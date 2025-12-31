@@ -8,11 +8,32 @@ async function loadNavbar() {
         const body = document.body;
         body.insertAdjacentHTML('afterbegin', html);
         
+        // Fix navbar links for current page context
+        fixNavbarLinks();
+        
         // Initialize navbar event listeners
         initNavbarEvents();
     } catch (error) {
         console.error('Error loading navbar:', error);
     }
+}
+
+function fixNavbarLinks() {
+    // Determine the correct base path for links
+    const isRootPage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
+    const basePrefix = isRootPage ? './src/components' : '.';
+    
+    // Fix navbar links based on current page location
+    const links = document.querySelectorAll('nav a[href^="./"]');
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('./')) {
+            const fileName = href.split('/').pop();
+            if (isRootPage) {
+                link.setAttribute('href', `./src/components/${fileName}`);
+            }
+        }
+    });
 }
 
 function initNavbarEvents() {

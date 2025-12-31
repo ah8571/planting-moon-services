@@ -15,6 +15,14 @@
     {
       "source": "/saasdirectories/:path*",
       "destination": "/src/components/saas-directories.html"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/src/components/contact.html"
+    },
+    {
+      "source": "/case-studies.html",
+      "destination": "/src/components/case-studies.html"
     }
   ],
   "headers": [
