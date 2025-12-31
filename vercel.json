@@ -8,27 +8,19 @@
     },
     {
       "source": "/contact",
-      "destination": "/src/components/contact.html"
-    },
-    {
-      "source": "/contact.html",
-      "destination": "/src/components/contact.html"
+      "destination": "/contact.html"
     },
     {
       "source": "/case-studies",
-      "destination": "/src/components/case-studies.html"
-    },
-    {
-      "source": "/case-studies.html",
-      "destination": "/src/components/case-studies.html"
+      "destination": "/case-studies.html"
     },
     {
       "source": "/saasdirectories",
-      "destination": "/src/components/saas-directories.html"
+      "destination": "/saas-directories.html"
     },
     {
       "source": "/saasdirectories/:path*",
-      "destination": "/src/components/saas-directories.html"
+      "destination": "/saas-directories.html"
     }
   ],
   "headers": [

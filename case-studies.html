@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Trading Moon</title>
+    <link rel="icon" type="image/svg+xml" href="../public/moon-favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        header {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .case-study {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .case-study:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .case-study-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .case-study-content {
+            padding: 30px;
+        }
+
+        .case-study-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            background: #e7f3ff;
+            color: #0056b3;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+        }
+
+        .case-study-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            margin-bottom: 20px;
+        }
+
+        .features-list h4 {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .features-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .features-list li {
+            padding: 6px 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .features-list li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .case-study-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .case-study-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .case-study-link:hover {
+            color: #764ba2;
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            margin-bottom: 40px;
+        }
+
+        .cta-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .cta-section p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.05em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #5568d3;
+        }
+
+        footer {
+            background: #000000 !important;
+            color: white;
+            padding: 30px 0 20px 0;
+            margin-top: 60px;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer .footer-section h3 {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        footer .footer-section ul {
+            list-style: none;
+        }
+
+        footer .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        footer .footer-section a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer .footer-section a:hover {
+            color: white;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        nav .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        nav .logo {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        nav .nav-items {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav .dropdown {
+            position: relative;
+        }
+
+        nav .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        nav .dropdown:hover .dropdown-menu.services-menu {
+            display: grid;
+        }
+
+        nav .dropdown:hover .dropdown-toggle {
+            color: #ccc;
+        }
+
+        nav .dropdown:hover .dropdown-toggle .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: white;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .dropdown-toggle:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-toggle .chevron {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        nav .dropdown-toggle.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            min-width: 200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 8px 0;
+            z-index: 100;
+        }
+
+        nav .dropdown-menu.open {
+            display: block;
+        }
+
+        nav .dropdown-menu.services-menu {
+            display: none;
+            grid-template-columns: 1fr 1fr;
+            min-width: 350px;
+            gap: 0;
+        }
+
+        nav .dropdown-menu.services-menu.open {
+            display: grid;
+        }
+
+        nav .dropdown-menu.services-menu a {
+            padding: 12px 20px;
+        }
+
+        nav .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .nav-link:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        nav .dropdown-menu a:hover {
+            background: #f5f5f5;
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .cta-section h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Case Studies</h1>
+            <p class="subtitle">See how we've helped businesses build and scale their projects.</p>
+        </header>
+
+        <div class="case-studies-grid">
+            <div class="case-study">
+                <div class="case-study-image">💰</div>
+                <div class="case-study-content">
+                    <h3>CashMarket</h3>
+                    <span class="case-study-tag">Web App Development</span>
+                    <p class="case-study-description">
+                        A comprehensive marketplace platform for buying and selling cash flow assets and future contracts.
+                    </p>
+                    <div class="features-list">
+                        <h4>What We Built:</h4>
+                        <ul>
+                            <li>Full-stack web application from scratch</li>
+                            <li>Secure user authentication and profile management</li>
+                            <li>Advanced marketplace functionality with bidding system</li>
+                            <li>Real-time notifications and messaging</li>
+                            <li>Payment processing integration</li>
+                            <li>Mobile-responsive design</li>
+                            <li>Admin dashboard for platform management</li>
+                        </ul>
+                    </div>
+                    <div class="case-study-footer">
+                        <a href="https://cashmarket.io" target="_blank" rel="noopener noreferrer" class="case-study-link">Visit Site →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Whether you need a complete web application, mobile app, or marketing help, we're here to assist.</p>
+            <a href="./contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="./navbar.js"></script>
+    <script src="./footer.js"></script>
+</body>
+</html>
