@@ -3,6 +3,10 @@
 **Status**: v1.0 - Stable production  
 **Last Updated**: December 31, 2025
 
+To Do:
+**Name change**
+- Need to consider a name change as there is another company with practically same name and has a negative reputation/ don't want to mix up its SEO
+
 ---
 
 ## ✅ Phase 1: Completed
@@ -61,16 +65,6 @@
 - [ ] Admin dashboard
 - [ ] Live chat widget
 
----
-
-## 📁 Key Files
-
-**Components** (Single Source of Truth)
-- `navbar.html` - Navigation + CSS
-- `footer.html` - Footer + CSS
-- `navbar.js`, `footer.js` - Loaders
-
-**Config**: `vercel.json`, `data/directories.json`, `sitemap.xml`, `robots.txt`
 
 ---
 

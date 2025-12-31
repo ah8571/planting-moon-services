@@ -12,6 +12,26 @@ async function loadNavbar() {
 }
 
 function initNavbarEvents() {
+    // Hamburger menu toggle for mobile
+    const hamburger = document.getElementById('hamburger-toggle');
+    const navItems = document.getElementById('nav-items');
+
+    if (hamburger && navItems) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            navItems.classList.toggle('open');
+        });
+
+        // Close menu when clicking a nav link
+        const navLinks = navItems.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                navItems.classList.remove('open');
+            });
+        });
+    }
+
     // Navbar dropdown toggle - click to toggle, hover to show
     const freeToolsDropdown = document.querySelector('#free-tools-toggle')?.parentElement;
     const servicesDropdown = document.querySelector('#services-toggle')?.parentElement;
