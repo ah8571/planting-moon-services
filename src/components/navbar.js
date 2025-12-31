@@ -19,9 +19,11 @@ async function loadNavbar() {
 }
 
 function fixNavbarLinks() {
-    // Determine the correct base path for links
-    const isRootPage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
-    const basePrefix = isRootPage ? './src/components' : '.';
+    // Only fix links if we're on the root page (index.html or /)
+    const pathname = window.location.pathname;
+    const isRootPage = pathname === '/' || pathname.endsWith('index.html');
+    
+    if (!isRootPage) return; // Don't fix if not on root page
     
     // Fix navbar links based on current page location
     const links = document.querySelectorAll('nav a[href^="./"]');
@@ -29,9 +31,8 @@ function fixNavbarLinks() {
         const href = link.getAttribute('href');
         if (href.startsWith('./')) {
             const fileName = href.split('/').pop();
-            if (isRootPage) {
-                link.setAttribute('href', `./src/components/${fileName}`);
-            }
+            // Update to point to src/components folder from root
+            link.setAttribute('href', `./src/components/${fileName}`);
         }
     });
 }
