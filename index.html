@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500+ SaaS Directories Aggregated</title>
+    <link rel="icon" type="image/svg+xml" href="./public/moon-favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./public/moon-favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        header {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #000;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: transparent;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .controls {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: grid;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .filter-toggle:hover {
+            background: #f5f5f5;
+        }
+
+        .chevron {
+            transition: transform 0.3s;
+            font-size: 0.8em;
+        }
+
+        .chevron.open {
+            transform: rotate(180deg);
+        }
+
+        .type-filters-container {
+            display: none;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            margin-top: 10px;
+            grid-column: 1 / -1;
+        }
+
+        .type-filters-container.open {
+            display: flex;
+        }
+
+        .type-filters-container .filter-btn {
+            flex: 0 1 auto;
+        }
+
+        .type-filters-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 10px;
+            gap: 8px;
+            flex-wrap: wrap;
+            z-index: 100;
+            min-width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .type-filters-dropdown.open {
+            display: flex;
+        }
+
+        .type-filters-dropdown .filter-btn {
+            flex: 0 1 auto;
+            margin: 0;
+        }
+
+        .filter-btn {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .filter-btn:hover {
+            background: #f5f5f5;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #1a1a1a;
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .th-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .th-header.toggleable:hover {
+            opacity: 0.8;
+        }
+
+        .th-chevron {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        .th-chevron.open {
+            transform: rotate(180deg);
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .name a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .name a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .name-text {
+            color: #999;
+            font-weight: 600;
+        }
+
+        .dr-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-align: center;
+            min-width: 60px;
+        }
+
+        .dr-high {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .dr-medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .dr-low {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .dr-unknown {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            background: #e7f3ff;
+            color: #0056b3;
+        }
+
+        .submission-type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            background: #f0e6ff;
+            color: #5a3a9d;
+            font-weight: 500;
+        }
+
+        .sources {
+            font-size: 0.85em;
+            color: #666;
+            max-width: 200px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            .sources {
+                display: none;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                min-width: auto;
+            }
+
+            .filter-group {
+                justify-content: space-between;
+            }
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        nav .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        nav .logo {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        nav .nav-items {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav .dropdown {
+            position: relative;
+        }
+
+        nav .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        nav .dropdown:hover .dropdown-menu.services-menu {
+            display: grid;
+        }
+
+        nav .dropdown:hover .dropdown-toggle {
+            color: #ccc;
+        }
+
+        nav .dropdown:hover .dropdown-toggle .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: white;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .dropdown-toggle:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-toggle .chevron {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        nav .dropdown-toggle.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            min-width: 200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 8px 0;
+            z-index: 100;
+        }
+
+        nav .dropdown-menu.open {
+            display: block;
+        }
+
+        nav .dropdown-menu.services-menu {
+            display: none;
+            grid-template-columns: 1fr 1fr;
+            min-width: 350px;
+            gap: 0;
+        }
+
+        nav .dropdown-menu.services-menu.open {
+            display: grid;
+        }
+
+        nav .dropdown-menu.services-menu a {
+            padding: 12px 20px;
+        }
+
+        nav .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .nav-link:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        nav .dropdown-menu a:hover {
+            background: #f5f5f5;
+            color: #667eea;
+        }
+
+        .pagination-info {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .pagination-info-top {
+            text-align: center;
+            padding: 15px 0;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .load-more-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 30px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .load-more-btn:hover {
+            background: #34495e;
+        }
+
+        .load-more-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .company-info {
+            display: none;
+        }
+
+        footer {
+            background: #000000 !important;
+            color: white;
+            padding: 30px 0 20px 0;
+            margin-top: 0;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer .footer-section h3 {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        footer .footer-section ul {
+            list-style: none;
+        }
+
+        footer .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        footer .footer-section a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer .footer-section a:hover {
+            color: white;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SaaS Directories Aggregator</h1>
+            <p class="subtitle">The SaaS Directories Aggregator is a comprehensive collection of 500+ SaaS submission platforms aggregated from multiple sources. Use this tool to discover where to submit your product for maximum visibility and reach in the SaaS ecosystem.</p>
+            
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number" id="total-count">0</div>
+                    <div class="stat-label">Total Directories</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="with-dr-count">0</div>
+                    <div class="stat-label">With Domain Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="avg-dr">0</div>
+                    <div class="stat-label">Average DR</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="highest-dr">0</div>
+                    <div class="stat-label">Highest DR</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pagination-info-top" id="pagination-info-top"></div>
+
+        <div class="table-container">
+            <table id="directories-table">
+                <thead>
+                    <tr>
+                        <th>Directory Name</th>
+                        <th id="type-header">
+                            <div class="th-header toggleable">
+                                <span>Directory Type</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="type-filters">
+                            </div>
+                        </th>
+                        <th id="submission-header">
+                            <div class="th-header toggleable">
+                                <span>Platform Fee</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="submission-filters-dropdown">
+                                <button class="filter-btn" data-filter="free">Free</button>
+                            </div>
+                        </th>
+                        <th id="dr-header">
+                            <div class="th-header toggleable">
+                                <span>Domain Rating</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="dr-filters-dropdown">
+                                <button class="filter-btn" data-filter="has-dr">Has DR</button>
+                                <button class="filter-btn" data-filter="no-dr">No DR</button>
+                            </div>
+                        </th>
+                        <th>Sources</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr class="loading">
+                        <td colspan="6">Loading directories...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination-info" id="pagination-info"></div>
+        <button class="load-more-btn" id="load-more-btn" style="display: none;">Load More</button>
+
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="./src/components/navbar.js"></script>
+    <script src="./src/components/footer.js"></script>
+
+    <script>
+        let allDirectories = [];
+        let filteredDirectories = [];
+        let currentFilter = 'all';
+        let currentTypeFilter = null;
+        let currentSubmissionFilter = null;
+        let currentPage = 1;
+        const ITEMS_PER_PAGE = 50;
+
+        // Load JSON data
+        async function loadDirectories() {
+            try {
+                const response = await fetch('../data/directories.json');
+                if (!response.ok) {
+                    throw new Error('Could not load directories.json');
+                }
+                const data = await response.json();
+                allDirectories = data.directories || [];
+                
+                // Sort by DR (highest first, unknown last)
+                allDirectories.sort((a, b) => {
+                    const drA = a.domainRating === 'unknown' ? -1 : a.domainRating;
+                    const drB = b.domainRating === 'unknown' ? -1 : b.domainRating;
+                    
+                    if (drA === -1 && drB === -1) return 0;
+                    if (drA === -1) return 1;
+                    if (drB === -1) return -1;
+                    return drB - drA;
+                });
+
+                filteredDirectories = allDirectories;
+                renderTable();
+                updateStats();
+                generateTypeFilters();
+            } catch (error) {
+                console.error('Error loading directories:', error);
+                document.getElementById('table-body').innerHTML = `
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px;">
+                            Error loading directories.json<br>
+                            <small style="color: #999;">Make sure the file is in the data/ folder relative to this HTML file</small>
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        // Apply filters
+        function applyFilters() {
+            let filtered = allDirectories;
+
+            // Filter by type (has DR / no DR)
+            if (currentFilter === 'has-dr') {
+                filtered = filtered.filter(d => d.domainRating !== 'unknown');
+            } else if (currentFilter === 'no-dr') {
+                filtered = filtered.filter(d => d.domainRating === 'unknown');
+            }
+
+            // Filter by directory type
+            if (currentTypeFilter) {
+                filtered = filtered.filter(d => d.type === currentTypeFilter);
+            }
+
+            // Filter by submission type
+            if (currentSubmissionFilter) {
+                filtered = filtered.filter(d => d.submissionType === currentSubmissionFilter);
+            }
+
+            // Reset pagination when filters change
+            currentPage = 1;
+
+            filteredDirectories = filtered;
+            renderTable();
+            updateStats();
+        }
+
+        // Render table
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            
+            if (filteredDirectories.length === 0) {
+                tbody.innerHTML = '<tr class="no-results"><td colspan="6">No directories found</td></tr>';
+                document.getElementById('pagination-info').textContent = '';
+                document.getElementById('load-more-btn').style.display = 'none';
+                return;
+            }
+
+            // Calculate pagination
+            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+            const endIndex = startIndex + ITEMS_PER_PAGE;
+            const pageItems = filteredDirectories.slice(startIndex, endIndex);
+            const totalPages = Math.ceil(filteredDirectories.length / ITEMS_PER_PAGE);
+
+            tbody.innerHTML = pageItems.map(dir => {
+                const drClass = dir.domainRating === 'unknown' 
+                    ? 'dr-unknown' 
+                    : dir.domainRating >= 80 
+                    ? 'dr-high' 
+                    : dir.domainRating >= 60 
+                    ? 'dr-medium' 
+                    : 'dr-low';
+                
+                const drText = dir.domainRating === 'unknown' 
+                    ? 'Unknown' 
+                    : dir.domainRating;
+
+                // Create clickable link or plain text for name
+                const nameDisplay = dir.url && dir.url.trim() !== ''
+                    ? `<a href="${dir.url}" target="_blank" rel="noopener noreferrer">${dir.name}</a>`
+                    : `<span class="name-text">${dir.name}</span>`;
+
+                // Format submission type for display
+                const submissionTypeDisplay = dir.submissionType || 'unknown';
+                const submissionTypeBadge = submissionTypeDisplay === 'unknown' 
+                    ? '' 
+                    : `<span class="submission-type-badge">${submissionTypeDisplay.charAt(0).toUpperCase() + submissionTypeDisplay.slice(1)}</span>`;
+
+                return `
+                    <tr>
+                        <td class="name">${nameDisplay}</td>
+                        <td><span class="type-badge">${dir.type || 'N/A'}</span></td>
+                        <td>${submissionTypeBadge}</td>
+                        <td><span class="dr-badge ${drClass}">${drText}</span></td>
+                        <td class="sources">${dir.listedOn.join(', ')}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Update pagination info
+            const startNum = (currentPage - 1) * ITEMS_PER_PAGE + 1;
+            const endNum = Math.min(currentPage * ITEMS_PER_PAGE, filteredDirectories.length);
+            const paginationText = `Showing ${startNum} - ${endNum} of ${filteredDirectories.length} directories`;
+            document.getElementById('pagination-info-top').textContent = paginationText;
+            document.getElementById('pagination-info').textContent = paginationText;
+
+            // Show/hide load more button
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            if (currentPage < totalPages) {
+                loadMoreBtn.style.display = 'block';
+                loadMoreBtn.disabled = false;
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        // Update stats
+        function updateStats() {
+            // Use filtered directories if filters are active, otherwise use all directories
+            const directories = (currentFilter !== 'all' || currentTypeFilter || currentSubmissionFilter) 
+                ? filteredDirectories 
+                : allDirectories;
+            
+            document.getElementById('total-count').textContent = directories.length;
+            
+            const withDR = directories.filter(d => d.domainRating !== 'unknown');
+            document.getElementById('with-dr-count').textContent = withDR.length;
+            
+            if (withDR.length > 0) {
+                const avgDR = (withDR.reduce((sum, d) => sum + d.domainRating, 0) / withDR.length).toFixed(1);
+                document.getElementById('avg-dr').textContent = avgDR;
+                
+                const maxDR = Math.max(...withDR.map(d => d.domainRating));
+                document.getElementById('highest-dr').textContent = maxDR;
+            } else {
+                document.getElementById('avg-dr').textContent = '0';
+                document.getElementById('highest-dr').textContent = '0';
+            }
+        }
+
+        // Generate type filter buttons
+        function generateTypeFilters() {
+            // Get unique types sorted
+            const types = [...new Set(allDirectories.map(d => d.type))].sort();
+            
+            const typeFiltersContainer = document.getElementById('type-filters');
+            
+            // Add type filters
+            const typeFiltersHTML = types.map(type => 
+                `<button class="filter-btn" data-type-filter="${type}">${type}</button>`
+            ).join('');
+            
+            typeFiltersContainer.innerHTML = typeFiltersHTML;
+            
+            // Add event listeners for type filters
+            document.querySelectorAll('[data-type-filter]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const isActive = e.target.classList.contains('active');
+                    document.querySelectorAll('[data-type-filter]').forEach(b => b.classList.remove('active'));
+                    
+                    if (isActive) {
+                        // If already active, deselect it
+                        currentTypeFilter = null;
+                    } else {
+                        // Otherwise select it
+                        e.target.classList.add('active');
+                        currentTypeFilter = e.target.dataset.typeFilter;
+                    }
+                    applyFilters();
+                });
+            });
+            
+            // Add toggle listener to column header
+            document.getElementById('type-header').addEventListener('click', (e) => {
+                // Don't toggle if clicking the filter buttons themselves
+                if (!e.target.matches('[data-type-filter]')) {
+                    typeFiltersContainer.classList.toggle('open');
+                    document.querySelector('#type-header .th-chevron').classList.toggle('open');
+                }
+            });
+        }
+
+        // Add DR filter dropdown toggle
+        document.getElementById('dr-header').addEventListener('click', (e) => {
+            // Don't toggle if clicking the filter buttons themselves
+            if (!e.target.matches('[data-filter]')) {
+                document.getElementById('dr-filters-dropdown').classList.toggle('open');
+                document.querySelector('#dr-header .th-chevron').classList.toggle('open');
+            }
+        });
+
+        // Add submission type filter dropdown toggle
+        document.getElementById('submission-header').addEventListener('click', (e) => {
+            // Don't toggle if clicking the filter buttons themselves
+            if (!e.target.matches('[data-filter]')) {
+                document.getElementById('submission-filters-dropdown').classList.toggle('open');
+                document.querySelector('#submission-header .th-chevron').classList.toggle('open');
+            }
+        });
+
+        // Add event listeners for DR filters in dropdown
+        document.querySelectorAll('#dr-filters-dropdown .filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const isActive = e.target.classList.contains('active');
+                document.querySelectorAll('#dr-filters-dropdown .filter-btn').forEach(b => b.classList.remove('active'));
+                
+                if (isActive) {
+                    // If already active, deselect it
+                    currentFilter = 'all';
+                } else {
+                    // Otherwise select it
+                    e.target.classList.add('active');
+                    currentFilter = e.target.dataset.filter;
+                }
+                applyFilters();
+            });
+        });
+
+        // Add event listeners for submission type filters in dropdown
+        document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const isActive = e.target.classList.contains('active');
+                document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(b => b.classList.remove('active'));
+                
+                if (isActive) {
+                    // If already active, deselect it
+                    currentSubmissionFilter = null;
+                } else {
+                    // Otherwise select it
+                    e.target.classList.add('active');
+                    currentSubmissionFilter = e.target.dataset.filter;
+                }
+                applyFilters();
+            });
+        });
+
+        // Navbar dropdown toggle - click to toggle, hover to show
+        const freeToolsDropdown = document.querySelector('#free-tools-toggle')?.parentElement;
+        const servicesDropdown = document.querySelector('#services-toggle')?.parentElement;
+
+        document.getElementById('free-tools-toggle')?.addEventListener('click', (e) => {
+            const menu = document.getElementById('free-tools-menu');
+            const toggle = e.currentTarget;
+            menu?.classList.toggle('open');
+            toggle?.classList.toggle('open');
+        });
+
+        document.getElementById('services-toggle')?.addEventListener('click', (e) => {
+            const menu = document.getElementById('services-menu');
+            const toggle = e.currentTarget;
+            menu?.classList.toggle('open');
+            toggle?.classList.toggle('open');
+        });
+
+        // Add hover support for dropdowns
+        freeToolsDropdown?.addEventListener('mouseenter', () => {
+            document.getElementById('free-tools-menu')?.classList.add('open');
+            document.getElementById('free-tools-toggle')?.classList.add('open');
+        });
+
+        freeToolsDropdown?.addEventListener('mouseleave', () => {
+            document.getElementById('free-tools-menu')?.classList.remove('open');
+            document.getElementById('free-tools-toggle')?.classList.remove('open');
+        });
+
+        servicesDropdown?.addEventListener('mouseenter', () => {
+            document.getElementById('services-menu')?.classList.add('open');
+            document.getElementById('services-toggle')?.classList.add('open');
+        });
+
+        servicesDropdown?.addEventListener('mouseleave', () => {
+            document.getElementById('services-menu')?.classList.remove('open');
+            document.getElementById('services-toggle')?.classList.remove('open');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            let clickedInDropdown = false;
+            
+            dropdowns.forEach(dropdown => {
+                if (dropdown.contains(e.target)) {
+                    clickedInDropdown = true;
+                }
+            });
+            
+            if (!clickedInDropdown) {
+                document.getElementById('free-tools-menu').classList.remove('open');
+                document.getElementById('free-tools-toggle').classList.remove('open');
+                document.getElementById('services-menu').classList.remove('open');
+                document.getElementById('services-toggle').classList.remove('open');
+            }
+        });
+
+        // Load more button
+        document.getElementById('load-more-btn').addEventListener('click', () => {
+            currentPage++;
+            renderTable();
+            document.querySelector('.pagination-info').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Load on page load
+        loadDirectories();
+    </script>
+</body>
+</html>
