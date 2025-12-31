@@ -8,33 +8,11 @@ async function loadNavbar() {
         const body = document.body;
         body.insertAdjacentHTML('afterbegin', html);
         
-        // Fix navbar links for current page context
-        fixNavbarLinks();
-        
         // Initialize navbar event listeners
         initNavbarEvents();
     } catch (error) {
         console.error('Error loading navbar:', error);
     }
-}
-
-function fixNavbarLinks() {
-    // Only fix links if we're on the root page (index.html or /)
-    const pathname = window.location.pathname;
-    const isRootPage = pathname === '/' || pathname.endsWith('index.html');
-    
-    if (!isRootPage) return; // Don't fix if not on root page
-    
-    // Fix navbar links based on current page location
-    const links = document.querySelectorAll('nav a[href^="./"]');
-    links.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href.startsWith('./')) {
-            const fileName = href.split('/').pop();
-            // Update to point to src/components folder from root
-            link.setAttribute('href', `./src/components/${fileName}`);
-        }
-    });
 }
 
 function initNavbarEvents() {
