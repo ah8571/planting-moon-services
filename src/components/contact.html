@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Trading Moon</title>
+    <link rel="icon" type="image/svg+xml" href="./public/moon-favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        header {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .form-section {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            border: 1px solid #ddd;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1em;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .checkbox-item label {
+            margin: 0;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        .optional-text {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto 0;
+            padding: 14px 40px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5568d3;
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #000000 !important;
+            color: white;
+            padding: 30px 0 20px 0;
+            margin-top: 60px;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer .footer-section h3 {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        footer .footer-section ul {
+            list-style: none;
+        }
+
+        footer .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        footer .footer-section a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer .footer-section a:hover {
+            color: white;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        nav .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        nav .logo {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        nav .nav-items {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav .dropdown {
+            position: relative;
+        }
+
+        nav .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        nav .dropdown:hover .dropdown-menu.services-menu {
+            display: grid;
+        }
+
+        nav .dropdown:hover .dropdown-toggle {
+            color: #ccc;
+        }
+
+        nav .dropdown:hover .dropdown-toggle .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: white;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .dropdown-toggle:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-toggle .chevron {
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        nav .dropdown-toggle.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        nav .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            min-width: 200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 8px 0;
+            z-index: 100;
+        }
+
+        nav .dropdown-menu.open {
+            display: block;
+        }
+
+        nav .dropdown-menu.services-menu {
+            display: none;
+            grid-template-columns: 1fr 1fr;
+            min-width: 350px;
+            gap: 0;
+        }
+
+        nav .dropdown-menu.services-menu.open {
+            display: grid;
+        }
+
+        nav .dropdown-menu.services-menu a {
+            padding: 12px 20px;
+        }
+
+        nav .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .nav-link:hover {
+            color: #ccc;
+        }
+
+        nav .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        nav .dropdown-menu a:hover {
+            background: #f5f5f5;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+            <p class="subtitle">Have a project in mind? Let's talk about how we can help.</p>
+        </header>
+
+        <div class="form-section">
+            <form id="contact-form" action="https://formspree.io/f/xeojzygb" method="POST">
+                <div class="form-group">
+                    <label for="company">Company Name *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website *</label>
+                    <input type="text" id="website" name="website" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                    <p class="optional-text">Optional</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Services Needed</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="web-dev" name="services" value="Web App Development">
+                            <label for="web-dev">Web App Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mobile-dev" name="services" value="Mobile App Development">
+                            <label for="mobile-dev">Mobile App Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mvp-dev" name="services" value="MVP Development">
+                            <label for="mvp-dev">MVP Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="marketing-growth" name="services" value="Marketing & Growth">
+                            <label for="marketing-growth">Marketing & Growth</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="seo-help" name="services" value="SEO Help">
+                            <label for="seo-help">SEO Help</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="ppc-help" name="services" value="PPC Help">
+                            <label for="ppc-help">PPC Help</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="analytics-help" name="services" value="Analytics Help">
+                            <label for="analytics-help">Analytics Help</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="automation" name="services" value="Automation Consulting">
+                            <label for="automation">Automation Consulting</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Description of Project *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your project and what you'd like help with..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="success-message" id="success-message">
+                ✓ Thank you! Your message has been sent successfully. We'll be in touch soon!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="./navbar.js"></script>
+    <script src="./footer.js"></script>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            // Let Formspree handle the submission naturally
+            // Just show success message after a brief delay
+            setTimeout(() => {
+                document.getElementById('contact-form').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

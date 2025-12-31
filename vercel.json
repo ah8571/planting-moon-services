@@ -6,15 +6,15 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/home.html"
+      "destination": "/src/components/home.html"
     },
     {
       "source": "/saasdirectories",
-      "destination": "/index.html"
+      "destination": "/src/components/saas-directories.html"
     },
     {
       "source": "/saasdirectories/:path*",
-      "destination": "/index.html"
+      "destination": "/src/components/saas-directories.html"
     }
   ],
   "headers": [
