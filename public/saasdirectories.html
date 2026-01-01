@@ -474,7 +474,14 @@
                                 <button class="filter-btn" data-filter="no-dr">No DR</button>
                             </div>
                         </th>
-                        <th>Sources</th>
+                        <th id="sources-header">
+                            <div class="th-header toggleable">
+                                <span>Sources</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="sources-filters">
+                            </div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -503,6 +510,7 @@
         let currentFilter = 'all';
         let currentTypeFilter = null;
         let currentSubmissionFilter = null;
+        let currentSourcesFilter = null;
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
@@ -531,6 +539,7 @@
                 renderTable();
                 updateStats();
                 generateTypeFilters();
+                generateSourcesFilters();
             } catch (error) {
                 console.error('Error loading directories:', error);
                 document.getElementById('table-body').innerHTML = `
@@ -557,12 +566,23 @@
 
             // Filter by directory type
             if (currentTypeFilter) {
-                filtered = filtered.filter(d => d.type === currentTypeFilter);
+                filtered = filtered.filter(d => {
+                    const types = Array.isArray(d.type) ? d.type : [d.type];
+                    return types.includes(currentTypeFilter);
+                });
             }
 
             // Filter by submission type
             if (currentSubmissionFilter) {
                 filtered = filtered.filter(d => d.submissionType === currentSubmissionFilter);
+            }
+
+            // Filter by number of sources
+            if (currentSourcesFilter) {
+                filtered = filtered.filter(d => {
+                    const sourceCount = d.listedOn ? d.listedOn.length : 0;
+                    return sourceCount === currentSourcesFilter;
+                });
             }
 
             // Reset pagination when filters change
@@ -614,10 +634,15 @@
                     ? '' 
                     : `<span class="submission-type-badge">${submissionTypeDisplay.charAt(0).toUpperCase() + submissionTypeDisplay.slice(1)}</span>`;
 
+                // Format type for display (handle both string and array)
+                const typeArray = Array.isArray(dir.type) ? dir.type : [dir.type];
+                const typeDisplay = typeArray.filter(t => t && t.trim()).join(', ') || 'N/A';
+                const typeBadges = typeArray.map(t => `<span class="type-badge">${t}</span>`).join('');
+
                 return `
                     <tr>
                         <td class="name">${nameDisplay}</td>
-                        <td><span class="type-badge">${dir.type || 'N/A'}</span></td>
+                        <td>${typeBadges || '<span class="type-badge">N/A</span>'}</td>
                         <td>${submissionTypeBadge}</td>
                         <td><span class="dr-badge ${drClass}">${drText}</span></td>
                         <td class="sources">${dir.listedOn.join(', ')}</td>
@@ -668,8 +693,13 @@
 
         // Generate type filter buttons
         function generateTypeFilters() {
-            // Get unique types sorted
-            const types = [...new Set(allDirectories.map(d => d.type))].sort();
+            // Get unique types sorted (handle both string and array types)
+            const typeSet = new Set();
+            allDirectories.forEach(d => {
+                const types = Array.isArray(d.type) ? d.type : (d.type ? [d.type] : []);
+                types.forEach(t => typeSet.add(t));
+            });
+            const types = Array.from(typeSet).sort();
             
             const typeFiltersContainer = document.getElementById('type-filters');
             
@@ -708,6 +738,44 @@
             });
         }
 
+        // Generate sources filter buttons
+        function generateSourcesFilters() {
+            const sourceCounts = {};
+            allDirectories.forEach(d => {
+                const count = d.listedOn ? d.listedOn.length : 0;
+                if (!sourceCounts[count]) {
+                    sourceCounts[count] = 0;
+                }
+                sourceCounts[count]++;
+            });
+
+            const container = document.getElementById('sources-filters');
+            container.innerHTML = '';
+            
+            // Create buttons for each source count in descending order
+            Object.keys(sourceCounts).sort((a, b) => b - a).forEach(count => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = `${count} source${count > 1 ? 's' : ''} (${sourceCounts[count]})`;
+                btn.dataset.sourcesFilter = count;
+                btn.addEventListener('click', () => toggleSourcesFilter(count, btn));
+                container.appendChild(btn);
+            });
+        }
+
+        // Toggle sources filter
+        function toggleSourcesFilter(sourceCount, btn) {
+            if (currentSourcesFilter === parseInt(sourceCount)) {
+                currentSourcesFilter = null;
+                btn.classList.remove('active');
+            } else {
+                document.querySelectorAll('#sources-filters .filter-btn.active').forEach(b => b.classList.remove('active'));
+                currentSourcesFilter = parseInt(sourceCount);
+                btn.classList.add('active');
+            }
+            applyFilters();
+        }
+
         // Add DR filter dropdown toggle
         document.getElementById('dr-header').addEventListener('click', (e) => {
             // Don't toggle if clicking the filter buttons themselves
@@ -723,6 +791,15 @@
             if (!e.target.matches('[data-filter]')) {
                 document.getElementById('submission-filters-dropdown').classList.toggle('open');
                 document.querySelector('#submission-header .th-chevron').classList.toggle('open');
+            }
+        });
+
+        // Add sources filter dropdown toggle
+        document.getElementById('sources-header').addEventListener('click', (e) => {
+            // Don't toggle if clicking the filter buttons themselves
+            if (!e.target.matches('[data-sources-filter]')) {
+                document.getElementById('sources-filters').classList.toggle('open');
+                document.querySelector('#sources-header .th-chevron').classList.toggle('open');
             }
         });
 
