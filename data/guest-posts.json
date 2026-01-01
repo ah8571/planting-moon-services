@@ -182,7 +182,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -235,7 +236,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -374,6 +376,25 @@
       "notes": ""
     },
     {
+      "id": "huffpostcom",
+      "name": "HuffPost.com",
+      "url": "https://www.huffpost.com",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Lifestyle"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "bloggingjoy.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "hubspot",
       "name": "HubSpot",
       "url": "https://blog.hubspot.com",
@@ -392,24 +413,6 @@
         "collaborator.pro"
       ],
       "notes": "Search Traffic: 4.7M"
-    },
-    {
-      "id": "huffpostcom",
-      "name": "HuffPost.com",
-      "url": "https://www.huffpost.com",
-      "dr": 93,
-      "description": "Guest post opportunity from bloggerspassion.com.",
-      "niche": [
-        "SaaS",
-        "News",
-        "Lifestyle"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com",
-        "bloggingjoy.com"
-      ],
-      "notes": ""
     },
     {
       "id": "tumblrcom",
@@ -540,7 +543,8 @@
       "submissionType": "free",
       "listedOn": [
         "bloggingjoy.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -558,6 +562,39 @@
       "submissionType": "free",
       "listedOn": [
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fast-company",
+      "name": "Fast Company",
+      "url": "https://fastcompany.com",
+      "dr": 93,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Business",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "psychology-today",
+      "name": "Psychology Today",
+      "url": "https://psychologytoday.com",
+      "dr": 93,
+      "description": "Guest posting opportunity from Psychology Today",
+      "niche": [
+        "Self Improvement"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -706,23 +743,6 @@
       "notes": ""
     },
     {
-      "id": "fast-company",
-      "name": "Fast Company",
-      "url": "https://fastcompany.com",
-      "dr": 92,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Business",
-        "Innovation"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
       "id": "how-stuff-works",
       "name": "How Stuff Works",
       "url": "https://howstuffworks.com",
@@ -734,7 +754,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -817,7 +838,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "linkbuilder.io"
+        "linkbuilder.io",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -838,7 +860,8 @@
         "bloggerspassion.com",
         "bloggingjoy.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -855,7 +878,8 @@
       "submissionType": "free",
       "listedOn": [
         "outreachmonks.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -872,7 +896,38 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "url": "https://lifehacker.com",
+      "dr": 92,
+      "description": "Guest posting opportunity from Lifehacker",
+      "niche": [
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "politico",
+      "name": "Politico",
+      "url": "https://politico.com",
+      "dr": 92,
+      "description": "Guest posting opportunity from Politico",
+      "niche": [
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1039,7 +1094,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1056,7 +1112,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1104,7 +1161,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1203,6 +1261,73 @@
       "listedOn": [
         "bloggerspassion.com",
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "smashing-magazine",
+      "name": "Smashing Magazine",
+      "url": "https://smashingmagazine.com",
+      "dr": 91,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Web Design",
+        "Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "crunchbase",
+      "name": "Crunchbase",
+      "url": "https://www.crunchbase.com",
+      "dr": 91,
+      "description": "Free guest posting opportunity from webseotrends.com.",
+      "niche": [
+        "Tech",
+        "Investment"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webseotrends.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wikihow",
+      "name": "Wikihow",
+      "url": "https://wikihow.com",
+      "dr": 91,
+      "description": "Guest posting opportunity from Wikihow",
+      "niche": [
+        "Blogging",
+        "SEO",
+        "Lifestyle"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "elearn-magazine",
+      "name": "eLearn Magazine",
+      "url": "https://elearnmag.com",
+      "dr": 91,
+      "description": "Guest posting opportunity from eLearn Magazine",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1361,23 +1486,6 @@
       "notes": ""
     },
     {
-      "id": "smashing-magazine",
-      "name": "Smashing Magazine",
-      "url": "https://smashingmagazine.com",
-      "dr": 90,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Web Design",
-        "Development"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
       "id": "topuniversitiescom",
       "name": "TopUniversities.com",
       "url": "https://www.topuniversities.com",
@@ -1496,7 +1604,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1512,7 +1621,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1612,7 +1722,8 @@
         "bloggerspassion.com",
         "webmetools.com",
         "outreachmonks.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1646,7 +1757,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1686,6 +1798,22 @@
         "bloggingjoy.com",
         "rhinorank.com",
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "creative-bloq",
+      "name": "Creative Bloq",
+      "url": "https://creativebloq.com",
+      "dr": 87,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1738,7 +1866,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1837,22 +1966,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "creative-bloq",
-      "name": "Creative Bloq",
-      "url": "https://creativebloq.com",
-      "dr": 86,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Design"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1886,7 +2001,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2005,7 +2121,8 @@
         "webseotrends.com",
         "outreachmonks.com",
         "collaborator.pro",
-        "linkbuilder.io"
+        "linkbuilder.io",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2022,6 +2139,43 @@
       "submissionType": "free",
       "listedOn": [
         "linkbuilder.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "getresponse",
+      "name": "GetResponse",
+      "url": "https://www.getresponse.com/blog",
+      "dr": 85,
+      "description": "Email marketing and automation platform",
+      "niche": [
+        "Email Marketing",
+        "Marketing",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingjoy.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "proprofs",
+      "name": "ProProfs",
+      "url": "https://www.proprofs.com/blog",
+      "dr": 85,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Productivity",
+        "Training",
+        "Business Tools"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2091,7 +2245,8 @@
         "bloggerspassion.com",
         "webseotrends.com",
         "outreachmonks.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2111,7 +2266,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2142,7 +2298,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2194,6 +2351,21 @@
         "bloggerspassion.com",
         "bloggingjoy.com",
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "science-org",
+      "name": "Science.org",
+      "url": "https://science.org",
+      "dr": 84,
+      "description": "Guest posting opportunity from Science.org",
+      "niche": [
+        "Science"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2346,7 +2518,25 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hongkiat",
+      "name": "Hongkiat",
+      "url": "https://hongkiat.com",
+      "dr": 83,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Web Design",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2439,23 +2629,6 @@
       "notes": "Writing Process for submissions"
     },
     {
-      "id": "getresponse",
-      "name": "GetResponse",
-      "url": "https://www.getresponse.com/blog",
-      "dr": 82,
-      "description": "Email marketing and automation platform",
-      "niche": [
-        "Email Marketing",
-        "Marketing",
-        "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingjoy.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "contact-music",
       "name": "Contact Music",
       "url": "https://www.contactmusic.com/page/writeforus",
@@ -2502,7 +2675,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2535,7 +2709,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2552,7 +2727,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2607,7 +2783,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2627,7 +2804,8 @@
         "bloggerspassion.com",
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2751,22 +2929,6 @@
       "notes": ""
     },
     {
-      "id": "hongkiat",
-      "name": "Hongkiat",
-      "url": "https://hongkiat.com",
-      "dr": 81,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Web Design",
-        "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro"
-      ],
-      "notes": ""
-    },
-    {
       "id": "jeff-bullas",
       "name": "Jeff Bullas",
       "url": "https://jeffbullas.com",
@@ -2779,7 +2941,23 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "99designs",
+      "name": "99designs",
+      "url": "https://99designs.com",
+      "dr": 81,
+      "description": "Guest posting opportunity from 99designs",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2854,7 +3032,8 @@
         "bloggerspassion.com",
         "webmetools.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -2891,25 +3070,8 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "proprofs",
-      "name": "ProProfs",
-      "url": "https://www.proprofs.com/blog",
-      "dr": 80,
-      "description": "Guest post opportunity from bloggerspassion.com.",
-      "niche": [
-        "SaaS",
-        "Productivity",
-        "Training",
-        "Business Tools"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3124,7 +3286,8 @@
       "submissionType": "free",
       "listedOn": [
         "linkbuilder.io",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3156,7 +3319,39 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "edsurge",
+      "name": "EdSurge",
+      "url": "https://edsurge.com",
+      "dr": 80,
+      "description": "Guest posting opportunity from EdSurge",
+      "niche": [
+        "Education",
+        "Jobs"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zme-science",
+      "name": "ZME Science",
+      "url": "https://zmescience.com",
+      "dr": 80,
+      "description": "Guest posting opportunity from ZME Science",
+      "niche": [
+        "Science"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3176,7 +3371,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3362,7 +3558,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3378,7 +3575,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3395,7 +3593,23 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "opendemocracy",
+      "name": "OpenDemocracy",
+      "url": "https://opendemocracy.net",
+      "dr": 79,
+      "description": "Guest posting opportunity from OpenDemocracy",
+      "niche": [
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3452,7 +3666,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3737,6 +3952,39 @@
       "notes": ""
     },
     {
+      "id": "inspiration-feed",
+      "name": "Inspiration Feed",
+      "url": "https://inspirationfeed.com/guest-writing/",
+      "dr": 78,
+      "description": "Guest post opportunity from webmetools.com.",
+      "niche": [
+        "Technology",
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webmetools.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "my-fancy-house",
+      "name": "My Fancy House",
+      "url": "https://myfancyhouse.com",
+      "dr": 78,
+      "description": "Guest posting opportunity from My Fancy House",
+      "niche": [
+        "Home Improvement",
+        "Interior Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "chanty",
       "name": "Chanty",
       "url": "https://chanty.com/blog",
@@ -3787,7 +4035,8 @@
         "bloggerspassion.com",
         "bloggingjoy.com",
         "webmetools.com",
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -3998,6 +4247,24 @@
       "notes": ""
     },
     {
+      "id": "contentmarketinginstitute-com",
+      "name": "ContentMarketingInstitute.com",
+      "url": "https://contentmarketinginstitute.com",
+      "dr": 77,
+      "description": "Guest posting opportunity from ContentMarketingInstitute.com",
+      "niche": [
+        "Marketing",
+        "Content",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "escapeartist",
       "name": "EscapeArtist",
       "url": "https://escapist.com",
@@ -4177,7 +4444,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4194,7 +4462,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4285,22 +4554,6 @@
       "notes": ""
     },
     {
-      "id": "inspiration-feed",
-      "name": "Inspiration Feed",
-      "url": "https://inspirationfeed.com/guest-writing/",
-      "dr": 75,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Technology",
-        "Design"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "wise-bread",
       "name": "Wise Bread",
       "url": "https://wisebread.com",
@@ -4382,6 +4635,38 @@
       "notes": ""
     },
     {
+      "id": "best-in-australia",
+      "name": "Best In Australia",
+      "url": "https://bestinaustria.com",
+      "dr": 75,
+      "description": "Guest posting opportunity from Best In Australia",
+      "niche": [
+        "Technology",
+        "How To",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "education-world",
+      "name": "Education World",
+      "url": "https://educationworld.com",
+      "dr": 75,
+      "description": "Guest posting opportunity from Education World",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "mycorporationcom",
       "name": "MyCorporation.com",
       "url": "https://www.mycorporation.com",
@@ -4445,7 +4730,8 @@
       "submissionType": "free",
       "listedOn": [
         "bloggingjoy.com",
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4510,7 +4796,23 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "springer-nature",
+      "name": "Springer Nature",
+      "url": "https://springernature.com",
+      "dr": 74,
+      "description": "Guest posting opportunity from Springer Nature",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4626,7 +4928,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4725,7 +5028,75 @@
       "submissionType": "free",
       "listedOn": [
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "money-saving-mom",
+      "name": "Money Saving Mom",
+      "url": "https://moneysavingmom.com",
+      "dr": 73,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Finance",
+        "Saving"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "noupe",
+      "name": "Noupe",
+      "url": "https://www.noupe.com",
+      "dr": 73,
+      "description": "Free guest posting opportunity from webseotrends.com.",
+      "niche": [
+        "Design",
+        "Creativity"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webseotrends.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "abc-money",
+      "name": "ABC Money",
+      "url": "https://abcmoney.co.uk",
+      "dr": 73,
+      "description": "Guest posting opportunity from ABC Money",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "roohome",
+      "name": "RooHome",
+      "url": "https://roohome.com",
+      "dr": 73,
+      "description": "Guest posting opportunity from RooHome",
+      "niche": [
+        "Home Improvement",
+        "Interior Design",
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4864,7 +5235,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4943,7 +5315,24 @@
       "listedOn": [
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-it-base",
+      "name": "The IT Base",
+      "url": "https://theitbase.com",
+      "dr": 72,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -4993,7 +5382,8 @@
       "submissionType": "write-for-us",
       "listedOn": [
         "bloggingjoy.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5137,7 +5527,23 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "linkbuilder.io"
+        "linkbuilder.io",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-cheek",
+      "name": "Legal Cheek",
+      "url": "https://legalcheek.com",
+      "dr": 71,
+      "description": "Guest posting opportunity from Legal Cheek",
+      "niche": [
+        "Law"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5156,7 +5562,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5175,7 +5582,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5208,7 +5616,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "bloggerspassion.com"
+        "bloggerspassion.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5396,6 +5805,39 @@
       "notes": ""
     },
     {
+      "id": "milwaukee",
+      "name": "Milwaukee",
+      "url": "https://milwaukee.com",
+      "dr": 70,
+      "description": "Guest posting opportunity from Milwaukee",
+      "niche": [
+        "Business",
+        "Health",
+        "Food"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "naukri",
+      "name": "Naukri",
+      "url": "https://naukri.com",
+      "dr": 70,
+      "description": "Guest posting opportunity from Naukri",
+      "niche": [
+        "Jobs",
+        "Career Advice"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "knowledgehut",
       "name": "KnowledgeHut",
       "url": "https://www.knowledgehut.com",
@@ -5427,7 +5869,8 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "bloggingjoy.com"
+        "bloggingjoy.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5480,7 +5923,8 @@
         "bloggingjoy.com",
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5497,7 +5941,8 @@
       "listedOn": [
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5534,19 +5979,32 @@
       "notes": ""
     },
     {
-      "id": "contentmarketinginstitute-com",
-      "name": "ContentMarketingInstitute.com",
-      "url": "https://contentmarketinginstitute.com",
+      "id": "seo-trench",
+      "name": "SEO Trench",
+      "url": "https://seotrench.com",
       "dr": 69,
-      "description": "Guest posting opportunity from ContentMarketingInstitute.com",
+      "description": "Guest posting opportunity from SEO Trench",
       "niche": [
-        "Marketing",
-        "Content",
-        "Business"
+        "SEO"
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ishan-mishra",
+      "name": "Ishan Mishra",
+      "url": "https://ishanmishra.com",
+      "dr": 69,
+      "description": "Guest posting opportunity from Ishan Mishra",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5734,7 +6192,8 @@
         "bloggerspassion.com",
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5787,23 +6246,6 @@
       "notes": ""
     },
     {
-      "id": "money-saving-mom",
-      "name": "Money Saving Mom",
-      "url": "https://moneysavingmom.com",
-      "dr": 67,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Finance",
-        "Saving"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
       "id": "instantshift-com",
       "name": "InstantShift.com",
       "url": "https://instantshift.com",
@@ -5821,6 +6263,39 @@
       "notes": ""
     },
     {
+      "id": "mailjet",
+      "name": "Mailjet",
+      "url": "https://www.mailjet.com/contributor-guidelines/",
+      "dr": 67,
+      "description": "Guest post opportunity from webmetools.com.",
+      "niche": [
+        "Email Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webmetools.com",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "goalcast",
+      "name": "Goalcast",
+      "url": "https://goalcast.com",
+      "dr": 67,
+      "description": "Guest posting opportunity from Goalcast",
+      "niche": [
+        "Self Improvement",
+        "Motivation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "gimmio-blog",
       "name": "Gimmio Blog",
       "url": "https://gimmio.com",
@@ -5834,22 +6309,6 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "mailjet",
-      "name": "Mailjet",
-      "url": "https://www.mailjet.com/contributor-guidelines/",
-      "dr": 66,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Email Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com",
-        "makeblogging"
       ],
       "notes": ""
     },
@@ -5883,7 +6342,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -5932,6 +6392,42 @@
       "submissionType": "free",
       "listedOn": [
         "linkbuilder.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webscoot-blog",
+      "name": "WebScoot Blog",
+      "url": "https://www.webscoot.io",
+      "dr": 66,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "derek-time",
+      "name": "Derek Time",
+      "url": "https://derektime.com",
+      "dr": 66,
+      "description": "Guest posting opportunity from Derek Time",
+      "niche": [
+        "Technology",
+        "Business",
+        "Lifestyle",
+        "Fashion"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6003,6 +6499,120 @@
       "notes": ""
     },
     {
+      "id": "benchmark-com",
+      "name": "Benchmark.com",
+      "url": "https://benchmark.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from Benchmark.com",
+      "niche": [
+        "Email",
+        "Marketing",
+        "SaaS"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bangshift",
+      "name": "BangShift",
+      "url": "https://bangshift.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from BangShift",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "newsblaze",
+      "name": "NewsBlaze",
+      "url": "https://newsblaze.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from NewsBlaze",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "iblogsandyou",
+      "name": "iBlogsAndYou",
+      "url": "https://iblogsandyou.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from iBlogsAndYou",
+      "niche": [
+        "Home Improvement",
+        "Interior Design",
+        "Real Estate"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "eathappyproject",
+      "name": "EatHappyProject",
+      "url": "https://eathappyproject.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from EatHappyProject",
+      "niche": [
+        "Home Improvement",
+        "Interior Design",
+        "Real Estate",
+        "Home Decor",
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-humanist",
+      "name": "The Humanist",
+      "url": "https://thehumanist.com",
+      "dr": 65,
+      "description": "Guest posting opportunity from The Humanist",
+      "niche": [
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "liberal-america",
+      "name": "Liberal America",
+      "url": "https://liberalamerica.org",
+      "dr": 65,
+      "description": "Guest posting opportunity from Liberal America",
+      "niche": [
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "ez-rankings",
       "name": "EZ Rankings",
       "url": "https://www.ezrankings.com",
@@ -6035,7 +6645,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6054,7 +6665,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6199,24 +6811,74 @@
       "listedOn": [
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
     {
-      "id": "benchmark-com",
-      "name": "Benchmark.com",
-      "url": "https://benchmark.com",
+      "id": "all-tech-buzz",
+      "name": "All Tech Buzz",
+      "url": "https://www.alltechbuzz.net",
       "dr": 64,
-      "description": "Guest posting opportunity from Benchmark.com",
+      "description": "Free guest posting opportunity from webseotrends.com.",
       "niche": [
-        "Email",
-        "Marketing",
-        "SaaS"
+        "Technology"
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "webseotrends.com",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "side-car",
+      "name": "Side Car",
+      "url": "https://sidecar.com",
+      "dr": 64,
+      "description": "Guest posting opportunity from Side Car",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pathofex",
+      "name": "Pathofex",
+      "url": "https://pathofex.com",
+      "dr": 64,
+      "description": "Guest posting opportunity from Pathofex",
+      "niche": [
+        "Technology",
+        "Social Media",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "placeit",
+      "name": "Placeit",
+      "url": "https://placeit.net",
+      "dr": 64,
+      "description": "Guest posting opportunity from Placeit",
+      "niche": [
+        "Design",
+        "Gaming",
+        "Sports"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6265,23 +6927,23 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
     {
-      "id": "all-tech-buzz",
-      "name": "All Tech Buzz",
-      "url": "https://www.alltechbuzz.net",
+      "id": "college-magazine",
+      "name": "College Magazine",
+      "url": "https://collegemag.com",
       "dr": 63,
-      "description": "Free guest posting opportunity from webseotrends.com.",
+      "description": "Guest posting opportunity from College Magazine",
       "niche": [
-        "Technology"
+        "Education"
       ],
       "submissionType": "free",
       "listedOn": [
-        "webseotrends.com",
-        "makeblogging"
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6386,19 +7048,32 @@
       "notes": ""
     },
     {
-      "id": "webscoot-blog",
-      "name": "WebScoot Blog",
-      "url": "https://www.webscoot.io",
+      "id": "hotcars",
+      "name": "HotCars",
+      "url": "https://hotcars.com",
       "dr": 62,
-      "description": "Guest post opportunity from bloggerspassion.com.",
+      "description": "Guest posting opportunity from HotCars",
       "niche": [
-        "SaaS",
-        "Web Development"
+        "Automobiles"
       ],
       "submissionType": "free",
       "listedOn": [
-        "bloggerspassion.com",
-        "makeblogging"
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-uk-time",
+      "name": "The UK Time",
+      "url": "https://theuktime.com",
+      "dr": 62,
+      "description": "Guest posting opportunity from The UK Time",
+      "niche": [
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6466,6 +7141,56 @@
       "notes": ""
     },
     {
+      "id": "my-wp-tips",
+      "name": "My WP Tips",
+      "url": "https://mywptips.com",
+      "dr": 61,
+      "description": "Guest posting opportunity from My WP Tips",
+      "niche": [
+        "Blogging",
+        "Technology",
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "honey-web-solutions",
+      "name": "Honey Web Solutions",
+      "url": "https://honeywebsolutions.com",
+      "dr": 61,
+      "description": "Guest posting opportunity from Honey Web Solutions",
+      "niche": [
+        "Web Design",
+        "Branding",
+        "Marketing",
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "web-tech-mantra",
+      "name": "Web Tech Mantra",
+      "url": "https://webtechmantra.com",
+      "dr": 61,
+      "description": "Guest posting opportunity from Web Tech Mantra",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "kickresume",
       "name": "Kickresume",
       "url": "https://kickresume.com/blog",
@@ -6514,6 +7239,132 @@
       "notes": ""
     },
     {
+      "id": "socialnomics-net",
+      "name": "Socialnomics.net",
+      "url": "https://socialnomics.net",
+      "dr": 60,
+      "description": "Guest posting opportunity from Socialnomics.net",
+      "niche": [
+        "Social Media",
+        "Marketing",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "motorward",
+      "name": "Motorward",
+      "url": "https://motorward.com",
+      "dr": 60,
+      "description": "Guest posting opportunity from Motorward",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "automoblog",
+      "name": "Automoblog",
+      "url": "https://automoblog.net",
+      "dr": 60,
+      "description": "Guest posting opportunity from Automoblog",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cv-library",
+      "name": "CV-Library",
+      "url": "https://cv-library.co.uk",
+      "dr": 60,
+      "description": "Guest posting opportunity from CV-Library",
+      "niche": [
+        "Career Advice"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "designbeep",
+      "name": "Designbeep",
+      "url": "https://designbeep.com",
+      "dr": 60,
+      "description": "Guest posting opportunity from Designbeep",
+      "niche": [
+        "Web Design",
+        "Web Development",
+        "Graphic Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tfd",
+      "name": "TFD",
+      "url": "https://thefitteddish.com",
+      "dr": 60,
+      "description": "Guest posting opportunity from TFD",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "homes-aura",
+      "name": "Homes Aura",
+      "url": "https://homesaura.com",
+      "dr": 60,
+      "description": "Guest posting opportunity from Homes Aura",
+      "niche": [
+        "Home Improvement",
+        "Interior Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "house-affection",
+      "name": "House Affection",
+      "url": "https://houseaffection.com",
+      "dr": 60,
+      "description": "Guest posting opportunity from House Affection",
+      "niche": [
+        "Home Improvement"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "the-next-tech",
       "name": "The Next Tech",
       "url": "https://thenexttech.com",
@@ -6531,17 +7382,83 @@
       "notes": ""
     },
     {
-      "id": "the-it-base",
-      "name": "The IT Base",
-      "url": "https://theitbase.com",
+      "id": "thumbtube",
+      "name": "ThumbTube",
+      "url": "https://thumbtube.com",
       "dr": 59,
-      "description": "Free guest posting opportunity from collaborator.pro.",
+      "description": "Guest posting opportunity from ThumbTube",
       "niche": [
-        "Technology"
+        "Business",
+        "Marketing"
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "css-author",
+      "name": "CSS Author",
+      "url": "https://cssauthor.com",
+      "dr": 59,
+      "description": "Guest posting opportunity from CSS Author",
+      "niche": [
+        "Web Design",
+        "Web Development",
+        "Graphic Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "it-graviti",
+      "name": "IT Graviti",
+      "url": "https://itgraviti.com",
+      "dr": 59,
+      "description": "Guest posting opportunity from IT Graviti",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "web-designer-pad",
+      "name": "Web Designer Pad",
+      "url": "https://webdesignerpad.com",
+      "dr": 59,
+      "description": "Guest posting opportunity from Web Designer Pad",
+      "niche": [
+        "Web Design",
+        "Graphic Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "kate-beckin-sale-gallery",
+      "name": "Kate Beckin Sale Gallery",
+      "url": "https://katebeckinsalegallery.com",
+      "dr": 59,
+      "description": "Guest posting opportunity from Kate Beckin Sale Gallery",
+      "niche": [
+        "Home Improvement",
+        "Interior Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6560,7 +7477,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6594,7 +7512,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6640,7 +7559,8 @@
       "submissionType": "free",
       "listedOn": [
         "webmetools.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6688,7 +7608,138 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mycorporation",
+      "name": "MyCorporation",
+      "url": "https://mycorporation.com",
+      "dr": 58,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Business",
+        "Legal"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "performancedrive",
+      "name": "PerformanceDrive",
+      "url": "https://performancedrive.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from PerformanceDrive",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "elephant-journal",
+      "name": "Elephant Journal",
+      "url": "https://elephantjournal.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from Elephant Journal",
+      "niche": [
+        "Lifestyle",
+        "Relationship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "enstine-muki",
+      "name": "Enstine Muki",
+      "url": "https://enstine.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from Enstine Muki",
+      "niche": [
+        "Blogging",
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wisestep",
+      "name": "Wisestep",
+      "url": "https://wisestep.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from Wisestep",
+      "niche": [
+        "Jobs",
+        "Career Advice"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "homesteading",
+      "name": "Homesteading",
+      "url": "https://homesteading.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from Homesteading",
+      "niche": [
+        "Home Improvement",
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "kw-homecares",
+      "name": "KW Homecares",
+      "url": "https://kwhomecares.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from KW Homecares",
+      "niche": [
+        "Home Improvement",
+        "Home Decor"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-gardening-cook",
+      "name": "The Gardening Cook",
+      "url": "https://thegardeningcook.com",
+      "dr": 58,
+      "description": "Guest posting opportunity from The Gardening Cook",
+      "niche": [
+        "Home Improvement",
+        "Gardening",
+        "DIY"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6707,7 +7758,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6739,23 +7791,6 @@
       "submissionType": "free",
       "listedOn": [
         "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "mycorporation",
-      "name": "MyCorporation",
-      "url": "https://mycorporation.com",
-      "dr": 57,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Business",
-        "Legal"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
       ],
       "notes": ""
     },
@@ -6825,14 +7860,130 @@
       "id": "techwalls",
       "name": "TechWalls",
       "url": "https://www.techwalls.com/become-our-writer/",
-      "dr": 56,
+      "dr": 57,
       "description": "Guest post opportunity from webmetools.com.",
       "niche": [
         "Technology"
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pandadoc-blog",
+      "name": "PandaDoc Blog",
+      "url": "https://pandadoc.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from PandaDoc Blog",
+      "niche": [
+        "Sales",
+        "Marketing",
+        "IT",
+        "HR"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "business-magazine",
+      "name": "Business Magazine",
+      "url": "https://businessmagazine.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from Business Magazine",
+      "niche": [
+        "Business",
+        "Finance",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "away-some-articles",
+      "name": "Away Some Articles",
+      "url": "https://awaysomearticles.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from Away Some Articles",
+      "niche": [
+        "Marketing",
+        "Health",
+        "Lifestyle"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "millennial-money",
+      "name": "Millennial Money",
+      "url": "https://millennialmoney.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from Millennial Money",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tree-world",
+      "name": "Tree World",
+      "url": "https://treeworld.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from Tree World",
+      "niche": [
+        "Home Improvement",
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "shelterforce",
+      "name": "Shelterforce",
+      "url": "https://shelterforce.org",
+      "dr": 57,
+      "description": "Guest posting opportunity from Shelterforce",
+      "niche": [
+        "Self Improvement",
+        "Community Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "better-humans",
+      "name": "Better Humans",
+      "url": "https://betterhumans.com",
+      "dr": 57,
+      "description": "Guest posting opportunity from Better Humans",
+      "niche": [
+        "Self Improvement",
+        "Motivation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6849,7 +8000,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6899,7 +8051,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6915,7 +8068,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -6970,6 +8124,105 @@
       "notes": ""
     },
     {
+      "id": "google-maps-widget-blog",
+      "name": "Google Maps Widget Blog",
+      "url": "https://googlemapswidgetblog.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from Google Maps Widget Blog",
+      "niche": [
+        "Blogging",
+        "SEO",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techjeny",
+      "name": "TechJeny",
+      "url": "https://techjeny.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from TechJeny",
+      "niche": [
+        "Blogging",
+        "Technology",
+        "Social Media",
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-nonstop-news",
+      "name": "The Nonstop News",
+      "url": "https://thenonstopnews.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from The Nonstop News",
+      "niche": [
+        "Technology",
+        "Health",
+        "Fitness",
+        "Sports",
+        "Recipe"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "artsprofessional",
+      "name": "ArtsProfessional",
+      "url": "https://artsprofessional.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from ArtsProfessional",
+      "niche": [
+        "Jobs"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-daily-buzz",
+      "name": "The Daily Buzz",
+      "url": "https://thedailybuzz.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from The Daily Buzz",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "geeky-medics",
+      "name": "Geeky Medics",
+      "url": "https://geekymedics.com",
+      "dr": 56,
+      "description": "Guest posting opportunity from Geeky Medics",
+      "niche": [
+        "Medicine"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "edugorilla",
       "name": "EduGorilla",
       "url": "https://edugorilla.com",
@@ -6982,7 +8235,8 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7034,19 +8288,86 @@
       "notes": ""
     },
     {
-      "id": "socialnomics-net",
-      "name": "Socialnomics.net",
-      "url": "https://socialnomics.net",
+      "id": "opportunities-planet",
+      "name": "Opportunities Planet",
+      "url": "https://opportunitiesplanet.com",
       "dr": 55,
-      "description": "Guest posting opportunity from Socialnomics.net",
+      "description": "Guest posting opportunity from Opportunities Planet",
       "niche": [
+        "Blogging",
+        "SEO",
         "Social Media",
-        "Marketing",
-        "Business"
+        "Marketing"
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "coming-soon-wp",
+      "name": "Coming Soon WP",
+      "url": "https://comingsoonwp.com",
+      "dr": 55,
+      "description": "Guest posting opportunity from Coming Soon WP",
+      "niche": [
+        "Blogging",
+        "WordPress"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mashhap",
+      "name": "MASHHAP",
+      "url": "https://mashhap.com",
+      "dr": 55,
+      "description": "Guest posting opportunity from MASHHAP",
+      "niche": [
+        "Technology",
+        "Finance",
+        "Travel",
+        "Sports"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "collegeatlas",
+      "name": "CollegeAtlas",
+      "url": "https://collegeatlas.org",
+      "dr": 55,
+      "description": "Guest posting opportunity from CollegeAtlas",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "worldranksolutions",
+      "name": "WorldRankSolutions",
+      "url": "https://worldranksolutions.com",
+      "dr": 55,
+      "description": "Guest posting opportunity from WorldRankSolutions",
+      "niche": [
+        "Web Design",
+        "Web Development",
+        "Mobile Apps"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7065,7 +8386,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webmetools.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7154,6 +8476,90 @@
       "notes": ""
     },
     {
+      "id": "top-design-magazine",
+      "name": "Top Design Magazine",
+      "url": "https://www.topdesignmag.com",
+      "dr": 54,
+      "description": "Free guest posting opportunity from webseotrends.com.",
+      "niche": [
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webseotrends.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "daily-contributors",
+      "name": "Daily Contributors",
+      "url": "https://dailycontributors.com",
+      "dr": 54,
+      "description": "Guest posting opportunity from Daily Contributors",
+      "niche": [
+        "Technology",
+        "SEO",
+        "Travel",
+        "Sports"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "web-design-library",
+      "name": "Web Design Library",
+      "url": "https://webdesignlibrary.com",
+      "dr": 54,
+      "description": "Guest posting opportunity from Web Design Library",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zeeclick",
+      "name": "Zeeclick",
+      "url": "https://zeeclick.com",
+      "dr": 54,
+      "description": "Guest posting opportunity from Zeeclick",
+      "niche": [
+        "Web Design",
+        "Graphic Design",
+        "Web Development",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-arches",
+      "name": "The Arches",
+      "url": "https://thearches.com",
+      "dr": 54,
+      "description": "Guest posting opportunity from The Arches",
+      "niche": [
+        "Home Improvement",
+        "Gardening",
+        "Home Decor"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "indesign-secrets",
       "name": "InDesign Secrets",
       "url": "https://indesignsecrets.com/write-for-us",
@@ -7182,6 +8588,71 @@
       "listedOn": [
         "webseotrends.com",
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techwyse",
+      "name": "TechWyse",
+      "url": "https://techwyse.com",
+      "dr": 53,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "SEO",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "answerprime",
+      "name": "AnswerPrime",
+      "url": "https://answerprime.com",
+      "dr": 53,
+      "description": "Guest posting opportunity from AnswerPrime",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techy-gossips",
+      "name": "Techy Gossips",
+      "url": "https://techygossips.com",
+      "dr": 53,
+      "description": "Guest posting opportunity from Techy Gossips",
+      "niche": [
+        "Web Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "developergang",
+      "name": "DeveloperGang",
+      "url": "https://developergang.com",
+      "dr": 53,
+      "description": "Guest posting opportunity from DeveloperGang",
+      "niche": [
+        "Web Design",
+        "Photography"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7276,7 +8747,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7308,7 +8780,8 @@
       "submissionType": "free",
       "listedOn": [
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7343,6 +8816,22 @@
       "submissionType": "free",
       "listedOn": [
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "charityjob",
+      "name": "CharityJob",
+      "url": "https://charityjob.co.uk",
+      "dr": 52,
+      "description": "Guest posting opportunity from CharityJob",
+      "niche": [
+        "Charity",
+        "Jobs"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7407,7 +8896,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7424,24 +8914,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "techwyse",
-      "name": "TechWyse",
-      "url": "https://techwyse.com",
-      "dr": 51,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "SEO",
-        "Digital Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7457,7 +8931,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7473,7 +8948,71 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "omniconvert",
+      "name": "Omniconvert",
+      "url": "https://omniconvert.com",
+      "dr": 51,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "eCommerce",
+        "CRO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wparena",
+      "name": "WPArena",
+      "url": "https://wparena.com",
+      "dr": 51,
+      "description": "Guest posting opportunity from WPArena",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "nealschaffer",
+      "name": "NealSchaffer",
+      "url": "https://nealschaffer.com",
+      "dr": 51,
+      "description": "Guest posting opportunity from NealSchaffer",
+      "niche": [
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "house-improvements",
+      "name": "House Improvements",
+      "url": "https://houseimprovements.com",
+      "dr": 51,
+      "description": "Guest posting opportunity from House Improvements",
+      "niche": [
+        "Home Improvement",
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7557,22 +9096,6 @@
       "notes": ""
     },
     {
-      "id": "omniconvert",
-      "name": "Omniconvert",
-      "url": "https://omniconvert.com",
-      "dr": 50,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "eCommerce",
-        "CRO"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro"
-      ],
-      "notes": ""
-    },
-    {
       "id": "chanty",
       "name": "Chanty",
       "url": "https://chanty.com",
@@ -7584,7 +9107,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "collaborator.pro"
+        "collaborator.pro",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7618,7 +9142,8 @@
       "listedOn": [
         "webseotrends.com",
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7634,7 +9159,118 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "torque-mag",
+      "name": "Torque Mag",
+      "url": "https://torquemag.io",
+      "dr": 50,
+      "description": "Guest posting opportunity from Torque Mag",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blogwolf",
+      "name": "BlogWolf",
+      "url": "https://blogwolf.com",
+      "dr": 50,
+      "description": "Guest posting opportunity from BlogWolf",
+      "niche": [
+        "Blogging",
+        "SEO",
+        "Social Media"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "startup",
+      "name": "Startup",
+      "url": "https://startup.com",
+      "dr": 50,
+      "description": "Guest posting opportunity from Startup",
+      "niche": [
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "small-business-bc",
+      "name": "Small Business BC",
+      "url": "https://smallbusinessbc.ca",
+      "dr": 50,
+      "description": "Guest posting opportunity from Small Business BC",
+      "niche": [
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fablog",
+      "name": "FABlog",
+      "url": "https://fablog.io",
+      "dr": 50,
+      "description": "Guest posting opportunity from FABlog",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "homedesignow",
+      "name": "HomeDesignow",
+      "url": "https://homedesignow.com",
+      "dr": 50,
+      "description": "Guest posting opportunity from HomeDesignow",
+      "niche": [
+        "Home Improvement",
+        "Gardening",
+        "Interior Design",
+        "DIY"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "sex-and-psychology",
+      "name": "Sex and Psychology",
+      "url": "https://sexandpsychology.com",
+      "dr": 50,
+      "description": "Guest posting opportunity from Sex and Psychology",
+      "niche": [
+        "Relationship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7732,6 +9368,71 @@
       "notes": "Add link in profile, posts, descriptions, or project documentation."
     },
     {
+      "id": "drifted",
+      "name": "Drifted",
+      "url": "https://drifted.com",
+      "dr": 49,
+      "description": "Guest posting opportunity from Drifted",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fleximize",
+      "name": "Fleximize",
+      "url": "https://fleximize.com",
+      "dr": 49,
+      "description": "Guest posting opportunity from Fleximize",
+      "niche": [
+        "Business",
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "codecondo",
+      "name": "CodeCondo",
+      "url": "https://codecondo.com",
+      "dr": 49,
+      "description": "Guest posting opportunity from CodeCondo",
+      "niche": [
+        "Web Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "home-inside",
+      "name": "Home Inside",
+      "url": "https://homeinside.com",
+      "dr": 49,
+      "description": "Guest posting opportunity from Home Inside",
+      "niche": [
+        "Home Improvement",
+        "Gardening",
+        "Interior Design",
+        "DIY",
+        "Real Estate"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "myventurepad",
       "name": "MyVenturePad",
       "url": "https://www.myventurepad.com",
@@ -7746,7 +9447,8 @@
       "listedOn": [
         "bloggerspassion.com",
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7792,7 +9494,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7859,6 +9562,52 @@
       "notes": ""
     },
     {
+      "id": "online-income-teacher",
+      "name": "Online Income Teacher",
+      "url": "https://onlineincometeacher.com/write-for-us/",
+      "dr": 48,
+      "description": "Guest post opportunity from webmetools.com.",
+      "niche": [
+        "Make Money"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webmetools.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "career-faqs",
+      "name": "Career FAQs",
+      "url": "https://careerfaqs.com.au",
+      "dr": 48,
+      "description": "Guest posting opportunity from Career FAQs",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-sociological-review",
+      "name": "The Sociological Review",
+      "url": "https://thesociologicalreview.com",
+      "dr": 48,
+      "description": "Guest posting opportunity from The Sociological Review",
+      "niche": [
+        "Science"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "bloggers-passion",
       "name": "Bloggers Passion",
       "url": "https://bloggerspassion.com/contact/",
@@ -7884,7 +9633,23 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
+        "webmetools.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "famous-bloggers",
+      "name": "Famous Bloggers",
+      "url": "https://famosbloggers.com",
+      "dr": 47,
+      "description": "Guest posting opportunity from Famous Bloggers",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7916,7 +9681,86 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "moneyminiblog",
+      "name": "MoneyMiniBlog",
+      "url": "https://www.moneyminiblog.com",
+      "dr": 46,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-gentleman-racer",
+      "name": "The Gentleman Racer",
+      "url": "https://thegentlemanracer.com",
+      "dr": 46,
+      "description": "Guest posting opportunity from The Gentleman Racer",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "innovate-car",
+      "name": "Innovate Car",
+      "url": "https://innovatecar.com",
+      "dr": 46,
+      "description": "Guest posting opportunity from Innovate Car",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "digital-gpoint",
+      "name": "Digital Gpoint",
+      "url": "https://digitalgpoint.com",
+      "dr": 46,
+      "description": "Guest posting opportunity from Digital Gpoint",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "start-of-happiness",
+      "name": "Start of Happiness",
+      "url": "https://startofhappiness.com",
+      "dr": 46,
+      "description": "Guest posting opportunity from Start of Happiness",
+      "niche": [
+        "Self Improvement"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -7968,23 +9812,6 @@
       "submissionType": "free",
       "listedOn": [
         "profeo.io"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "moneyminiblog",
-      "name": "MoneyMiniBlog",
-      "url": "https://www.moneyminiblog.com",
-      "dr": 45,
-      "description": "Guest post opportunity from bloggerspassion.com.",
-      "niche": [
-        "SaaS",
-        "Finance"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com",
-        "makeblogging"
       ],
       "notes": ""
     },
@@ -8080,7 +9907,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8128,7 +9956,55 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seo-scout",
+      "name": "SEO Scout",
+      "url": "https://seoscout.com",
+      "dr": 45,
+      "description": "Free guest posting opportunity from webseotrends.com.",
+      "niche": [
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "webseotrends.com",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-happy-manager",
+      "name": "The Happy Manager",
+      "url": "https://thehappymanager.com",
+      "dr": 45,
+      "description": "Guest posting opportunity from The Happy Manager",
+      "niche": [
+        "Self Improvement"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "peace-revolution",
+      "name": "Peace Revolution",
+      "url": "https://peacerevolution.org",
+      "dr": 45,
+      "description": "Guest posting opportunity from Peace Revolution",
+      "niche": [
+        "Self Improvement",
+        "Meditation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8210,7 +10086,8 @@
       "submissionType": "free",
       "listedOn": [
         "webseotrends.com",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8248,6 +10125,69 @@
       "notes": ""
     },
     {
+      "id": "old-car-online",
+      "name": "Old Car Online",
+      "url": "https://oldcaronline.com",
+      "dr": 44,
+      "description": "Guest posting opportunity from Old Car Online",
+      "niche": [
+        "Automobiles"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wpoven",
+      "name": "WPOven",
+      "url": "https://wpoven.com",
+      "dr": 44,
+      "description": "Guest posting opportunity from WPOven",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "linkody",
+      "name": "Linkody",
+      "url": "https://linkody.com",
+      "dr": 44,
+      "description": "Guest posting opportunity from Linkody",
+      "niche": [
+        "SEO",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "expatden",
+      "name": "ExpatDen",
+      "url": "https://expatden.com",
+      "dr": 44,
+      "description": "Guest posting opportunity from ExpatDen",
+      "niche": [
+        "Business",
+        "Health",
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "dealer-marketing",
       "name": "Dealer Marketing",
       "url": "https://www.dealermarketing.com/write-for-us/",
@@ -8270,21 +10210,6 @@
       "description": "Guest post opportunity from webmetools.com.",
       "niche": [
         "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "online-income-teacher",
-      "name": "Online Income Teacher",
-      "url": "https://onlineincometeacher.com/write-for-us/",
-      "dr": 43,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Make Money"
       ],
       "submissionType": "free",
       "listedOn": [
@@ -8353,6 +10278,21 @@
       "submissionType": "free",
       "listedOn": [
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "smss-blog",
+      "name": "SMSS Blog",
+      "url": "https://smssblog.com",
+      "dr": 43,
+      "description": "Guest posting opportunity from SMSS Blog",
+      "niche": [
+        "Social Media"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8451,6 +10391,38 @@
       "notes": ""
     },
     {
+      "id": "wp-sauce",
+      "name": "WP Sauce",
+      "url": "https://wpsauce.com",
+      "dr": 42,
+      "description": "Guest posting opportunity from WP Sauce",
+      "niche": [
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tutorialchip",
+      "name": "TutorialChip",
+      "url": "https://tutorialchip.com",
+      "dr": 42,
+      "description": "Guest posting opportunity from TutorialChip",
+      "niche": [
+        "Web Development",
+        "Web Design",
+        "Graphic Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "webscootblog",
       "name": "WebScoot Blog",
       "url": "https://www.webscootblog.com",
@@ -8514,6 +10486,24 @@
       "notes": ""
     },
     {
+      "id": "chatterbuzz-media",
+      "name": "ChatterBuzz Media",
+      "url": "https://chatterbuzzmedia.com",
+      "dr": 41,
+      "description": "Free guest posting opportunity from collaborator.pro.",
+      "niche": [
+        "Content",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "collaborator.pro",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "web-alive",
       "name": "Web Alive",
       "url": "https://webalive.com.au",
@@ -8526,7 +10516,8 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro",
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8542,7 +10533,86 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "makeblogging"
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "campus-news",
+      "name": "Campus News",
+      "url": "https://campusnews.com",
+      "dr": 40,
+      "description": "Guest posting opportunity from Campus News",
+      "niche": [
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webandesigners",
+      "name": "Webandesigners",
+      "url": "https://webandesigners.net",
+      "dr": 40,
+      "description": "Guest posting opportunity from Webandesigners",
+      "niche": [
+        "Web Design",
+        "Graphic Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "my-finances",
+      "name": "My Finances",
+      "url": "https://myfinances.com",
+      "dr": 40,
+      "description": "Guest posting opportunity from My Finances",
+      "niche": [
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "getmotivation",
+      "name": "GetMotivation",
+      "url": "https://getmotivation.com",
+      "dr": 40,
+      "description": "Guest posting opportunity from GetMotivation",
+      "niche": [
+        "Self Improvement",
+        "Motivation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "live-purposefully",
+      "name": "Live Purposefully",
+      "url": "https://livepurposefully.org",
+      "dr": 40,
+      "description": "Guest posting opportunity from Live Purposefully",
+      "niche": [
+        "Self Improvement",
+        "Spirituality"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8559,6 +10629,59 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "itechcode",
+      "name": "iTechCode",
+      "url": "https://itechcode.com",
+      "dr": 39,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "webseotrends.com",
+        "makeblogging",
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mexseo",
+      "name": "MexSEO",
+      "url": "https://mexseo.com",
+      "dr": 39,
+      "description": "Guest posting opportunity from MexSEO",
+      "niche": [
+        "SEO",
+        "Technology",
+        "Marketing",
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "birdsontheblog",
+      "name": "Birdsontheblog",
+      "url": "https://birdsontheblog.com",
+      "dr": 39,
+      "description": "Guest posting opportunity from Birdsontheblog",
+      "niche": [
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8590,24 +10713,8 @@
       ],
       "submissionType": "free",
       "listedOn": [
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "chatterbuzz-media",
-      "name": "ChatterBuzz Media",
-      "url": "https://chatterbuzzmedia.com",
-      "dr": 38,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Content",
-        "Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging"
+        "webmetools.com",
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8722,6 +10829,24 @@
       "notes": ""
     },
     {
+      "id": "grit-virtue",
+      "name": "Grit & Virtue",
+      "url": "https://gritandvirtue.com",
+      "dr": 36,
+      "description": "Guest posting opportunity from Grit & Virtue",
+      "niche": [
+        "Self Improvement",
+        "Spirituality",
+        "Relationship",
+        "Productivity"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "webdew",
       "name": "webdew",
       "url": "https://webdew.net",
@@ -8771,21 +10896,18 @@
       "notes": ""
     },
     {
-      "id": "itechcode",
-      "name": "iTechCode",
-      "url": "https://itechcode.com",
+      "id": "be-a-better-blogger",
+      "name": "Be A Better Blogger",
+      "url": "https://beabetterblogger.com",
       "dr": 35,
-      "description": "Guest post opportunity from bloggerspassion.com.",
+      "description": "Guest posting opportunity from Be A Better Blogger",
       "niche": [
-        "SaaS",
-        "Technology",
-        "Development"
+        "Blogging",
+        "Make Money"
       ],
       "submissionType": "free",
       "listedOn": [
-        "bloggerspassion.com",
-        "webseotrends.com",
-        "makeblogging"
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8820,6 +10942,21 @@
       "notes": ""
     },
     {
+      "id": "bbog",
+      "name": "BBOG",
+      "url": "https://bbog.com",
+      "dr": 33,
+      "description": "Guest posting opportunity from BBOG",
+      "niche": [
+        "Gardening"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
       "id": "finance-alliance",
       "name": "Finance Alliance",
       "url": "https://financealliance.io",
@@ -8832,6 +10969,38 @@
       "submissionType": "free",
       "listedOn": [
         "collaborator.pro"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blogging-mile",
+      "name": "Blogging Mile",
+      "url": "https://bloggingmile.com",
+      "dr": 32,
+      "description": "Guest posting opportunity from Blogging Mile",
+      "niche": [
+        "Blogging",
+        "Make Money"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seo-india-online",
+      "name": "SEO India Online",
+      "url": "https://seoindia.org",
+      "dr": 31,
+      "description": "Guest posting opportunity from SEO India Online",
+      "niche": [
+        "SEO",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8849,6 +11018,24 @@
       "listedOn": [
         "collaborator.pro",
         "makeblogging"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seogdk",
+      "name": "SEOGDK",
+      "url": "https://seogdk.com",
+      "dr": 28,
+      "description": "Guest posting opportunity from SEOGDK",
+      "niche": [
+        "SEO",
+        "Blogging",
+        "Make Money Online",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8884,24 +11071,25 @@
       "notes": ""
     },
     {
-      "id": "webseotrends",
-      "name": "Webseotrends",
-      "url": "https://webseotrends.com",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
+      "id": "mytechtalky",
+      "name": "MyTechTalky",
+      "url": "https://mytechtalky.com",
+      "dr": 24,
+      "description": "Guest posting opportunity from MyTechTalky",
       "niche": [
-        "SEO"
+        "Blogging",
+        "Make Money"
       ],
       "submissionType": "free",
       "listedOn": [
-        "webseotrends.com"
+        "bloggingtriggers"
       ],
       "notes": ""
     },
     {
-      "id": "seo-scout",
-      "name": "SEO Scout",
-      "url": "https://seoscout.com",
+      "id": "webseotrends",
+      "name": "Webseotrends",
+      "url": "https://webseotrends.com",
       "dr": null,
       "description": "Free guest posting opportunity from webseotrends.com.",
       "niche": [
@@ -9122,22 +11310,6 @@
       "description": "Free guest posting opportunity from webseotrends.com.",
       "niche": [
         "PR"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "noupe",
-      "name": "Noupe",
-      "url": "https://www.noupe.com",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "Design",
-        "Creativity"
       ],
       "submissionType": "free",
       "listedOn": [
@@ -9896,22 +12068,6 @@
       "notes": ""
     },
     {
-      "id": "crunchbase",
-      "name": "Crunchbase",
-      "url": "https://www.crunchbase.com",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "Tech",
-        "Investment"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "cookieyes",
       "name": "CookieYes",
       "url": "https://www.cookieyes.com",
@@ -10199,21 +12355,6 @@
       "niche": [
         "Design",
         "Creativity"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "top-design-magazine",
-      "name": "Top Design Magazine",
-      "url": "https://www.topdesignmag.com",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "Design"
       ],
       "submissionType": "free",
       "listedOn": [
