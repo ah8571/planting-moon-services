@@ -449,7 +449,14 @@
                                 <button class="filter-btn" data-filter="no-dr">No DR</button>
                             </div>
                         </th>
-                        <th>Sources</th>
+                        <th id="sources-header">
+                            <div class="th-header toggleable">
+                                <span>Sources</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="sources-filters-dropdown">
+                            </div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -477,13 +484,14 @@
         let filteredGuestPosts = [];
         let currentFilter = 'all';
         let currentNicheFilter = null;
+        let currentSourcesFilter = null;
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
         // Load JSON data
         async function loadGuestPosts() {
             try {
-                const response = await fetch('./data/guest-posts.json');
+                const response = await fetch('/data/guest-posts.json');
                 if (!response.ok) {
                     throw new Error('Could not load guest-posts.json');
                 }
@@ -505,6 +513,7 @@
                 renderTable();
                 updateStats();
                 generateNicheFilters();
+                generateSourcesFilters();
             } catch (error) {
                 console.error('Error loading guest-posts.json:', error);
                 document.getElementById('table-body').innerHTML = `
@@ -539,6 +548,46 @@
             });
         }
 
+        // Generate sources filter buttons
+        function generateSourcesFilters() {
+            const sourceCounts = {};
+            allGuestPosts.forEach(post => {
+                if (post.listedOn && Array.isArray(post.listedOn)) {
+                    const sourceCount = post.listedOn.length;
+                    if (!sourceCounts[sourceCount]) {
+                        sourceCounts[sourceCount] = 0;
+                    }
+                    sourceCounts[sourceCount]++;
+                }
+            });
+
+            const container = document.getElementById('sources-filters-dropdown');
+            container.innerHTML = '';
+            
+            // Create buttons for each source count in descending order
+            Object.keys(sourceCounts).sort((a, b) => b - a).forEach(count => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = `${count} source${count > 1 ? 's' : ''} (${sourceCounts[count]})`;
+                btn.dataset.filter = count;
+                btn.addEventListener('click', () => toggleSourcesFilter(count, btn));
+                container.appendChild(btn);
+            });
+        }
+
+        // Toggle sources filter
+        function toggleSourcesFilter(sourceCount, btn) {
+            if (currentSourcesFilter === parseInt(sourceCount)) {
+                currentSourcesFilter = null;
+                btn.classList.remove('active');
+            } else {
+                document.querySelectorAll('#sources-filters-dropdown .filter-btn.active').forEach(b => b.classList.remove('active'));
+                currentSourcesFilter = parseInt(sourceCount);
+                btn.classList.add('active');
+            }
+            applyFilters();
+        }
+
         // Toggle niche filter
         function toggleNicheFilter(niche, btn) {
             if (currentNicheFilter === niche) {
@@ -566,6 +615,14 @@
             // Filter by niche
             if (currentNicheFilter) {
                 filtered = filtered.filter(d => d.niche && d.niche.includes(currentNicheFilter));
+            }
+
+            // Filter by sources count
+            if (currentSourcesFilter) {
+                filtered = filtered.filter(d => {
+                    const sourceCount = d.listedOn ? d.listedOn.length : 0;
+                    return sourceCount === currentSourcesFilter;
+                });
             }
 
             // Apply search filter
@@ -691,6 +748,15 @@
                 if (chevron) {
                     chevron.classList.toggle('open');
                     document.getElementById('niche-filters').classList.toggle('open');
+                }
+            });
+
+            // Sources filter toggle
+            document.getElementById('sources-header')?.addEventListener('click', (e) => {
+                const chevron = e.target.closest('.th-header')?.querySelector('.th-chevron');
+                if (chevron) {
+                    chevron.classList.toggle('open');
+                    document.getElementById('sources-filters-dropdown').classList.toggle('open');
                 }
             });
 
