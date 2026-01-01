@@ -1,0 +1,3190 @@
+{
+  "guestPosts": [
+    {
+      "id": "a-list-apart",
+      "name": "A List Apart",
+      "url": "https://alistapart.com",
+      "dr": 88,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ascdorg",
+      "name": "ASCD.org",
+      "url": "https://www.ascd.org",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "asu-lodestarcenter",
+      "name": "ASU LodestarCenter",
+      "url": "https://lodestar.asu.edu",
+      "dr": 73,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Nonprofit"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "above-the-law",
+      "name": "Above the Law",
+      "url": "https://abovethelaw.com",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Law",
+        "News"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "addicted2success",
+      "name": "Addicted2Success",
+      "url": "https://addicted2success.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Success"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "all-tech-buzz",
+      "name": "All Tech Buzz",
+      "url": "https://alltechbuzz.net",
+      "dr": 63,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "allbusinesscom",
+      "name": "AllBusiness.com",
+      "url": "https://www.allbusiness.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "analytics-india-magazine",
+      "name": "Analytics India Magazine",
+      "url": "https://analyticsindiamag.com",
+      "dr": 79,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Analytics",
+        "AI"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "analytics-insight",
+      "name": "Analytics Insight",
+      "url": "https://www.analyticsinsight.net",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Analytics",
+        "AI"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "asia-times",
+      "name": "Asia Times",
+      "url": "https://asiatimes.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Asia",
+        "International"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "attorney-at-work",
+      "name": "Attorney at Work",
+      "url": "https://www.attorneyatwork.com",
+      "dr": 72,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Law",
+        "Legal Services"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bigger-pockets",
+      "name": "Bigger Pockets",
+      "url": "https://www.biggerpockets.com",
+      "dr": 85,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Real Estate",
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "billdu",
+      "name": "Billdu",
+      "url": "https://billdu.com/blog",
+      "dr": 72,
+      "description": "\"Blog is all about invoicing, small business tools, and entrepreneurship.\" ([Profeo](https://profeo.io)). They're interested in articles that help small businesses and freelancers manage their finances better.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Small Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bplanscom",
+      "name": "Bplans.com",
+      "url": "https://www.bplans.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Planning"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "business-insider-india",
+      "name": "Business Insider India",
+      "url": "https://www.businessinsider.in",
+      "dr": 84,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "India"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "chamaileon",
+      "name": "Chamaileon",
+      "url": "https://chamaileon.io/blog",
+      "dr": 46,
+      "description": "\"Email template builder sharing email marketing best practices.\" ([Profeo](https://profeo.io)). Looking for practical guides on email campaigns and marketing automation.",
+      "niche": [
+        "SaaS",
+        "Email Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "chanty",
+      "name": "Chanty",
+      "url": "https://chanty.com/blog",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Productivity",
+        "Remote Work",
+        "Collaboration"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "chatter-buzz",
+      "name": "Chatter Buzz",
+      "url": "https://www.chatterbuzz.com",
+      "dr": 62,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Social Media"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "clickz",
+      "name": "ClickZ",
+      "url": "https://www.clickz.com",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cloudways",
+      "name": "Cloudways",
+      "url": "https://cloudways.com/blog",
+      "dr": 91,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Hosting"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "colocation-america",
+      "name": "Colocation America",
+      "url": "https://colocationamerica.com",
+      "dr": 66,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Hosting"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "colossal",
+      "name": "Colossal",
+      "url": "https://www.colossal.com",
+      "dr": 83,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Art"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "comidor",
+      "name": "Comidor",
+      "url": "https://comidor.com/blog",
+      "dr": 38,
+      "description": "\"Business process management platform with insights on workflow automation.\" ([Profeo](https://profeo.io)). Looking for content on business automation and efficiency.",
+      "niche": [
+        "SaaS",
+        "Business Process Management",
+        "Workflow"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "complete-connection",
+      "name": "Complete Connection",
+      "url": "https://completeconnection.com",
+      "dr": 51,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "contactpigeon",
+      "name": "ContactPigeon",
+      "url": "https://www.contactpigeon.com",
+      "dr": 67,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Email Marketing",
+        "Marketing Automation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "content-marketing-institute",
+      "name": "Content Marketing Institute",
+      "url": "https://contentmarketinginstitute.com",
+      "dr": 89,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Marketing",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "convertcom",
+      "name": "Convert.com",
+      "url": "https://convert.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Conversion Optimization",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "crazyleafdesign",
+      "name": "CrazyLeafDesign",
+      "url": "https://crazyleafdesign.com",
+      "dr": 48,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "createlycom",
+      "name": "Creately.com",
+      "url": "https://creately.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Diagramming"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "creative-blog-(cb)",
+      "name": "Creative Blog (CB)",
+      "url": "https://www.creativeboom.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Inspiration"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "creative-nerds",
+      "name": "Creative Nerds",
+      "url": "https://creativenerds.co.uk",
+      "dr": 45,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "cyberchimps",
+      "name": "CyberChimps",
+      "url": "https://www.cyberchimps.com",
+      "dr": 91,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "designhill",
+      "name": "Designhill",
+      "url": "https://www.designhill.com/design-blog",
+      "dr": 67,
+      "description": "\"Covers graphic design, branding, freelancing, and creative entrepreneurship.\" ([Profeo](https://profeo.io)). Accepts guest posts on design trends and freelance tips.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Freelance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ez-rankings",
+      "name": "EZ Rankings",
+      "url": "https://www.ezrankings.com",
+      "dr": 64,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "edugorilla",
+      "name": "EduGorilla",
+      "url": "https://edugorilla.com",
+      "dr": 55,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "eduonix",
+      "name": "Eduonix",
+      "url": "https://www.eduonix.com",
+      "dr": 62,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Online Learning"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "edutopia",
+      "name": "Edutopia",
+      "url": "https://www.edutopia.org",
+      "dr": 83,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "entrepreneurcom",
+      "name": "Entrepreneur.com",
+      "url": "https://www.entrepreneur.com",
+      "dr": 93,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "escapeartist",
+      "name": "EscapeArtist",
+      "url": "https://escapist.com",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Travel",
+        "Lifestyle"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "everyday-power",
+      "name": "Everyday Power",
+      "url": "https://www.everydaypower.com",
+      "dr": 62,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Personal Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "exabytes",
+      "name": "Exabytes",
+      "url": "https://www.exabytes.com",
+      "dr": 83,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Hosting"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fast-company",
+      "name": "Fast Company",
+      "url": "https://www.fastcompany.com",
+      "dr": 93,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "fatbit",
+      "name": "Fatbit",
+      "url": "https://www.fatbit.com",
+      "dr": 75,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "financesonlinecom",
+      "name": "FinancesOnline.com",
+      "url": "https://financesonline.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Business Tools"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "forbescom",
+      "name": "Forbes.com",
+      "url": "https://www.forbes.com",
+      "dr": 96,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "News",
+        "Entrepreneurship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "freshdesk",
+      "name": "Freshdesk",
+      "url": "https://freshdesk.com/blog",
+      "dr": 90,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Customer Support",
+        "CRM",
+        "Business Tools"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "friday",
+      "name": "Friday",
+      "url": "https://www.friday.app/blog",
+      "dr": 42,
+      "description": "\"Time tracking and productivity platform publishing content on project management.\" ([Profeo](https://profeo.io)). Welcomes content on remote work and time management.",
+      "niche": [
+        "SaaS",
+        "Project Management",
+        "Remote Work"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "gijn",
+      "name": "GIJN",
+      "url": "https://gijn.org",
+      "dr": 79,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Journalism"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "geek-estate-blog",
+      "name": "Geek Estate Blog",
+      "url": "https://geekvape.com",
+      "dr": 25,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Real Estate"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "geekestate-blog",
+      "name": "GeekEstate Blog",
+      "url": "https://geekvape.com",
+      "dr": 25,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Real Estate",
+        "Tech"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "getting-smart",
+      "name": "Getting Smart",
+      "url": "https://www.gettingsmart.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "gimmio-blog",
+      "name": "Gimmio Blog",
+      "url": "https://gimmio.com",
+      "dr": 66,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "githubcom",
+      "name": "Github.com",
+      "url": "https://github.com",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "harvard-business-review",
+      "name": "Harvard Business Review",
+      "url": "https://hbr.org",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hongkiat",
+      "name": "Hongkiat",
+      "url": "https://www.hongkiat.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "url": "https://blog.hubspot.com",
+      "dr": 93,
+      "description": "\"The go-to site for marketers, entrepreneurs, and businesses. Their blog covers everything from email marketing to customer retention.\" ([Profeo](https://profeo.io)). Guidelines emphasize original, data-backed content that educates their audience.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "CRM"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": "Search Traffic: 4.7M"
+    },
+    {
+      "id": "huffpostcom",
+      "name": "HuffPost.com",
+      "url": "https://www.huffpost.com",
+      "dr": 93,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Lifestyle"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "inccom",
+      "name": "Inc.com",
+      "url": "https://www.inc.com",
+      "dr": 92,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "inc42com",
+      "name": "Inc42.com",
+      "url": "https://inc42.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups",
+        "India"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "incomediarycom",
+      "name": "IncomeDiary.com",
+      "url": "https://incomediary.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Online Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "infedorg",
+      "name": "Infed.org",
+      "url": "https://infed.org",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "informit",
+      "name": "InformIT",
+      "url": "https://www.informit.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "instantshift",
+      "name": "InstantShift",
+      "url": "https://www.instantshift.com",
+      "dr": 71,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "international-living-magazine",
+      "name": "International Living Magazine",
+      "url": "https://internationalliving.com",
+      "dr": 86,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Travel",
+        "Lifestyle",
+        "International"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "investingcom",
+      "name": "Investing.com",
+      "url": "https://www.investing.com",
+      "dr": 92,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Investing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "jeffbullass-blog",
+      "name": "Jeffbullas's Blog",
+      "url": "https://www.jeffbullas.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Social Media",
+        "Content Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "jungleworks",
+      "name": "Jungleworks",
+      "url": "https://jungleworks.com",
+      "dr": 72,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "kickresume",
+      "name": "Kickresume",
+      "url": "https://kickresume.com/blog",
+      "dr": 60,
+      "description": "\"Career and resume writing guide by a CV platform.\" ([Profeo](https://profeo.io)). Publishes articles on job search, interviewing, and career development.",
+      "niche": [
+        "SaaS",
+        "HR",
+        "Careers"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "killerstartupscom",
+      "name": "KillerStartups.com",
+      "url": "https://killerstartups.com",
+      "dr": 64,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "knowledgehut",
+      "name": "KnowledgeHut",
+      "url": "https://www.knowledgehut.com",
+      "dr": 69,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Technology Training"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "lawfuel",
+      "name": "LawFuel",
+      "url": "https://lawfuel.com",
+      "dr": 68,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Law",
+        "Legal News"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "leadgenapp",
+      "name": "LeadGenApp",
+      "url": "https://leadgenapp.io/blog",
+      "dr": 45,
+      "description": "\"A lead management platform sharing best practices in sales and marketing.\" ([Profeo](https://profeo.io)). Interested in content about sales processes and lead generation.",
+      "niche": [
+        "SaaS",
+        "Sales",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "leavingworkbehindcom",
+      "name": "LeavingWorkBehind.com",
+      "url": "https://leavingworkbehind.com",
+      "dr": 62,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Remote Work"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "luxafor",
+      "name": "Luxafor",
+      "url": "https://luxafor.com/blog",
+      "dr": 45,
+      "description": "\"Productivity and focus blog by a time-tracking software company.\" ([Profeo](https://profeo.io)). Interested in content about productivity, focus, and work efficiency.",
+      "niche": [
+        "SaaS",
+        "Productivity",
+        "Remote Work"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "main-street-host",
+      "name": "Main Street Host",
+      "url": "https://www.mainstreethost.com",
+      "dr": 65,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Hosting"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "make-a-living-writing",
+      "name": "Make a Living Writing",
+      "url": "https://makealivinwriting.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Marketing",
+        "Writing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "makewebbetter",
+      "name": "MakeWebBetter",
+      "url": "https://makewebbetter.com",
+      "dr": 73,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "WordPress"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "makingdifferent",
+      "name": "MakingDifferent",
+      "url": "https://makingdifferent.com",
+      "dr": 54,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "manningcom",
+      "name": "Manning.com",
+      "url": "https://www.manning.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Programming"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "marketingtechnews",
+      "name": "MarketingTechNews",
+      "url": "https://www.marketingtechnews.net",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Technology",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mediapost",
+      "name": "Mediapost",
+      "url": "https://www.mediapost.com",
+      "dr": 75,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Digital Advertising"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mindmajix",
+      "name": "MindMajix",
+      "url": "https://mindmajix.com",
+      "dr": 68,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Training"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mobisoft-infotech",
+      "name": "Mobisoft Infotech",
+      "url": "https://www.mobisoftinfotech.com",
+      "dr": 64,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Mobile"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "modest-money",
+      "name": "Modest Money",
+      "url": "https://www.modestmoney.com",
+      "dr": 68,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Personal Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "money-saving-mom",
+      "name": "Money Saving Mom",
+      "url": "https://moneysavingmom.com",
+      "dr": 74,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Budgeting"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "moneyminiblog",
+      "name": "MoneyMiniBlog",
+      "url": "https://www.moneyminiblog.com",
+      "dr": 45,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "monocubed",
+      "name": "Monocubed",
+      "url": "https://monocubed.com/blog",
+      "dr": 51,
+      "description": "\"Development and startup insights from a custom software company.\" ([Profeo](https://profeo.io)). Publishes articles on web development trends and startup lessons.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "mycorporationcom",
+      "name": "MyCorporation.com",
+      "url": "https://www.mycorporation.com",
+      "dr": 74,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Legal"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "myventurepad",
+      "name": "MyVenturePad",
+      "url": "https://www.myventurepad.com",
+      "dr": 48,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "neptune-blog",
+      "name": "Neptune Blog",
+      "url": "https://neptune.io",
+      "dr": 72,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "nethunt",
+      "name": "NetHunt",
+      "url": "https://nethunt.com/blog",
+      "dr": 73,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "CRM",
+        "Sales",
+        "Automation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "netguru-blog",
+      "name": "Netguru Blog",
+      "url": "https://www.netguru.com/blog",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "orf",
+      "name": "ORF",
+      "url": "https://www.orfonline.org",
+      "dr": 79,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "India",
+        "Policy"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "oilpricecom",
+      "name": "OilPrice.com",
+      "url": "https://oilprice.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Energy"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "oncrawl",
+      "name": "OnCrawl",
+      "url": "https://www.oncrawl.com",
+      "dr": 75,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pat-research",
+      "name": "PAT RESEARCH",
+      "url": "https://www.patresearch.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pollthepeople",
+      "name": "PollthePeople",
+      "url": "https://www.pollthepeople.app",
+      "dr": 48,
+      "description": "\"User testing and feedback platform with a blog on UX research methodologies.\" ([Profeo](https://profeo.io)). They publish insights on customer research and product feedback.",
+      "niche": [
+        "SaaS",
+        "Market Research"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "poptin",
+      "name": "Poptin",
+      "url": "https://www.poptin.com/blog",
+      "dr": 52,
+      "description": "\"Conversion optimization blog for SaaS and e-commerce businesses.\" ([Profeo](https://profeo.io)). Welcomes content on visitor engagement and conversion optimization.",
+      "niche": [
+        "SaaS",
+        "Conversion Rate Optimization",
+        "Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pragprog",
+      "name": "PragProg",
+      "url": "https://pragprog.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Technology",
+        "Programming"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "proprofs",
+      "name": "ProProfs",
+      "url": "https://www.proprofs.com/blog",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Productivity",
+        "Training",
+        "Business Tools"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "quertime",
+      "name": "Quertime",
+      "url": "https://www.quertime.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "rankwatch-blog",
+      "name": "RankWatch Blog",
+      "url": "https://www.rankwatch.com/blog",
+      "dr": 73,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ranktracker",
+      "name": "Ranktracker",
+      "url": "https://ranktracker.com/blog",
+      "dr": 74,
+      "description": "\"Blog focuses on SEO tips, keyword research, and tools for marketers and agencies.\" ([Profeo](https://profeo.io)). They look for practical and actionable content on SEO and digital marketing.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": "Search Traffic: 91K"
+    },
+    {
+      "id": "read-write",
+      "name": "Read Write",
+      "url": "https://readwrite.com",
+      "dr": 84,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Entrepreneurship",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "resellerclub-blog",
+      "name": "ResellerClub Blog",
+      "url": "https://www.resellerclub.com/blog",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business Tools",
+        "Reseller"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "search-engine-land",
+      "name": "Search Engine Land",
+      "url": "https://searchengineland.com",
+      "dr": 91,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "search-engine-roundtable",
+      "name": "Search Engine Roundtable",
+      "url": "https://www.seroundtable.com",
+      "dr": 84,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "search-engine-watch",
+      "name": "Search Engine Watch",
+      "url": "https://www.searchenginewatch.com",
+      "dr": 86,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "serpstat-blog",
+      "name": "Serpstat Blog",
+      "url": "https://serpstat.com/blog",
+      "dr": 79,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Content Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "simplek12",
+      "name": "SimpleK12",
+      "url": "https://www.simplek12.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "E-learning"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "simplybook",
+      "name": "SimplyBook",
+      "url": "https://simplybook.me/en/blog",
+      "dr": 45,
+      "description": "\"Appointment booking software sharing business and scheduling tips.\" ([Profeo](https://profeo.io)). Accepts guest posts on small business management and customer experience.",
+      "niche": [
+        "SaaS",
+        "Appointment Scheduling",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "sitepoint",
+      "name": "SitePoint",
+      "url": "https://www.sitepoint.com",
+      "dr": 87,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Web Development",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "smallbizclub",
+      "name": "SmallBizClub",
+      "url": "https://smallbizclub.com",
+      "dr": 64,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Small Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "smashing-magazine",
+      "name": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com",
+      "dr": 89,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "softwareworld",
+      "name": "SoftwareWorld",
+      "url": "https://www.softwareworld.net",
+      "dr": 74,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Software Reviews"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "sogolytics",
+      "name": "Sogolytics",
+      "url": "https://www.sogolytics.com",
+      "dr": 71,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Analytics",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "speckyboy",
+      "name": "Speckyboy",
+      "url": "https://www.speckyboy.com",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "stackify",
+      "name": "Stackify",
+      "url": "https://stackify.com",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "DevOps"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "startupbros-blog",
+      "name": "StartupBros Blog",
+      "url": "https://startupbros.com",
+      "dr": 58,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "startupnation",
+      "name": "StartupNation",
+      "url": "https://www.startupnation.com",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "successcom",
+      "name": "Success.com",
+      "url": "https://www.success.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "successful-blogcom",
+      "name": "Successful-Blog.com",
+      "url": "https://successful-blog.com",
+      "dr": 54,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "Content"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "swarajya",
+      "name": "Swarajya",
+      "url": "https://swarajyamag.com",
+      "dr": 72,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "India",
+        "Policy"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techlila",
+      "name": "TechLila",
+      "url": "https://techlila.com",
+      "dr": 47,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techsupremo",
+      "name": "TechSupremo",
+      "url": "https://techsupremo.com",
+      "dr": 45,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "techwyse",
+      "name": "TechWyse",
+      "url": "https://www.techwyse.com/blog",
+      "dr": 71,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "SEO",
+        "Marketing",
+        "Digital Marketing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technology-networks",
+      "name": "Technology Networks",
+      "url": "https://www.technologynetworks.com",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-blog-herald",
+      "name": "The Blog Herald",
+      "url": "https://www.theblogherald.com",
+      "dr": 69,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content",
+        "Blogging"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-conversation",
+      "name": "The Conversation",
+      "url": "https://theconversation.com",
+      "dr": 85,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Education",
+        "Research"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-diplomat",
+      "name": "The Diplomat",
+      "url": "https://thediplomat.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Politics",
+        "International"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-greater-good-science-center",
+      "name": "The Greater Good Science Center",
+      "url": "https://greatergood.berkeley.edu",
+      "dr": 84,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Science"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-ken",
+      "name": "The Ken",
+      "url": "https://the-ken.com",
+      "dr": 67,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business",
+        "India"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-next-tech",
+      "name": "The Next Tech",
+      "url": "https://thenexttech.com",
+      "dr": 59,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "the-pie-news",
+      "name": "The PIE News",
+      "url": "https://thepienews.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "International"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "theguardiancom",
+      "name": "TheGuardian.com",
+      "url": "https://www.theguardian.com",
+      "dr": 96,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "General"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "times-of-india",
+      "name": "Times of India",
+      "url": "https://timesofindia.indiatimes.com",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "India"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "top-design-magazine",
+      "name": "Top Design Magazine",
+      "url": "https://www.topdesignmagazine.com",
+      "dr": 65,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "topuniversitiescom",
+      "name": "TopUniversities.com",
+      "url": "https://www.topuniversities.com",
+      "dr": 88,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "University Rankings"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tutorialsteacher",
+      "name": "TutorialsTeacher",
+      "url": "https://www.tutorialsteacher.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "Programming"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "venturebeat",
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com",
+      "dr": 91,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Entrepreneurship",
+        "Innovation"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wall-street-journal",
+      "name": "Wall Street Journal",
+      "url": "https://www.wsj.com",
+      "dr": 95,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News",
+        "Finance",
+        "Business"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "web-design-ledger",
+      "name": "Web Design Ledger",
+      "url": "https://webdesignledger.com",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webalive",
+      "name": "WebAlive",
+      "url": "https://www.webalive.com.au",
+      "dr": 50,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "Design"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webengage",
+      "name": "WebEngage",
+      "url": "https://www.webengage.com/blog",
+      "dr": 72,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Marketing",
+        "Automation",
+        "Customer Engagement"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webscoot-blog",
+      "name": "WebScoot Blog",
+      "url": "https://www.webscoot.io",
+      "dr": 43,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webnus",
+      "name": "Webnus",
+      "url": "https://webnus.net",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Web Development",
+        "WordPress"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wise-bread",
+      "name": "Wise Bread",
+      "url": "https://www.wisebread.com",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Finance",
+        "Personal Finance"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wordable",
+      "name": "Wordable",
+      "url": "https://wordable.io/blog",
+      "dr": 49,
+      "description": "\"Content publishing tool helping writers and agencies.\" ([Profeo](https://profeo.io)). Interested in articles about content creation and publishing.",
+      "niche": [
+        "SaaS",
+        "Content Marketing",
+        "Writing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "profeo.io"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "writers-relief",
+      "name": "Writer's Relief",
+      "url": "https://www.writersrelief.com",
+      "dr": 70,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Writing",
+        "Publishing"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "yfs-magazine",
+      "name": "YFS Magazine",
+      "url": "https://www.yfsmag.com",
+      "dr": 68,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "aboutme",
+      "name": "about.me",
+      "url": "https://about.me",
+      "dr": 85,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Personal Branding",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blogaddacom",
+      "name": "blogadda.com",
+      "url": "https://www.blogadda.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "India",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blogaramacom",
+      "name": "blogarama.com",
+      "url": "https://www.blogarama.com",
+      "dr": 76,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "Directory",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "blogengagecom",
+      "name": "blogengage.com",
+      "url": "https://www.blogengage.com",
+      "dr": 58,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bloggercom",
+      "name": "blogger.com",
+      "url": "https://blogger.com",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bloglovincom",
+      "name": "bloglovin.com",
+      "url": "https://www.bloglovin.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "diigocom",
+      "name": "diigo.com",
+      "url": "https://www.diigo.com",
+      "dr": 77,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Bookmarking",
+        "Research",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "elearn-magazine",
+      "name": "eLearn Magazine",
+      "url": "https://elearnmag.acm.org",
+      "dr": 75,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Education",
+        "E-learning"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "farkcom",
+      "name": "fark.com",
+      "url": "https://fark.com",
+      "dr": 73,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "News Aggregation",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "flickrcom",
+      "name": "flickr.com",
+      "url": "https://flickr.com",
+      "dr": 92,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Photography",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hackernooncom",
+      "name": "hackernoon.com",
+      "url": "https://hackernoon.com",
+      "dr": 79,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Development",
+        "Technology",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hubpagescom",
+      "name": "hubpages.com",
+      "url": "https://hubpages.com",
+      "dr": 80,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Publishing",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "imocha",
+      "name": "iMocha",
+      "url": "https://www.imocha.io",
+      "dr": 57,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Business Tools",
+        "Assessment"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "itechcode",
+      "name": "iTechCode",
+      "url": "https://itechcode.com",
+      "dr": 30,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Technology",
+        "Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "indibloghubcom",
+      "name": "indibloghub.com",
+      "url": "https://indibloghub.com",
+      "dr": 68,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Blogging",
+        "India",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "indiehackerscom",
+      "name": "indiehackers.com",
+      "url": "https://www.indiehackers.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Startups",
+        "Indie Developers",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "joomlaorg",
+      "name": "joomla.org",
+      "url": "https://joomla.org",
+      "dr": 88,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "CMS",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "opensourcecom",
+      "name": "opensource.com",
+      "url": "https://opensource.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Open Source",
+        "Technology",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "outbraincom",
+      "name": "outbrain.com",
+      "url": "https://www.outbrain.com",
+      "dr": 86,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Discovery",
+        "Advertising"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "redditcom",
+      "name": "reddit.com",
+      "url": "https://reddit.com",
+      "dr": 94,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Community",
+        "Social Media"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "scoopit",
+      "name": "scoop.it",
+      "url": "https://scoop.it",
+      "dr": 78,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Curation",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "strikinglycom",
+      "name": "strikingly.com",
+      "url": "https://strikingly.com",
+      "dr": 81,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Website Building",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "substackcom",
+      "name": "substack.com",
+      "url": "https://substack.com",
+      "dr": 88,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Publishing",
+        "Newsletters",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tumblrcom",
+      "name": "tumblr.com",
+      "url": "https://tumblr.com",
+      "dr": 93,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Social Media",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wakeletcom",
+      "name": "wakelet.com",
+      "url": "https://wakelet.com",
+      "dr": 75,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Content Curation",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webdew",
+      "name": "webdew",
+      "url": "https://webdew.net",
+      "dr": 35,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Design",
+        "Web Development"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "webnodecom",
+      "name": "webnode.com",
+      "url": "https://webnode.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Website Building",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wikidotcom",
+      "name": "wikidot.com",
+      "url": "https://www.wikidot.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Wiki",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "wixcom",
+      "name": "wix.com",
+      "url": "https://www.wix.com",
+      "dr": 90,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Website Building",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "yourstorycom",
+      "name": "yourstory.com",
+      "url": "https://yourstory.com",
+      "dr": 82,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "SaaS",
+        "Startups",
+        "India",
+        "Community"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com"
+      ],
+      "notes": ""
+    }
+  ],
+  "niches": [
+    "AI",
+    "Advertising",
+    "Analytics",
+    "Appointment Scheduling",
+    "Art",
+    "Asia",
+    "Assessment",
+    "Automation",
+    "Blogging",
+    "Bookmarking",
+    "Budgeting",
+    "Business",
+    "Business Process Management",
+    "Business Tools",
+    "CMS",
+    "CRM",
+    "Careers",
+    "Collaboration",
+    "Community",
+    "Content",
+    "Content Curation",
+    "Content Discovery",
+    "Content Marketing",
+    "Content Publishing",
+    "Conversion Optimization",
+    "Conversion Rate Optimization",
+    "Customer Engagement",
+    "Customer Support",
+    "Design",
+    "DevOps",
+    "Development",
+    "Diagramming",
+    "Digital Advertising",
+    "Digital Marketing",
+    "Directory",
+    "E-learning",
+    "Education",
+    "Email Marketing",
+    "Energy",
+    "Entrepreneurship",
+    "Finance",
+    "Freelance",
+    "General",
+    "HR",
+    "Hosting",
+    "India",
+    "Indie Developers",
+    "Innovation",
+    "Inspiration",
+    "International",
+    "Investing",
+    "Journalism",
+    "Law",
+    "Legal",
+    "Legal News",
+    "Legal Services",
+    "Lifestyle",
+    "Market Research",
+    "Marketing",
+    "Marketing Automation",
+    "Mobile",
+    "News",
+    "News Aggregation",
+    "Newsletters",
+    "Nonprofit",
+    "Online Business",
+    "Online Learning",
+    "Open Source",
+    "Personal Branding",
+    "Personal Development",
+    "Personal Finance",
+    "Photography",
+    "Planning",
+    "Policy",
+    "Politics",
+    "Productivity",
+    "Programming",
+    "Project Management",
+    "Publishing",
+    "Real Estate",
+    "Remote Work",
+    "Research",
+    "Reseller",
+    "SEO",
+    "SaaS",
+    "Sales",
+    "Science",
+    "Small Business",
+    "Social Media",
+    "Software Reviews",
+    "Startups",
+    "Success",
+    "Tech",
+    "Technology",
+    "Technology Training",
+    "Training",
+    "Travel",
+    "University Rankings",
+    "Web Development",
+    "Website Building",
+    "Wiki",
+    "WordPress",
+    "Workflow",
+    "Writing"
+  ]
+}

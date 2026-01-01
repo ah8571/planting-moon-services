@@ -7,7 +7,7 @@
       "description": "Platform for discovering and launching new tech products, offering daily curated lists and community discussions.",
       "type": "Launch Platform",
       "domainRating": 91,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "amrytt.com",
@@ -25,7 +25,7 @@
       "description": "Peer-to-peer review site for software and services with comprehensive comparisons.",
       "type": "Review Directory",
       "domainRating": 91,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "amrytt.com",
@@ -42,7 +42,7 @@
       "description": "Software comparison and review platform for business solutions.",
       "type": "Review Directory",
       "domainRating": 90,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "amrytt.com",
@@ -59,7 +59,7 @@
       "description": "Community-driven SaaS comparison site with product reviews and ratings.",
       "type": "SaaS Directory",
       "domainRating": 72,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "amrytt.com",
@@ -78,7 +78,7 @@
       "description": "Directory for discovering alternatives to popular software and services.",
       "type": "SaaS Directory",
       "domainRating": 80,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
         "amrytt.com",
@@ -95,7 +95,7 @@
       "description": "Platform to find and get early access to new startups and products.",
       "type": "Launch Platform",
       "domainRating": 73,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
         "topsaasdirectories.com",
@@ -112,7 +112,7 @@
       "description": "Community forum for independent developers and entrepreneurs to share projects.",
       "type": null,
       "domainRating": 80,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
         "amrytt.com",
@@ -130,7 +130,7 @@
       "description": "Database of startups, companies, and funding information.",
       "type": "SaaS Directory",
       "domainRating": 90,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "submitsaas.com",
@@ -147,7 +147,7 @@
       "description": "Deals and discovery platform for software and digital tools.",
       "type": "SaaS Directory",
       "domainRating": 84,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
         "amrytt.com",
@@ -164,12 +164,13 @@
       "description": "Repository for open-source software and project hosting.",
       "type": "SaaS Directory",
       "domainRating": 92,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "nofollow",
       "listedOn": [
         "amrytt.com",
         "saaspedia.io",
-        "getleadwave.io", "submitatool.com"
+        "getleadwave.io",
+        "submitatool.com"
       ],
       "notes": "High DA, especially good for open-source projects."
     },
@@ -2602,7 +2603,7 @@
       "description": "Uneed directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 87.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2632,7 +2633,7 @@
       "description": "F6S directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 83.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2693,7 +2694,7 @@
       "description": "Eu Startups directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 77.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2757,7 +2758,7 @@
       "description": "Saasworthy directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 73.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2804,7 +2805,7 @@
       "description": "Alternative directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 72.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2848,7 +2849,7 @@
       "description": "Sideprojectors directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 70.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -2938,7 +2939,7 @@
       "description": "Pitchwall directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 65.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -3259,7 +3260,7 @@
       "description": "Techpluto directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 48.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -3350,7 +3351,7 @@
       "description": "Startuptracker directory for SaaS and software discovery.",
       "type": "SaaS Directory",
       "domainRating": 42.0,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
@@ -3549,7 +3550,7 @@
       "description": "Developer Tools",
       "type": "SaaS Directory",
       "domainRating": 31,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -3635,7 +3636,7 @@
       "description": "Launch Platform",
       "type": "SaaS Directory",
       "domainRating": 39,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -3737,7 +3738,7 @@
       "description": "AI Directory",
       "type": "SaaS Directory",
       "domainRating": 33,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -3766,7 +3767,7 @@
       "description": "Directory",
       "type": "SaaS Directory",
       "domainRating": 51,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -4244,7 +4245,7 @@
       "description": "Directory",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -4273,7 +4274,7 @@
       "description": "AI Directory",
       "type": "SaaS Directory",
       "domainRating": 35,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -4345,7 +4346,7 @@
       "description": "Directory",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "topsaasdirectories.com",
@@ -4839,7 +4840,7 @@
       "description": "",
       "type": "Review Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -4896,7 +4897,7 @@
       "description": "",
       "type": "Review Directory",
       "domainRating": 87,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -4995,7 +4996,7 @@
       "description": "",
       "type": null,
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5010,7 +5011,7 @@
       "description": "A service for discovering and comparing business software.",
       "type": "Review Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5278,7 +5279,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5573,7 +5574,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5630,7 +5631,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5757,7 +5758,7 @@
       "description": "",
       "type": "Review Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5871,7 +5872,7 @@
       "description": "A platform to see and share software stacks.",
       "type": "SaaS Directory",
       "domainRating": 79,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5887,7 +5888,7 @@
       "description": "A platform to promote and discover new startups.",
       "type": "SaaS Directory",
       "domainRating": 39,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -5974,7 +5975,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -6115,7 +6116,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -6214,7 +6215,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": 38,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "getleadwave.io",
@@ -6285,7 +6286,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 91,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6299,7 +6300,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 90,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6313,7 +6314,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 88,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6327,7 +6328,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 86,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6341,7 +6342,7 @@
       "description": "A website directory and review platform.",
       "type": "AI Directory",
       "domainRating": 77,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6356,7 +6357,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 76,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6370,7 +6371,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 75,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6384,7 +6385,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 71,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6398,7 +6399,7 @@
       "description": "Directory for discovering and adding similar websites.",
       "type": "AI Directory",
       "domainRating": 70,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6415,7 +6416,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 70,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6429,7 +6430,7 @@
       "description": "A directory ranking startups based on various metrics.",
       "type": "AI Directory",
       "domainRating": 67,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6444,7 +6445,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 64,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6458,7 +6459,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 64,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6472,7 +6473,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 61,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6486,7 +6487,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 59,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6500,7 +6501,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 57,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6514,7 +6515,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 56,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6528,7 +6529,7 @@
       "description": "A resource for finding and comparing business software.",
       "type": "AI Directory",
       "domainRating": 55,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6543,7 +6544,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 53,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6557,7 +6558,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 53,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6571,7 +6572,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 51,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6585,7 +6586,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 50,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6599,7 +6600,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 47,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6613,7 +6614,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 46,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6627,7 +6628,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 44,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6641,7 +6642,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 44,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6655,7 +6656,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 41,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6669,7 +6670,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 40,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6683,7 +6684,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 39,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6697,7 +6698,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 39,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6711,7 +6712,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 38,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6726,7 +6727,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 38,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6740,7 +6741,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 37,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6754,7 +6755,7 @@
       "description": "A resource site for entrepreneurs and startups.",
       "type": "AI Directory",
       "domainRating": 35,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -6769,7 +6770,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 34,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6783,7 +6784,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 33,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6797,7 +6798,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 33,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6811,7 +6812,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 33,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6825,7 +6826,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 33,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6839,7 +6840,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 32,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6853,7 +6854,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 31,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6867,7 +6868,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 31,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6881,7 +6882,7 @@
       "description": "",
       "type": "AI Directory",
       "domainRating": 30,
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6895,7 +6896,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6909,7 +6910,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6923,7 +6924,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6937,7 +6938,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6951,7 +6952,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6965,7 +6966,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6979,7 +6980,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -6993,7 +6994,7 @@
       "description": "A directory for SaaS products and tools.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7008,7 +7009,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7022,7 +7023,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7036,7 +7037,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7050,7 +7051,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7064,7 +7065,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7078,7 +7079,7 @@
       "description": "A crowdsourced directory for tracking startups.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7093,7 +7094,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7107,7 +7108,7 @@
       "description": "A site for submitting and discovering startup products.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7122,7 +7123,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7136,7 +7137,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7150,7 +7151,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7164,7 +7165,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7178,7 +7179,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7192,7 +7193,7 @@
       "description": "A marketplace for buying and selling side projects.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7207,7 +7208,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7221,7 +7222,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7235,7 +7236,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7249,7 +7250,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7263,7 +7264,7 @@
       "description": "A global startup ecosystem map and research center.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7278,7 +7279,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7292,7 +7293,7 @@
       "description": "A community for growth hacking and marketing strategies.",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com",
@@ -7307,7 +7308,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7321,7 +7322,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7335,7 +7336,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7349,7 +7350,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7363,7 +7364,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7377,7 +7378,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7391,7 +7392,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7405,7 +7406,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7419,7 +7420,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7433,7 +7434,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7447,7 +7448,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7461,7 +7462,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
@@ -7475,7 +7476,7 @@
       "description": "",
       "type": "SaaS Directory",
       "domainRating": "unknown",
-      "submissionType": "unknown",
+      "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
         "submitatool.com"
