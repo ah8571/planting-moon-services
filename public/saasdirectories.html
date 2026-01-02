@@ -867,7 +867,7 @@
         // Add sources filter dropdown toggle
         document.getElementById('sources-header').addEventListener('click', (e) => {
             // Don't toggle if clicking the filter buttons themselves
-            if (!e.target.matches('[data-sources-filter]')) {
+            if (!e.target.matches('[data-sourcesFilter]')) {
                 document.getElementById('sources-filters').classList.toggle('open');
                 document.querySelector('#sources-header .th-chevron').classList.toggle('open');
             }
