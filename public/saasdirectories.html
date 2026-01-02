@@ -777,7 +777,7 @@
                 btn.className = 'filter-btn';
                 btn.textContent = `${count} source${count > 1 ? 's' : ''} (${sourceCounts[count]})`;
                 btn.dataset.sourcesFilter = count;
-                btn.addEventListener('click', () => toggleSourcesFilter(count, btn));
+                btn.addEventListener('click', (e) => toggleSourcesFilter(count, btn, e));
                 container.appendChild(btn);
             });
         }
@@ -829,7 +829,11 @@
         }
 
         // Toggle sources filter
-        function toggleSourcesFilter(sourceCount, btn) {
+        function toggleSourcesFilter(sourceCount, btn, e) {
+            // Stop event from bubbling to parent toggle handler
+            if (e) {
+                e.stopPropagation();
+            }
             const count = parseInt(sourceCount);
             if (currentSourcesFilters.includes(count)) {
                 currentSourcesFilters = currentSourcesFilters.filter(c => c !== count);
