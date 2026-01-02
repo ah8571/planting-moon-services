@@ -180,7 +180,7 @@
     <script>
         let allDirectories = [];
         let filteredDirectories = [];
-        let currentTypeFilter = null;
+        let currentTypeFilters = [];
         let currentSubmissionFilter = null;
         let currentSourcesFilters = [];
         let sortByName = false;
@@ -226,11 +226,11 @@
         function applyFilters() {
             let filtered = allDirectories;
 
-            // Filter by directory type
-            if (currentTypeFilter) {
+            // Filter by directory type (multiple types allowed)
+            if (currentTypeFilters.length > 0) {
                 filtered = filtered.filter(d => {
                     const types = Array.isArray(d.type) ? d.type : [d.type];
-                    return types.includes(currentTypeFilter);
+                    return types.some(t => currentTypeFilters.includes(t));
                 });
             }
 
@@ -377,19 +377,20 @@
             
             typeFiltersContainer.innerHTML = typeFiltersHTML;
             
-            // Add event listeners for type filters
+            // Add event listeners for type filters (multiple selection allowed)
             document.querySelectorAll('[data-type-filter]').forEach(btn => {
                 btn.addEventListener('click', (e) => {
+                    const typeFilter = e.target.dataset.typeFilter;
                     const isActive = e.target.classList.contains('active');
-                    document.querySelectorAll('[data-type-filter]').forEach(b => b.classList.remove('active'));
                     
                     if (isActive) {
                         // If already active, deselect it
-                        currentTypeFilter = null;
+                        e.target.classList.remove('active');
+                        currentTypeFilters = currentTypeFilters.filter(t => t !== typeFilter);
                     } else {
-                        // Otherwise select it
+                        // Otherwise add it
                         e.target.classList.add('active');
-                        currentTypeFilter = e.target.dataset.typeFilter;
+                        currentTypeFilters.push(typeFilter);
                     }
                     applyFilters();
                 });
