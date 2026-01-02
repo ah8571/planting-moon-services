@@ -95,7 +95,10 @@
         </div>
 
         <div class="pagination-info" id="pagination-info"></div>
-        <button class="load-more-btn" id="load-more-btn" style="display: none;">Load More</button>
+        <div style="display: flex; gap: 10px; justify-content: center; margin: 30px 0;">
+            <button class="load-more-btn" id="prev-btn" style="display: none;">← Previous Page</button>
+            <button class="load-more-btn" id="next-btn" style="display: none;">Next Page →</button>
+        </div>
 
         <!-- Educational Content Section -->
         <div class="education-section">
@@ -338,14 +341,12 @@
             document.getElementById('pagination-info-top').textContent = paginationText;
             document.getElementById('pagination-info').textContent = paginationText;
 
-            // Show/hide load more button
-            const loadMoreBtn = document.getElementById('load-more-btn');
-            if (currentPage < totalPages) {
-                loadMoreBtn.style.display = 'block';
-                loadMoreBtn.disabled = false;
-            } else {
-                loadMoreBtn.style.display = 'none';
-            }
+            // Show/hide previous/next buttons
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            prevBtn.style.display = currentPage > 1 ? 'block' : 'none';
+            nextBtn.style.display = currentPage < totalPages ? 'block' : 'none';
         }
 
         // Update stats
@@ -610,11 +611,23 @@
             }
         });
 
-        // Load more button
-        document.getElementById('load-more-btn').addEventListener('click', () => {
-            currentPage++;
-            renderTable();
-            document.querySelector('.pagination-info').scrollIntoView({ behavior: 'smooth' });
+        // Previous button
+        document.getElementById('prev-btn')?.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        // Next button
+        document.getElementById('next-btn')?.addEventListener('click', () => {
+            const totalPages = Math.ceil(filteredDirectories.length / ITEMS_PER_PAGE);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderTable();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         });
 
         // Load on page load
