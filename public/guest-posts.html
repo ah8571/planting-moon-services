@@ -436,33 +436,29 @@
 
         .faq-item {
             background: #f9f9f9;
-            border-left: 4px solid #667eea;
             padding: 25px;
             margin-bottom: 20px;
             border-radius: 6px;
+            box-shadow: -4px 0 12px rgba(102, 126, 234, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .faq-item h3 {
             font-size: 1.2em;
             margin-bottom: 15px;
             color: #333;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: block;
         }
 
         .faq-item h3 .toggle {
-            font-size: 1.5em;
-            transition: transform 0.3s;
+            display: none;
         }
 
         .faq-item h3 .toggle.open {
-            transform: rotate(180deg);
+            display: none;
         }
 
         .faq-answer {
-            display: none;
+            display: block;
             color: #555;
             line-height: 1.8;
             font-size: 1em;
@@ -562,6 +558,7 @@
 
         <!-- Educational Content Section -->
         <div class="education-section">
+            <p style="font-size: 0.95em; color: #999; margin-bottom: 20px;"><em>Last Updated: January 2026</em></p>
             <h2>Why Guest Posting Matters for SEO</h2>
             <p>Guest posting is one of the most effective white-hat link-building strategies available to modern marketers. When you contribute quality content to established websites in your industry, you're not just reaching new audiences—you're building high-quality backlinks that signal authority and relevance to search engines. (<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable" target="_blank">Google Search Central - Links and crawlability</a>)</p>
             <p>Unlike paid links or low-quality directory submissions, guest posting provides real value: you're publishing authentic content that helps readers solve problems. This approach aligns perfectly with Google's E-E-A-T guidelines (Experience, Expertise, Authoritativeness, Trustworthiness) because you're demonstrating your knowledge on reputable platforms. The key to success is targeting relevant websites in your niche with substantive, original content that provides genuine value to their audience. (<a href="https://moz.com/blog/link-building" target="_blank">Moz - Link Building Strategy Guide</a>)</p>
@@ -603,6 +600,11 @@
                         <p>Quality over quantity is the golden rule. Google's algorithm is designed to recognize and reward natural linking patterns. If you suddenly acquire dozens of links from unrelated sites in a short timeframe, it can raise red flags. A sustainable approach is 1-4 quality guest posts per month, depending on your resources and industry. This allows you to maintain consistent outreach while ensuring each piece is genuinely valuable. The goal isn't to hit a specific number of backlinks but to build a diverse, natural-looking link profile from authoritative, relevant sources over time. Focus on building relationships with editors and becoming a trusted contributor to key publications in your field. Consistent, quality contributions will generate more SEO value than sporadic, high-volume attempts. (<a href="https://moz.com/blog/link-building" target="_blank">Moz - Sustainable Link Building Practices</a>)</p>
                     </div>
                 </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 25px; background: #f5f5f5; border-radius: 6px; border-left: 4px solid #667eea;">
+                <h4 style="margin-top: 0; color: #333;">About the Authors</h4>
+                <p style="color: #555; line-height: 1.8; margin: 0;">This guide was created by the <strong>Planting Moon Team</strong> in collaboration with <strong>Claude</strong>, leveraging expertise in SEO, link-building strategies, and content marketing best practices. Our mission is to provide actionable, evidence-based resources that help teams develop effective outreach and link-building strategies for sustainable growth.</p>
             </div>
         </div>
 
@@ -958,18 +960,6 @@
             document.getElementById('load-more-btn')?.addEventListener('click', () => {
                 currentPage++;
                 renderTable();
-            });
-
-            // FAQ toggle functionality
-            document.querySelectorAll('.faq-item h3').forEach(header => {
-                header.addEventListener('click', () => {
-                    const faqItem = header.closest('.faq-item');
-                    const answer = faqItem.querySelector('.faq-answer');
-                    const toggle = header.querySelector('.toggle');
-                    
-                    answer.classList.toggle('open');
-                    toggle.classList.toggle('open');
-                });
             });
 
             setupSearch();
