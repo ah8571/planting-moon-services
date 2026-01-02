@@ -168,8 +168,8 @@
                 const data = await response.json();
                 allGuestPosts = data.guestPosts || [];
                 
-                // Filter out entries without DR
-                allGuestPosts = allGuestPosts.filter(post => post.dr);
+                // Filter out entries without DR or with DR < 30
+                allGuestPosts = allGuestPosts.filter(post => post.dr && post.dr >= 30);
                 
                 // Sort by DR (highest first)
                 allGuestPosts.sort((a, b) => b.dr - a.dr);

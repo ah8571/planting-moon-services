@@ -178,8 +178,8 @@
                 const data = await response.json();
                 allDirectories = data.directories || [];
                 
-                // Filter out entries without DR
-                allDirectories = allDirectories.filter(d => d.domainRating !== 'unknown');
+                // Filter out entries without DR or with DR < 30
+                allDirectories = allDirectories.filter(d => d.domainRating !== 'unknown' && d.domainRating >= 30);
                 
                 // Sort by DR (highest first)
                 allDirectories.sort((a, b) => b.domainRating - a.domainRating);
