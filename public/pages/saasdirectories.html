@@ -239,16 +239,8 @@
                     }
                 });
             } else {
-                // Default: sort by DR (highest first, unknown last)
-                filtered.sort((a, b) => {
-                    const drA = a.domainRating === 'unknown' ? -1 : a.domainRating;
-                    const drB = b.domainRating === 'unknown' ? -1 : b.domainRating;
-                    
-                    if (drA === -1 && drB === -1) return 0;
-                    if (drA === -1) return 1;
-                    if (drB === -1) return -1;
-                    return drB - drA;
-                });
+                // Default: sort by DR (highest first)
+                filtered.sort((a, b) => b.domainRating - a.domainRating);
             }
 
             // Reset pagination when filters change
@@ -277,17 +269,13 @@
             const totalPages = Math.ceil(filteredDirectories.length / ITEMS_PER_PAGE);
 
             tbody.innerHTML = pageItems.map(dir => {
-                const drClass = dir.domainRating === 'unknown' 
-                    ? 'dr-unknown' 
-                    : dir.domainRating >= 80 
+                const drClass = dir.domainRating >= 80 
                     ? 'dr-high' 
                     : dir.domainRating >= 60 
                     ? 'dr-medium' 
                     : 'dr-low';
                 
-                const drText = dir.domainRating === 'unknown' 
-                    ? 'Unknown' 
-                    : dir.domainRating;
+                const drText = dir.domainRating;
 
                 // Create clickable link or plain text for name
                 const nameDisplay = dir.url && dir.url.trim() !== ''
@@ -333,14 +321,9 @@
 
         // Update stats
         function updateStats() {
-            // Use filtered directories if filters are active, otherwise use all directories
-            const directories = (currentFilter !== 'all' || currentTypeFilter || currentSubmissionFilter) 
-                ? filteredDirectories 
-                : allDirectories;
+            document.getElementById('total-count').textContent = filteredDirectories.length;
             
-            document.getElementById('total-count').textContent = directories.length;
-            
-            const withDR = directories.filter(d => d.domainRating !== 'unknown');
+            const withDR = filteredDirectories.filter(d => d.domainRating !== 'unknown');
             document.getElementById('with-dr-count').textContent = withDR.length;
             
             if (withDR.length > 0) {
