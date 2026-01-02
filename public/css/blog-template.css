@@ -519,3 +519,30 @@ tr:hover {
         padding: 15px;
     }
 }
+
+/* Content Section Styling */
+.content-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+}
+
+.content-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.authors-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+}
+
+.authors-section h4 {
+    margin-top: 0;
+    color: #333;
+}
