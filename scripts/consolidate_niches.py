@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Consolidate 265 niche categories into 15 master categories
+Consolidate niche categories into 15 master categories
 Applies mapping to both guest-posts.json and directories.json
 """
 
@@ -11,7 +11,7 @@ from collections import defaultdict
 
 # Define the consolidation mapping
 NICHE_MAPPING = {
-    # Education (14 items)
+    # Education - 18 items
     'e-learning': 'Education',
     'elearning': 'Education',
     'online learning': 'Education',
@@ -27,8 +27,11 @@ NICHE_MAPPING = {
     'research': 'Education',
     'thought leadership': 'Education',
     'knowledge': 'Education',
+    'education': 'Education',
+    'self improvement': 'Education',
+    'productivity': 'Education',
     
-    # Development (16 items)
+    # Development - 20 items
     'programming': 'Development',
     'web development': 'Development',
     'software development': 'Development',
@@ -45,8 +48,12 @@ NICHE_MAPPING = {
     'ai': 'Development',
     'machine learning': 'Development',
     'automation': 'Development',
+    'development': 'Development',
+    'technology': 'Development',
+    'tech': 'Development',
+    'saas': 'Development',
     
-    # Design (8 items)
+    # Design - 9 items
     'web design': 'Design',
     'ux design': 'Design',
     'graphic design': 'Design',
@@ -55,8 +62,9 @@ NICHE_MAPPING = {
     'icons': 'Design',
     'diagramming': 'Design',
     'themes': 'Design',
+    'design': 'Design',
     
-    # Marketing (11 items)
+    # Marketing - 16 items
     'marketing': 'Marketing',
     'digital marketing': 'Marketing',
     'content marketing': 'Marketing',
@@ -68,8 +76,13 @@ NICHE_MAPPING = {
     'growth hacking': 'Marketing',
     'influencer marketing': 'Marketing',
     'lead generation': 'Marketing',
+    'blogging': 'Marketing',
+    'content': 'Marketing',
+    'writing': 'Marketing',
+    'guest posting': 'Marketing',
+    'publishing': 'Marketing',
     
-    # Social Media (11 items)
+    # Social Media - 12 items
     'social media': 'Social Media',
     'social media marketing': 'Social Media',
     'instagram': 'Social Media',
@@ -80,14 +93,16 @@ NICHE_MAPPING = {
     'facebook': 'Social Media',
     'social networking': 'Social Media',
     'bookmarking': 'Social Media',
+    'professional': 'Social Media',
+    'media': 'Social Media',
     
-    # E-Commerce (4 items)
+    # E-Commerce - 4 items
     'ecommerce': 'E-Commerce',
     'shopping': 'E-Commerce',
     'retail': 'E-Commerce',
     'dropshipping': 'E-Commerce',
     
-    # Finance (6 items)
+    # Finance - 6 items
     'finance': 'Finance',
     'accounting': 'Finance',
     'business finance': 'Finance',
@@ -95,7 +110,7 @@ NICHE_MAPPING = {
     'cryptocurrency': 'Finance',
     'payments': 'Finance',
     
-    # Health & Wellness (10 items)
+    # Health & Wellness - 10 items
     'health': 'Health & Wellness',
     'wellness': 'Health & Wellness',
     'fitness': 'Health & Wellness',
@@ -107,23 +122,23 @@ NICHE_MAPPING = {
     'sports': 'Health & Wellness',
     'travel': 'Health & Wellness',
     
-    # Creative (5 items)
+    # Creative - 5 items
     'creative': 'Creative',
     'photography': 'Creative',
     'illustration': 'Creative',
     'stock images': 'Creative',
     'visual': 'Creative',
     
-    # Open Source (2 items)
+    # Open Source - 2 items
     'open source': 'Open Source',
     'wiki': 'Open Source',
     
-    # Home Improvement (4 items)
+    # Home Improvement - 3 items
     'home decor': 'Home Improvement',
     'home improvement': 'Home Improvement',
     'hosting': 'Home Improvement',
     
-    # Business (16 items)
+    # Business - 19 items
     'business': 'Business',
     'entrepreneurship': 'Business',
     'startups': 'Business',
@@ -140,8 +155,11 @@ NICHE_MAPPING = {
     'portfolio': 'Business',
     'domains': 'Business',
     'surveys': 'Business',
+    'community': 'Business',
+    'news': 'Business',
+    'video': 'Business',
     
-    # Standalone (3 items)
+    # Standalone - 3 items
     'nonprofit': 'Nonprofit',
     'directory': 'Directory',
     'automobiles': 'Automobiles',
@@ -164,7 +182,7 @@ def consolidate_niches(niches_list):
         if normalized in NICHE_MAPPING:
             consolidated.add(NICHE_MAPPING[normalized])
         else:
-            # If not in mapping, check if it should be removed (General, Success, etc.)
+            # If not in mapping, check if it should be removed
             if normalized not in ['general', 'success', 'documents', 'collections', 'alternatives']:
                 unmapped.append(niche)
     
@@ -192,6 +210,7 @@ def process_file(filepath):
     
     consolidation_stats = defaultdict(int)
     unchanged_count = 0
+    modified_count = 0
     
     for item in items:
         if 'niche' in item and item['niche']:
@@ -200,6 +219,7 @@ def process_file(filepath):
             
             if consolidated != original_niches:
                 consolidation_stats[f"{len(original_niches)} → {len(consolidated)}"] += 1
+                modified_count += 1
             else:
                 unchanged_count += 1
             
@@ -210,12 +230,14 @@ def process_file(filepath):
         json.dump(data, f, indent=2, ensure_ascii=False)
     
     print(f"  Total items processed: {len(items)}")
-    print(f"  Items with unchanged niches: {unchanged_count}")
-    print(f"  Consolidation patterns:")
-    for pattern, count in sorted(consolidation_stats.items()):
-        print(f"    {pattern}: {count} items")
+    print(f"  Items modified: {modified_count}")
+    print(f"  Items unchanged: {unchanged_count}")
+    if consolidation_stats:
+        print(f"  Consolidation patterns:")
+        for pattern, count in sorted(consolidation_stats.items()):
+            print(f"    {pattern}: {count} items")
     
-    return len(items), unchanged_count
+    return len(items), modified_count
 
 def main():
     base_path = Path(__file__).parent.parent
@@ -228,17 +250,17 @@ def main():
     ]
     
     print("=" * 60)
-    print("NICHE CONSOLIDATION: 265 categories → 15 master categories")
+    print("NICHE CONSOLIDATION: Multiple categories → Master categories")
     print("=" * 60)
     
     total_items = 0
-    total_unchanged = 0
+    total_modified = 0
     
     for filepath in files_to_process:
         if filepath.exists():
-            items, unchanged = process_file(filepath)
+            items, modified = process_file(filepath)
             total_items += items
-            total_unchanged += unchanged
+            total_modified += modified
         else:
             print(f"\nSkipping (not found): {filepath}")
     
@@ -246,22 +268,24 @@ def main():
     print("CONSOLIDATION COMPLETE")
     print("=" * 60)
     print(f"Total items processed: {total_items}")
-    print(f"Master categories now: 15")
-    print(f"  - Education")
-    print(f"  - Development")
-    print(f"  - Design")
-    print(f"  - Marketing")
-    print(f"  - Social Media")
-    print(f"  - E-Commerce")
-    print(f"  - Finance")
-    print(f"  - Health & Wellness")
-    print(f"  - Creative")
-    print(f"  - Open Source")
-    print(f"  - Home Improvement")
-    print(f"  - Business")
-    print(f"  - Nonprofit")
-    print(f"  - Directory")
-    print(f"  - Automobiles")
+    print(f"Total items modified: {total_modified}")
+    print(f"\nMaster categories (15):")
+    print(f"  1. Education")
+    print(f"  2. Development")
+    print(f"  3. Design")
+    print(f"  4. Marketing")
+    print(f"  5. Social Media")
+    print(f"  6. E-Commerce")
+    print(f"  7. Finance")
+    print(f"  8. Health & Wellness")
+    print(f"  9. Creative")
+    print(f"  10. Open Source")
+    print(f"  11. Home Improvement")
+    print(f"  12. Business")
+    print(f"\nStandalone categories (3):")
+    print(f"  13. Nonprofit")
+    print(f"  14. Directory")
+    print(f"  15. Automobiles")
 
 if __name__ == '__main__':
     main()
