@@ -193,7 +193,7 @@
                 console.error('Error loading directories:', error);
                 document.getElementById('table-body').innerHTML = `
                     <tr>
-                        <td colspan="5" style="text-align: center; padding: 40px;">
+                        <td colspan="6" style="text-align: center; padding: 40px;">
                             Error loading directories.json<br>
                             <small style="color: #999;">Make sure the file is in the data/ folder relative to this HTML file</small>
                         </td>
@@ -587,9 +587,10 @@
         });
 
         // Load on page load
-        loadDirectories();
-
-        // Initialize JSON-LD schemas after data loads
+        (async () => {
+            await loadDirectories();
+            
+            // Initialize JSON-LD schemas after data loads
         setTimeout(() => {
             const schemaGen = new SchemaGenerator();
             const config = SAAS_DIRECTORIES_SCHEMA_CONFIG;
@@ -641,6 +642,7 @@
             // Inject all schemas
             schemaGen.injectSchemas(schemas);
         }, 100); // Brief delay to ensure DOM is ready
+        })();
     </script>
 </body>
 </html>
