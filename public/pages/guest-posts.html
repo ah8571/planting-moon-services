@@ -58,13 +58,8 @@
                             </div>
                         </th>
                         <th id="dr-header">
-                            <div class="th-header toggleable">
+                            <div class="th-header">
                                 <span>Domain Rating</span>
-                                <span class="th-chevron">▼</span>
-                            </div>
-                            <div class="type-filters-dropdown" id="dr-filters-dropdown">
-                                <button class="filter-btn" data-filter="has-dr">Has DR</button>
-                                <button class="filter-btn" data-filter="no-dr">No DR</button>
                             </div>
                         </th>
                         <th id="sources-header">
@@ -156,7 +151,6 @@
     <script>
         let allGuestPosts = [];
         let filteredGuestPosts = [];
-        let currentFilter = 'all';
         let currentNicheFilter = null;
         let currentSourcesFilters = [];
         let sortByName = false;
@@ -174,16 +168,11 @@
                 const data = await response.json();
                 allGuestPosts = data.guestPosts || [];
                 
-                // Sort by DR (highest first, unknown last)
-                allGuestPosts.sort((a, b) => {
-                    const drA = !a.dr ? -1 : a.dr;
-                    const drB = !b.dr ? -1 : b.dr;
-                    
-                    if (drA === -1 && drB === -1) return 0;
-                    if (drA === -1) return 1;
-                    if (drB === -1) return -1;
-                    return drB - drA;
-                });
+                // Filter out entries without DR
+                allGuestPosts = allGuestPosts.filter(post => post.dr);
+                
+                // Sort by DR (highest first)
+                allGuestPosts.sort((a, b) => b.dr - a.dr);
 
                 filteredGuestPosts = allGuestPosts;
                 renderTable();
@@ -305,13 +294,6 @@
         // Apply filters
         function applyFilters() {
             let filtered = allGuestPosts;
-
-            // Filter by DR
-            if (currentFilter === 'has-dr') {
-                filtered = filtered.filter(d => d.dr);
-            } else if (currentFilter === 'no-dr') {
-                filtered = filtered.filter(d => !d.dr);
-            }
 
             // Filter by niche
             if (currentNicheFilter) {
@@ -452,15 +434,6 @@
                 toggleNameSort();
             });
 
-            // DR filter toggle
-            document.getElementById('dr-header')?.addEventListener('click', (e) => {
-                const chevron = e.target.closest('.th-header')?.querySelector('.th-chevron');
-                if (chevron) {
-                    chevron.classList.toggle('open');
-                    document.getElementById('dr-filters-dropdown').classList.toggle('open');
-                }
-            });
-
             // Niche filter toggle
             document.getElementById('niche-header')?.addEventListener('click', (e) => {
                 const chevron = e.target.closest('.th-header')?.querySelector('.th-chevron');
@@ -477,19 +450,6 @@
                     chevron.classList.toggle('open');
                     document.getElementById('sources-filters-dropdown').classList.toggle('open');
                 }
-            });
-
-            // DR filter buttons
-            document.querySelectorAll('#dr-filters-dropdown .filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    btn.classList.toggle('active');
-                    if (btn.dataset.filter === 'has-dr') {
-                        currentFilter = btn.classList.contains('active') ? 'has-dr' : 'all';
-                    } else if (btn.dataset.filter === 'no-dr') {
-                        currentFilter = btn.classList.contains('active') ? 'no-dr' : 'all';
-                    }
-                    applyFilters();
-                });
             });
 
             // Previous button

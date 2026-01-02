@@ -67,13 +67,8 @@
                             </div>
                         </th>
                         <th id="dr-header">
-                            <div class="th-header toggleable">
+                            <div class="th-header">
                                 <span>Domain Rating</span>
-                                <span class="th-chevron">▼</span>
-                            </div>
-                            <div class="type-filters-dropdown" id="dr-filters-dropdown">
-                                <button class="filter-btn" data-filter="has-dr">Has DR</button>
-                                <button class="filter-btn" data-filter="no-dr">No DR</button>
                             </div>
                         </th>
                         <th id="sources-header">
@@ -165,7 +160,6 @@
     <script>
         let allDirectories = [];
         let filteredDirectories = [];
-        let currentFilter = 'all';
         let currentTypeFilter = null;
         let currentSubmissionFilter = null;
         let currentSourcesFilters = [];
@@ -184,16 +178,11 @@
                 const data = await response.json();
                 allDirectories = data.directories || [];
                 
-                // Sort by DR (highest first, unknown last)
-                allDirectories.sort((a, b) => {
-                    const drA = a.domainRating === 'unknown' ? -1 : a.domainRating;
-                    const drB = b.domainRating === 'unknown' ? -1 : b.domainRating;
-                    
-                    if (drA === -1 && drB === -1) return 0;
-                    if (drA === -1) return 1;
-                    if (drB === -1) return -1;
-                    return drB - drA;
-                });
+                // Filter out entries without DR
+                allDirectories = allDirectories.filter(d => d.domainRating !== 'unknown');
+                
+                // Sort by DR (highest first)
+                allDirectories.sort((a, b) => b.domainRating - a.domainRating);
 
                 filteredDirectories = allDirectories;
                 renderTable();
@@ -216,13 +205,6 @@
         // Apply filters
         function applyFilters() {
             let filtered = allDirectories;
-
-            // Filter by type (has DR / no DR)
-            if (currentFilter === 'has-dr') {
-                filtered = filtered.filter(d => d.domainRating !== 'unknown');
-            } else if (currentFilter === 'no-dr') {
-                filtered = filtered.filter(d => d.domainRating === 'unknown');
-            }
 
             // Filter by directory type
             if (currentTypeFilter) {
@@ -490,14 +472,6 @@
             toggleNameSort();
         });
 
-        // Add DR filter dropdown toggle
-        document.getElementById('dr-header').addEventListener('click', (e) => {
-            // Don't toggle if clicking the filter buttons themselves
-            if (!e.target.matches('[data-filter]')) {
-                document.getElementById('dr-filters-dropdown').classList.toggle('open');
-                document.querySelector('#dr-header .th-chevron').classList.toggle('open');
-            }
-        });
 
         // Add submission type filter dropdown toggle
         document.getElementById('submission-header').addEventListener('click', (e) => {
@@ -515,24 +489,6 @@
                 document.getElementById('sources-filters').classList.toggle('open');
                 document.querySelector('#sources-header .th-chevron').classList.toggle('open');
             }
-        });
-
-        // Add event listeners for DR filters in dropdown
-        document.querySelectorAll('#dr-filters-dropdown .filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const isActive = e.target.classList.contains('active');
-                document.querySelectorAll('#dr-filters-dropdown .filter-btn').forEach(b => b.classList.remove('active'));
-                
-                if (isActive) {
-                    // If already active, deselect it
-                    currentFilter = 'all';
-                } else {
-                    // Otherwise select it
-                    e.target.classList.add('active');
-                    currentFilter = e.target.dataset.filter;
-                }
-                applyFilters();
-            });
         });
 
         // Add event listeners for submission type filters in dropdown

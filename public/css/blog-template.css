@@ -315,6 +315,17 @@ tr:hover {
     margin-bottom: 3px;
 }
 
+.type-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    background: #e7f3ff;
+    color: #0056b3;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
 .submission-type-badge {
     display: inline-block;
     padding: 4px 10px;
