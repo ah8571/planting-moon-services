@@ -484,7 +484,7 @@
         let filteredGuestPosts = [];
         let currentFilter = 'all';
         let currentNicheFilter = null;
-        let currentSourcesFilter = null;
+        let currentSourcesFilters = [];
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
@@ -577,12 +577,14 @@
 
         // Toggle sources filter
         function toggleSourcesFilter(sourceCount, btn) {
-            if (currentSourcesFilter === parseInt(sourceCount)) {
-                currentSourcesFilter = null;
+            const count = parseInt(sourceCount);
+            if (currentSourcesFilters.includes(count)) {
+                // Remove from array if already selected
+                currentSourcesFilters = currentSourcesFilters.filter(c => c !== count);
                 btn.classList.remove('active');
             } else {
-                document.querySelectorAll('#sources-filters-dropdown .filter-btn.active').forEach(b => b.classList.remove('active'));
-                currentSourcesFilter = parseInt(sourceCount);
+                // Add to array (multi-select, no need to clear others)
+                currentSourcesFilters.push(count);
                 btn.classList.add('active');
             }
             applyFilters();
@@ -617,11 +619,11 @@
                 filtered = filtered.filter(d => d.niche && d.niche.includes(currentNicheFilter));
             }
 
-            // Filter by sources count
-            if (currentSourcesFilter) {
+            // Filter by sources count (multiple selections)
+            if (currentSourcesFilters.length > 0) {
                 filtered = filtered.filter(d => {
                     const sourceCount = d.listedOn ? d.listedOn.length : 0;
-                    return sourceCount === currentSourcesFilter;
+                    return currentSourcesFilters.includes(sourceCount);
                 });
             }
 

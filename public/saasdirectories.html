@@ -510,7 +510,7 @@
         let currentFilter = 'all';
         let currentTypeFilter = null;
         let currentSubmissionFilter = null;
-        let currentSourcesFilter = null;
+        let currentSourcesFilters = [];
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
@@ -578,10 +578,10 @@
             }
 
             // Filter by number of sources
-            if (currentSourcesFilter) {
+            if (currentSourcesFilters.length > 0) {
                 filtered = filtered.filter(d => {
                     const sourceCount = d.listedOn ? d.listedOn.length : 0;
-                    return sourceCount === currentSourcesFilter;
+                    return currentSourcesFilters.includes(sourceCount);
                 });
             }
 
@@ -765,12 +765,12 @@
 
         // Toggle sources filter
         function toggleSourcesFilter(sourceCount, btn) {
-            if (currentSourcesFilter === parseInt(sourceCount)) {
-                currentSourcesFilter = null;
+            const count = parseInt(sourceCount);
+            if (currentSourcesFilters.includes(count)) {
+                currentSourcesFilters = currentSourcesFilters.filter(c => c !== count);
                 btn.classList.remove('active');
             } else {
-                document.querySelectorAll('#sources-filters .filter-btn.active').forEach(b => b.classList.remove('active'));
-                currentSourcesFilter = parseInt(sourceCount);
+                currentSourcesFilters.push(count);
                 btn.classList.add('active');
             }
             applyFilters();
