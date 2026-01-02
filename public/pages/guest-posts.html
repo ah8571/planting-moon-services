@@ -6,6 +6,8 @@
     <title>659 Free Guest Post Sites Database - High-Quality Opportunities</title>
     <link rel="icon" type="image/svg+xml" href="../favicon/moon-favicon-black.svg">
     <link rel="stylesheet" href="../css/blog-template.css">
+    <script src="../js/schema-generator.js"></script>
+    <script src="../js/schema-configs.js"></script>
 </head>
 <body>
     <nav id="navbar-container"></nav>
@@ -494,6 +496,57 @@
             });
 
             setupSearch();
+
+            // Initialize JSON-LD schemas
+            const schemaGen = new SchemaGenerator();
+            const config = GUEST_POSTS_SCHEMA_CONFIG;
+            const schemas = [];
+
+            // Add Organization schema
+            if (config.organization.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateOrganization(),
+                    id: 'org-schema'
+                });
+            }
+
+            // Add Breadcrumb schema
+            if (config.breadcrumb.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateBreadcrumb(config.breadcrumb.items),
+                    id: 'breadcrumb-schema'
+                });
+            }
+
+            // Add Dataset schema
+            if (config.dataset.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateDataset({
+                        ...config.dataset,
+                        url: config.pageUrl,
+                        itemCount: allGuestPosts.length,
+                        creator: config.organization
+                    }),
+                    id: 'dataset-schema'
+                });
+            }
+
+            // Add FAQPage schema
+            if (config.faq.enabled) {
+                const faqs = config.faq.extractFromDOM 
+                    ? schemaGen.extractFAQsFromDOM() 
+                    : config.faq.faqs;
+                
+                if (faqs.length > 0) {
+                    schemas.push({
+                        schema: schemaGen.generateFAQPage(faqs, config.pageUrl),
+                        id: 'faq-schema'
+                    });
+                }
+            }
+
+            // Inject all schemas
+            schemaGen.injectSchemas(schemas);
         });
     </script>
 </body>

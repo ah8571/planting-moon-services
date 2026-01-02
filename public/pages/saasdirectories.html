@@ -6,6 +6,8 @@
     <title>160 Free SaaS Directories</title>
     <link rel="icon" type="image/svg+xml" href="../favicon/moon-favicon-black.svg">
     <link rel="stylesheet" href="../css/blog-template.css">
+    <script src="../js/schema-generator.js"></script>
+    <script src="../js/schema-configs.js"></script>
 </head>
 <body>
     <nav id="navbar-container"></nav>
@@ -617,6 +619,59 @@
 
         // Load on page load
         loadDirectories();
+
+        // Initialize JSON-LD schemas after data loads
+        setTimeout(() => {
+            const schemaGen = new SchemaGenerator();
+            const config = SAAS_DIRECTORIES_SCHEMA_CONFIG;
+            const schemas = [];
+
+            // Add Organization schema
+            if (config.organization.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateOrganization(),
+                    id: 'org-schema'
+                });
+            }
+
+            // Add Breadcrumb schema
+            if (config.breadcrumb.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateBreadcrumb(config.breadcrumb.items),
+                    id: 'breadcrumb-schema'
+                });
+            }
+
+            // Add Dataset schema
+            if (config.dataset.enabled) {
+                schemas.push({
+                    schema: schemaGen.generateDataset({
+                        ...config.dataset,
+                        url: config.pageUrl,
+                        itemCount: allDirectories.length,
+                        creator: config.organization
+                    }),
+                    id: 'dataset-schema'
+                });
+            }
+
+            // Add FAQPage schema
+            if (config.faq.enabled) {
+                const faqs = config.faq.extractFromDOM 
+                    ? schemaGen.extractFAQsFromDOM() 
+                    : config.faq.faqs;
+                
+                if (faqs.length > 0) {
+                    schemas.push({
+                        schema: schemaGen.generateFAQPage(faqs, config.pageUrl),
+                        id: 'faq-schema'
+                    });
+                }
+            }
+
+            // Inject all schemas
+            schemaGen.injectSchemas(schemas);
+        }, 100); // Brief delay to ensure DOM is ready
     </script>
 </body>
 </html>
