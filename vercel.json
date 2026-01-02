@@ -3,10 +3,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/contact", "destination": "/pages/contact.html" },
-    { "source": "/case-studies", "destination": "/pages/case-studies.html" },
-    { "source": "/guest-posts", "destination": "/pages/guest-posts.html" },
-    { "source": "/saasdirectories", "destination": "/pages/saasdirectories.html" }
+    { "source": "/contact", "destination": "/pages/contact" },
+    { "source": "/case-studies", "destination": "/pages/case-studies" },
+    { "source": "/guest-posts", "destination": "/pages/guest-posts" },
+    { "source": "/saasdirectories", "destination": "/pages/saasdirectories" }
   ],
   "headers": [
     {
