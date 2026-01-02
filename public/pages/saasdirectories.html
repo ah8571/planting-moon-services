@@ -171,7 +171,7 @@
         // Load JSON data
         async function loadDirectories() {
             try {
-                const response = await fetch('./data/directories.json');
+                const response = await fetch('/data/directories.json');
                 if (!response.ok) {
                     throw new Error('Could not load directories.json');
                 }
