@@ -593,6 +593,23 @@
       "notes": ""
     },
     {
+      "id": "politico",
+      "name": "Politico",
+      "url": "https://politico.com",
+      "dr": 92,
+      "description": "Guest posting opportunity from Politico",
+      "niche": [
+        "Guest Posting",
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers",
+        "instalinko"
+      ],
+      "notes": ""
+    },
+    {
       "id": "inccom",
       "name": "Inc.com",
       "url": "https://www.inc.com",
@@ -849,21 +866,6 @@
       "listedOn": [
         "bloggingtriggers",
         "instalinko"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "politico",
-      "name": "Politico",
-      "url": "https://politico.com",
-      "dr": 92,
-      "description": "Guest posting opportunity from Politico",
-      "niche": [
-        "Politics"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -1445,21 +1447,6 @@
       "listedOn": [
         "bloggerspassion.com",
         "collaborator.pro"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "politico-magazine",
-      "name": "POLITICO Magazine",
-      "url": "https://politicomagazine.com",
-      "dr": 90,
-      "description": "Guest posting opportunity from POLITICO Magazine",
-      "niche": [
-        "Guest Posting"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "instalinko"
       ],
       "notes": ""
     },
@@ -2066,6 +2053,27 @@
       "notes": ""
     },
     {
+      "id": "getresponse",
+      "name": "GetResponse",
+      "url": "https://www.getresponse.com/blog",
+      "dr": 85,
+      "description": "Email marketing and automation platform",
+      "niche": [
+        "Email Marketing",
+        "Marketing",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingjoy.com",
+        "bloggingtriggers",
+        "collaborator.pro",
+        "makeblogging",
+        "webmetools.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "lifehack",
       "name": "Lifehack",
       "url": "https://www.lifehack.org",
@@ -2192,41 +2200,6 @@
         "linkbuilder.io",
         "outreachmonks.com",
         "rhinorank.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "getresponse",
-      "name": "GetResponse",
-      "url": "https://www.getresponse.com/blog",
-      "dr": 85,
-      "description": "Email marketing and automation platform",
-      "niche": [
-        "Email Marketing",
-        "Marketing",
-        "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingjoy.com",
-        "bloggingtriggers",
-        "collaborator.pro"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "getresponse-blog",
-      "name": "GetResponse Blog",
-      "url": "https://www.getresponse.com/blog/write-for-us",
-      "dr": 85,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Email Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com",
-        "makeblogging"
       ],
       "notes": ""
     },
@@ -2394,6 +2367,31 @@
       "notes": ""
     },
     {
+      "id": "martech-today",
+      "name": "MarTech Today",
+      "url": "https://martechtoday.com",
+      "dr": 83,
+      "description": "Guest posting opportunity from linkbuilder.io.",
+      "niche": [
+        "MarTech",
+        "Marketing",
+        "Marketing Technology",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingjoy.com",
+        "bloggingtriggers",
+        "collaborator.pro",
+        "instalinko",
+        "linkbuilder.io",
+        "makeblogging",
+        "rhinorank.com",
+        "webseotrends.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "colossal",
       "name": "Colossal",
       "url": "https://www.colossal.com",
@@ -2491,21 +2489,6 @@
       "notes": "Add link in profile, posts, descriptions, or project documentation."
     },
     {
-      "id": "martech-today",
-      "name": "MarTech Today",
-      "url": "https://martechtoday.com",
-      "dr": 83,
-      "description": "Guest posting opportunity from linkbuilder.io.",
-      "niche": [
-        "Marketing Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "linkbuilder.io"
-      ],
-      "notes": ""
-    },
-    {
       "id": "mention",
       "name": "Mention",
       "url": "https://mention.com",
@@ -2521,6 +2504,29 @@
         "makeblogging",
         "bloggingtriggers",
         "instalinko"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "oil-price",
+      "name": "Oil Price",
+      "url": "https://oilprice.com/write-for-oilprice",
+      "dr": 82,
+      "description": "Guest post opportunity from webmetools.com.",
+      "niche": [
+        "Energy",
+        "Finance",
+        "Guest Posting",
+        "SaaS"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "bloggingtriggers",
+        "collaborator.pro",
+        "instalinko",
+        "makeblogging",
+        "webmetools.com"
       ],
       "notes": ""
     },
@@ -2632,44 +2638,6 @@
       "notes": ""
     },
     {
-      "id": "oil-price",
-      "name": "Oil Price",
-      "url": "https://oilprice.com/write-for-oilprice",
-      "dr": 82,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Finance",
-        "Energy"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "oilpricecom",
-      "name": "OilPrice.com",
-      "url": "https://oilprice.com",
-      "dr": 82,
-      "description": "Guest post opportunity from bloggerspassion.com.",
-      "niche": [
-        "Energy",
-        "Finance",
-        "Guest Posting",
-        "SaaS"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com",
-        "bloggingtriggers",
-        "collaborator.pro",
-        "instalinko",
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
       "id": "vocal-media",
       "name": "Vocal Media",
       "url": "https://vocal.media",
@@ -2703,24 +2671,6 @@
       "notes": ""
     },
     {
-      "id": "martechseries",
-      "name": "MarTech Series",
-      "url": "https://www.martechseries.com",
-      "dr": 82,
-      "description": "Marketing technology news and insights",
-      "niche": [
-        "Marketing",
-        "Technology",
-        "MarTech"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "rhinorank.com",
-        "instalinko"
-      ],
-      "notes": ""
-    },
-    {
       "id": "manning-com",
       "name": "Manning.com",
       "url": "https://www.manningcom.com",
@@ -2742,6 +2692,23 @@
         "instalinko",
         "makeblogging",
         "webmetools.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "open-democracy",
+      "name": "open Democracy",
+      "url": "https://opendemocracy.com",
+      "dr": 81,
+      "description": "Guest posting opportunity from open Democracy",
+      "niche": [
+        "Guest Posting",
+        "Politics"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers",
+        "instalinko"
       ],
       "notes": ""
     },
@@ -3032,21 +2999,6 @@
         "collaborator.pro",
         "instalinko",
         "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "open-democracy",
-      "name": "open Democracy",
-      "url": "https://opendemocracy.com",
-      "dr": 81,
-      "description": "Guest posting opportunity from open Democracy",
-      "niche": [
-        "Guest Posting"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "instalinko"
       ],
       "notes": ""
     },
@@ -3543,21 +3495,6 @@
       "notes": ""
     },
     {
-      "id": "opendemocracy",
-      "name": "OpenDemocracy",
-      "url": "https://opendemocracy.net",
-      "dr": 79,
-      "description": "Guest posting opportunity from OpenDemocracy",
-      "niche": [
-        "Politics"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingtriggers"
-      ],
-      "notes": ""
-    },
-    {
       "id": "agorapulse",
       "name": "Agorapulse",
       "url": "https://agorapulse.com",
@@ -3572,6 +3509,25 @@
         "instalinko",
         "makeblogging",
         "webmetools.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "serpstatblog",
+      "name": "Serpstat Blog",
+      "url": "https://blog.serpstat.com",
+      "dr": 78,
+      "description": "SEO and content marketing insights",
+      "niche": [
+        "Analytics",
+        "Content Marketing",
+        "SEO"
+      ],
+      "submissionType": "submit",
+      "listedOn": [
+        "bloggingjoy.com",
+        "bloggingtriggers",
+        "makeblogging"
       ],
       "notes": ""
     },
@@ -3679,22 +3635,6 @@
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "serpstatblog",
-      "name": "Serpstat Blog",
-      "url": "https://blog.serpstat.com",
-      "dr": 78,
-      "description": "SEO and content marketing insights",
-      "niche": [
-        "SEO",
-        "Content Marketing"
-      ],
-      "submissionType": "submit",
-      "listedOn": [
-        "bloggingjoy.com"
       ],
       "notes": ""
     },
@@ -4148,6 +4088,30 @@
       "notes": ""
     },
     {
+      "id": "omniconvertblog",
+      "name": "Omniconvert blog",
+      "url": "https://www.omniconvert.com/blog",
+      "dr": 76,
+      "description": "CRO and conversion rate optimization",
+      "niche": [
+        "CRO",
+        "Conversion",
+        "Guest Posting",
+        "Marketing",
+        "eCommerce"
+      ],
+      "submissionType": "write-for-us",
+      "listedOn": [
+        "bloggingjoy.com",
+        "bloggingtriggers",
+        "collaborator.pro",
+        "instalinko",
+        "makeblogging",
+        "webseotrends.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "escapeartist",
       "name": "EscapeArtist",
       "url": "https://escapist.com",
@@ -4215,44 +4179,6 @@
         "bloggingjoy.com",
         "instalinko",
         "webmetools.com",
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "omniconvertblog",
-      "name": "Omniconvert blog",
-      "url": "https://www.omniconvert.com/blog",
-      "dr": 76,
-      "description": "CRO and conversion rate optimization",
-      "niche": [
-        "CRO",
-        "Conversion",
-        "Guest Posting",
-        "Marketing"
-      ],
-      "submissionType": "write-for-us",
-      "listedOn": [
-        "bloggingjoy.com",
-        "instalinko"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "marketingtech",
-      "name": "MarketingTech",
-      "url": "https://www.marketingtech.com",
-      "dr": 76,
-      "description": "Marketing technology news and resources",
-      "niche": [
-        "MarTech",
-        "Marketing",
-        "Technology"
-      ],
-      "submissionType": "write-for-us",
-      "listedOn": [
-        "bloggingjoy.com",
-        "instalinko",
         "webseotrends.com"
       ],
       "notes": ""
@@ -4360,6 +4286,24 @@
       "notes": ""
     },
     {
+      "id": "startup",
+      "name": "Startup.info",
+      "url": "https://startup.info",
+      "dr": 75,
+      "description": "Startup news and resources",
+      "niche": [
+        "Business",
+        "Entrepreneurship",
+        "Startups"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingjoy.com",
+        "webseotrends.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "oncrawl",
       "name": "OnCrawl",
       "url": "https://www.oncrawl.com",
@@ -4400,23 +4344,6 @@
         "instalinko",
         "makeblogging",
         "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "startup",
-      "name": "Startup.info",
-      "url": "https://startup.info",
-      "dr": 75,
-      "description": "Startup news and resources",
-      "niche": [
-        "Startups",
-        "Entrepreneurship",
-        "Business"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingjoy.com"
       ],
       "notes": ""
     },
@@ -4518,6 +4445,30 @@
       "notes": ""
     },
     {
+      "id": "softwareworld",
+      "name": "SoftwareWorld",
+      "url": "https://www.softwareworld.net",
+      "dr": 74,
+      "description": "Guest post opportunity from bloggerspassion.com.",
+      "niche": [
+        "B2B",
+        "Guest Posting",
+        "SaaS",
+        "Software",
+        "Software Reviews",
+        "Tech",
+        "Technology"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "instalinko",
+        "makeblogging",
+        "webseotrends.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "mycorporationcom",
       "name": "MyCorporation.com",
       "url": "https://www.mycorporation.com",
@@ -4555,28 +4506,6 @@
         "profeo.io"
       ],
       "notes": "Search Traffic: 91K"
-    },
-    {
-      "id": "softwareworld",
-      "name": "SoftwareWorld",
-      "url": "https://www.softwareworld.net",
-      "dr": 74,
-      "description": "Guest post opportunity from bloggerspassion.com.",
-      "niche": [
-        "B2B",
-        "Guest Posting",
-        "SaaS",
-        "Software",
-        "Software Reviews",
-        "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com",
-        "instalinko",
-        "webseotrends.com"
-      ],
-      "notes": ""
     },
     {
       "id": "coschedule",
@@ -5496,8 +5425,10 @@
       "listedOn": [
         "bloggerspassion.com",
         "bloggingjoy.com",
+        "bloggingtriggers",
         "collaborator.pro",
         "instalinko",
+        "makeblogging",
         "webseotrends.com"
       ],
       "notes": ""
@@ -6252,14 +6183,35 @@
       "description": "Guest post opportunity from bloggerspassion.com.",
       "niche": [
         "Business",
+        "Entrepreneurship",
         "Guest Posting",
         "Marketing",
-        "SaaS"
+        "SaaS",
+        "Social Media"
       ],
       "submissionType": "free",
       "listedOn": [
         "bloggerspassion.com",
-        "instalinko"
+        "instalinko",
+        "makeblogging",
+        "webseotrends.com"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "sociableblog-com",
+      "name": "Sociableblog.com",
+      "url": "https://www.sociableblogcom.com",
+      "dr": 66,
+      "description": "Guest posting opportunity from Sociableblog.com",
+      "niche": [
+        "Guest Posting",
+        "Social Media"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "instalinko",
+        "webmetools.com"
       ],
       "notes": ""
     },
@@ -6462,21 +6414,6 @@
       "listedOn": [
         "webmetools.com",
         "makeblogging",
-        "instalinko"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "sociableblog-com",
-      "name": "Sociableblog.com",
-      "url": "https://www.sociableblogcom.com",
-      "dr": 66,
-      "description": "Guest posting opportunity from Sociableblog.com",
-      "niche": [
-        "Guest Posting"
-      ],
-      "submissionType": "free",
-      "listedOn": [
         "instalinko"
       ],
       "notes": ""
@@ -7563,23 +7500,6 @@
       "notes": ""
     },
     {
-      "id": "serpstat-com",
-      "name": "SerpStat.com",
-      "url": "https://serpstat.com",
-      "dr": 58,
-      "description": "Guest posting opportunity from SerpStat.com",
-      "niche": [
-        "SEO",
-        "Analytics"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "makeblogging",
-        "bloggingtriggers"
-      ],
-      "notes": ""
-    },
-    {
       "id": "performancedrive",
       "name": "PerformanceDrive",
       "url": "https://performancedrive.com",
@@ -7708,6 +7628,27 @@
       "submissionType": "free",
       "listedOn": [
         "instalinko"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "geek-estate-blog",
+      "name": "Geek Estate Blog",
+      "url": "https://geekestateblog.com/contribute/",
+      "dr": 57,
+      "description": "Guest post opportunity from webmetools.com.",
+      "niche": [
+        "Finance",
+        "Real Estate",
+        "SaaS",
+        "Tech"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggerspassion.com",
+        "instalinko",
+        "makeblogging",
+        "webmetools.com"
       ],
       "notes": ""
     },
@@ -7942,25 +7883,6 @@
       "notes": ""
     },
     {
-      "id": "geek-estate-blog",
-      "name": "Geek Estate Blog",
-      "url": "https://geekestateblog.com/contribute/",
-      "dr": 57,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Finance",
-        "Real Estate",
-        "SaaS"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggerspassion.com",
-        "instalinko",
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "itechcode",
       "name": "iTechCode",
       "url": "https://itechcode.com",
@@ -8012,41 +7934,6 @@
       "submissionType": "free",
       "listedOn": [
         "linkbuilder.io"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "marketingtechnews",
-      "name": "MarketingTechNews",
-      "url": "https://marketingtechnews.net",
-      "dr": 56,
-      "description": "Free guest posting opportunity from collaborator.pro.",
-      "niche": [
-        "Marketing",
-        "Technology"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "collaborator.pro",
-        "makeblogging",
-        "bloggingtriggers"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "makealivingwriting-com",
-      "name": "MakeALivingWriting.com",
-      "url": "https://makealivingriting.com",
-      "dr": 56,
-      "description": "Guest posting opportunity from MakeALivingWriting.com",
-      "niche": [
-        "Writing",
-        "Freelance"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "makeblogging",
-        "bloggingtriggers"
       ],
       "notes": ""
     },
@@ -8603,25 +8490,6 @@
       "notes": ""
     },
     {
-      "id": "omniconvert",
-      "name": "Omniconvert",
-      "url": "https://www.omniconvert.com",
-      "dr": 53,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "CRO",
-        "eCommerce"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingtriggers",
-        "collaborator.pro",
-        "makeblogging",
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "techwyse",
       "name": "TechWyse",
       "url": "https://techwyse.com",
@@ -8934,21 +8802,6 @@
       "description": "Guest post opportunity from webmetools.com.",
       "niche": [
         "Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "sociable-blog",
-      "name": "Sociable Blog",
-      "url": "https://www.sociableblog.com/submit-news/",
-      "dr": 50,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "Social Media"
       ],
       "submissionType": "free",
       "listedOn": [
@@ -9736,6 +9589,23 @@
       "notes": ""
     },
     {
+      "id": "linkody",
+      "name": "Linkody",
+      "url": "https://linkody.com",
+      "dr": 44,
+      "description": "Guest posting opportunity from Linkody",
+      "niche": [
+        "Marketing",
+        "SEO"
+      ],
+      "submissionType": "free",
+      "listedOn": [
+        "bloggingtriggers",
+        "webmetools.com"
+      ],
+      "notes": ""
+    },
+    {
       "id": "userpilot",
       "name": "Userpilot",
       "url": "https://userpilot.com",
@@ -9848,22 +9718,6 @@
       "notes": ""
     },
     {
-      "id": "linkody",
-      "name": "Linkody",
-      "url": "https://linkody.com",
-      "dr": 44,
-      "description": "Guest posting opportunity from Linkody",
-      "niche": [
-        "SEO",
-        "Marketing"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "bloggingtriggers"
-      ],
-      "notes": ""
-    },
-    {
       "id": "expatden",
       "name": "ExpatDen",
       "url": "https://expatden.com",
@@ -9911,22 +9765,6 @@
       "notes": ""
     },
     {
-      "id": "geekestateblog-com",
-      "name": "GeekEstateBlog.com",
-      "url": "https://geekestateblogs.com",
-      "dr": 43,
-      "description": "Guest posting opportunity from GeekEstateBlog.com",
-      "niche": [
-        "Real Estate",
-        "Tech"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "makeblogging"
-      ],
-      "notes": ""
-    },
-    {
       "id": "smss-blog",
       "name": "SMSS Blog",
       "url": "https://smssblog.com",
@@ -9938,21 +9776,6 @@
       "submissionType": "free",
       "listedOn": [
         "bloggingtriggers"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "linkody-blog",
-      "name": "Linkody Blog",
-      "url": "https://blog.linkody.com/write-for-us",
-      "dr": 43,
-      "description": "Guest post opportunity from webmetools.com.",
-      "niche": [
-        "SEO"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webmetools.com"
       ],
       "notes": ""
     },
@@ -10066,22 +9889,6 @@
         "collaborator.pro"
       ],
       "notes": "Add link in profile, posts, descriptions, or project documentation."
-    },
-    {
-      "id": "gimmio-in",
-      "name": "Gimmio.in",
-      "url": "https://gimmio.in",
-      "dr": 41,
-      "description": "Guest posting opportunity from Gimmio.in",
-      "niche": [
-        "Social Media",
-        "Business"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "makeblogging"
-      ],
-      "notes": ""
     },
     {
       "id": "chatterbuzz-media",
@@ -10293,22 +10100,6 @@
       "submissionType": "free",
       "listedOn": [
         "profeo.io"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "softwareworld-co",
-      "name": "SoftwareWorld.co",
-      "url": "https://softwareworld.co",
-      "dr": 38,
-      "description": "Guest posting opportunity from SoftwareWorld.co",
-      "niche": [
-        "Software",
-        "Tech"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "makeblogging"
       ],
       "notes": ""
     },
@@ -11176,21 +10967,6 @@
       "notes": ""
     },
     {
-      "id": "startup-info",
-      "name": "Startup Info",
-      "url": "https://startupinfo.co",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "Startups"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "candybar-blog",
       "name": "CandyBar Blog",
       "url": "https://www.candybar.io",
@@ -11241,21 +11017,6 @@
       "id": "young-upstarts",
       "name": "Young Upstarts",
       "url": "https://www.youngupstarts.com",
-      "dr": null,
-      "description": "Free guest posting opportunity from webseotrends.com.",
-      "niche": [
-        "Entrepreneurship"
-      ],
-      "submissionType": "free",
-      "listedOn": [
-        "webseotrends.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "gimmio-blog",
-      "name": "Gimm.io Blog",
-      "url": "https://gimm.io",
       "dr": null,
       "description": "Free guest posting opportunity from webseotrends.com.",
       "niche": [
