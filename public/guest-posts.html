@@ -188,14 +188,22 @@
         .table-container {
             background: white;
             border-radius: 8px;
-            overflow: hidden;
+            overflow: auto;
             border: 1px solid #000;
             position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 600px;
         }
 
         th {
@@ -430,7 +438,12 @@
             <table id="guest-posts-table">
                 <thead>
                     <tr>
-                        <th>Site Name</th>
+                        <th id="name-header">
+                            <div class="th-header toggleable">
+                                <span>Site Name</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                        </th>
                         <th id="niche-header">
                             <div class="th-header toggleable">
                                 <span>Niche</span>
@@ -485,6 +498,8 @@
         let currentFilter = 'all';
         let currentNicheFilter = null;
         let currentSourcesFilters = [];
+        let sortByName = false;
+        let sortDirection = 'asc';
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
@@ -575,6 +590,29 @@
             });
         }
 
+        // Toggle name sort
+        function toggleNameSort() {
+            const btn = document.querySelector('#name-header .th-header');
+            const chevron = btn?.querySelector('.th-chevron');
+            
+            if (sortByName) {
+                // Toggle direction
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                if (chevron) {
+                    chevron.style.transform = sortDirection === 'desc' ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+            } else {
+                // Enable sorting
+                sortByName = true;
+                sortDirection = 'asc';
+                if (chevron) {
+                    chevron.style.color = '#667eea';
+                    chevron.style.opacity = '1';
+                }
+            }
+            applyFilters();
+        }
+
         // Toggle sources filter
         function toggleSourcesFilter(sourceCount, btn) {
             const count = parseInt(sourceCount);
@@ -634,6 +672,19 @@
                     d.name.toLowerCase().includes(searchTerm) ||
                     (d.description && d.description.toLowerCase().includes(searchTerm))
                 );
+            }
+
+            // Apply name sorting
+            if (sortByName) {
+                filtered.sort((a, b) => {
+                    const nameA = a.name.toLowerCase();
+                    const nameB = b.name.toLowerCase();
+                    if (sortDirection === 'asc') {
+                        return nameA.localeCompare(nameB);
+                    } else {
+                        return nameB.localeCompare(nameA);
+                    }
+                });
             }
 
             // Reset pagination when filters change
@@ -734,6 +785,11 @@
         // Header click handlers
         document.addEventListener('DOMContentLoaded', () => {
             loadGuestPosts();
+
+            // Name sort toggle
+            document.getElementById('name-header')?.addEventListener('click', () => {
+                toggleNameSort();
+            });
 
             // DR filter toggle
             document.getElementById('dr-header')?.addEventListener('click', (e) => {
