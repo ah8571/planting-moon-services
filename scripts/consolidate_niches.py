@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Consolidate niche categories into 15 master categories
+Consolidate niche categories to optimal master categories
 Applies mapping to both guest-posts.json and directories.json
 """
 
@@ -11,7 +11,7 @@ from collections import defaultdict
 
 # Define the consolidation mapping
 NICHE_MAPPING = {
-    # Education - 18 items
+    # Education (22 items)
     'e-learning': 'Education',
     'elearning': 'Education',
     'online learning': 'Education',
@@ -30,8 +30,20 @@ NICHE_MAPPING = {
     'education': 'Education',
     'self improvement': 'Education',
     'productivity': 'Education',
+    'books': 'Education',
+    'stories': 'Education',
+    'college': 'Education',
+    'higher education': 'Education',
+    'how-to': 'Education',
+    'how to': 'Education',
+    'self-help': 'Education',
+    'personal development': 'Education',
+    'expertise': 'Education',
+    'experts': 'Education',
+    'presentations': 'Education',
+    'planning': 'Education',
     
-    # Development - 20 items
+    # Development (28 items)
     'programming': 'Development',
     'web development': 'Development',
     'software development': 'Development',
@@ -52,8 +64,34 @@ NICHE_MAPPING = {
     'technology': 'Development',
     'tech': 'Development',
     'saas': 'Development',
+    'it': 'Development',
+    'security': 'Development',
+    'web hosting': 'Development',
+    'infrastructure': 'Development',
+    'data science': 'Development',
+    'software': 'Development',
+    'crm': 'Development',
+    'cms': 'Development',
+    'analytics': 'Development',
+    'big data': 'Development',
+    'data': 'Development',
+    'monitoring': 'Development',
+    'technical seo': 'Development',
+    'testing': 'Development',
+    'qa': 'Development',
+    'css': 'Development',
+    'mobile': 'Development',
+    'mobile apps': 'Development',
+    'indie developers': 'Development',
+    'shopify': 'Development',
+    'data-driven': 'Development',
+    'conversion': 'Development',
+    'telecommunications': 'Development',
+    'conversion optimization': 'Development',
+    'conversion rate optimization': 'Development',
+    'optimization': 'Development',
     
-    # Design - 9 items
+    # Design (9 items)
     'web design': 'Design',
     'ux design': 'Design',
     'graphic design': 'Design',
@@ -63,8 +101,11 @@ NICHE_MAPPING = {
     'diagramming': 'Design',
     'themes': 'Design',
     'design': 'Design',
+    'cro': 'Design',
+    'a/b testing': 'Design',
+    'uX': 'Design',
     
-    # Marketing - 16 items
+    # Marketing (44 items)
     'marketing': 'Marketing',
     'digital marketing': 'Marketing',
     'content marketing': 'Marketing',
@@ -81,8 +122,36 @@ NICHE_MAPPING = {
     'writing': 'Marketing',
     'guest posting': 'Marketing',
     'publishing': 'Marketing',
+    'marketing technology': 'Marketing',
+    'martech': 'Marketing',
+    'digital advertising': 'Marketing',
+    'advertising': 'Marketing',
+    'ppc': 'Marketing',
+    'product marketing': 'Marketing',
+    'market research': 'Marketing',
+    'link building': 'Marketing',
+    'digital pr': 'Marketing',
+    'pr': 'Marketing',
+    'content publishing': 'Marketing',
+    'content discovery': 'Marketing',
+    'content curation': 'Marketing',
+    'curation': 'Marketing',
+    'copywriting': 'Marketing',
+    'email': 'Marketing',
+    'video marketing': 'Marketing',
+    'branding': 'Marketing',
+    'personal branding': 'Marketing',
+    'news aggregation': 'Marketing',
+    'journalism': 'Marketing',
+    'links': 'Marketing',
+    'growth': 'Marketing',
+    'make money': 'Marketing',
+    'make money online': 'Marketing',
+    'sales': 'Marketing',
+    'reseller': 'Marketing',
+    'online business': 'Marketing',
     
-    # Social Media - 12 items
+    # Social Media (12 items)
     'social media': 'Social Media',
     'social media marketing': 'Social Media',
     'instagram': 'Social Media',
@@ -95,22 +164,33 @@ NICHE_MAPPING = {
     'bookmarking': 'Social Media',
     'professional': 'Social Media',
     'media': 'Social Media',
+    'social network': 'Social Media',
+    'social bookmarking': 'Social Media',
+    'messaging': 'Social Media',
+    'community development': 'Social Media',
+    'collaboration': 'Social Media',
+    'q&a': 'Social Media',
     
-    # E-Commerce - 4 items
+    # E-Commerce (4 items)
     'ecommerce': 'E-Commerce',
     'shopping': 'E-Commerce',
     'retail': 'E-Commerce',
     'dropshipping': 'E-Commerce',
     
-    # Finance - 6 items
+    # Finance (7 items)
     'finance': 'Finance',
     'accounting': 'Finance',
     'business finance': 'Finance',
     'investment': 'Finance',
     'cryptocurrency': 'Finance',
     'payments': 'Finance',
+    'personal finance': 'Finance',
+    'investing': 'Finance',
+    'saving': 'Finance',
+    'expense management': 'Finance',
+    'real estate': 'Finance',
     
-    # Health & Wellness - 10 items
+    # Health & Wellness (15 items)
     'health': 'Health & Wellness',
     'wellness': 'Health & Wellness',
     'fitness': 'Health & Wellness',
@@ -121,24 +201,45 @@ NICHE_MAPPING = {
     'spirituality': 'Health & Wellness',
     'sports': 'Health & Wellness',
     'travel': 'Health & Wellness',
+    'lifestyle': 'Health & Wellness',
+    'psychology': 'Health & Wellness',
+    'events': 'Health & Wellness',
+    'identity': 'Health & Wellness',
+    'meditation': 'Health & Wellness',
+    'medical': 'Health & Wellness',
+    'medicine': 'Health & Wellness',
     
-    # Creative - 5 items
+    # Creative (11 items)
     'creative': 'Creative',
     'photography': 'Creative',
     'illustration': 'Creative',
     'stock images': 'Creative',
     'visual': 'Creative',
+    'inspiration': 'Creative',
+    'art': 'Creative',
+    'arts': 'Creative',
+    'creativity': 'Creative',
+    'culture': 'Creative',
+    'entertainment': 'Creative',
+    'music': 'Creative',
+    'infographics': 'Creative',
+    'energy': 'Creative',
     
-    # Open Source - 2 items
+    # Open Source (4 items)
     'open source': 'Open Source',
     'wiki': 'Open Source',
+    'software reviews': 'Open Source',
+    'tech news': 'Open Source',
     
-    # Home Improvement - 3 items
+    # Home Improvement (5 items)
     'home decor': 'Home Improvement',
     'home improvement': 'Home Improvement',
     'hosting': 'Home Improvement',
+    'gardening': 'Home Improvement',
+    'food': 'Home Improvement',
+    'diy': 'Home Improvement',
     
-    # Business - 19 items
+    # Business (36 items)
     'business': 'Business',
     'entrepreneurship': 'Business',
     'startups': 'Business',
@@ -148,6 +249,7 @@ NICHE_MAPPING = {
     'team communication': 'Business',
     'assessment': 'Business',
     'appointments': 'Business',
+    'appointment scheduling': 'Business',
     'innovation': 'Business',
     'outreach': 'Business',
     'remote work': 'Business',
@@ -158,11 +260,68 @@ NICHE_MAPPING = {
     'community': 'Business',
     'news': 'Business',
     'video': 'Business',
+    'freelance': 'Business',
+    'freelance writing': 'Business',
+    'customer support': 'Business',
+    'customer service': 'Business',
+    'customer experience': 'Business',
+    'customer feedback': 'Business',
+    'customer engagement': 'Business',
+    'agencies': 'Business',
+    'newsletters': 'Business',
+    'launch': 'Business',
+    'products': 'Business',
+    'markets': 'Business',
+    'workflow': 'Business',
+    'communication': 'Business',
+    'reputation': 'Business',
+    'reputation management': 'Business',
+    'b2b': 'Business',
+    'business tools': 'Business',
+    'tools': 'Business',
+    'jobs': 'Business',
+    'hr': 'Business',
+    'recruiting': 'Business',
+    'small business': 'Business',
+    'career advice': 'Business',
+    'policy': 'Business',
+    'business process management': 'Business',
+    'business tech': 'Business',
+    'local': 'Business',
     
-    # Standalone - 3 items
+    # Legal (3 items)
+    'law': 'Legal',
+    'legal': 'Legal',
+    'compliance': 'Legal',
+    
+    # Nonprofit (2 items)
     'nonprofit': 'Nonprofit',
-    'directory': 'Directory',
+    'charity': 'Nonprofit',
+    
+    # International (4 items)
+    'india': 'International',
+    'malaysia': 'International',
+    'asia': 'International',
+    'australia': 'International',
+    
+    # Standalone (9 items)
     'automobiles': 'Automobiles',
+    'automotive': 'Automobiles',
+    'politics': 'Politics',
+    'directory': 'Directory',
+    'classified': 'Classified',
+    'fashion': 'Fashion',
+    'gaming': 'Gaming',
+    'military': 'Military',
+    'careers': 'Careers',
+    'motivation': 'Motivation',
+    'science': 'Science',
+    'pdfs': 'Business',
+    'ux': 'Design',
+    'cx': 'Design',
+    'analysis': 'Business',
+    'coupons': 'Marketing',
+    'digital business': 'Business',
 }
 
 def normalize_niche(niche):
@@ -183,7 +342,7 @@ def consolidate_niches(niches_list):
             consolidated.add(NICHE_MAPPING[normalized])
         else:
             # If not in mapping, check if it should be removed
-            if normalized not in ['general', 'success', 'documents', 'collections', 'alternatives']:
+            if normalized not in ['general', 'success', 'documents', 'collections', 'alternatives', 'google', 'contests']:
                 unmapped.append(niche)
     
     # Combine consolidated categories with any unmapped ones that aren't in the removal list
@@ -250,7 +409,7 @@ def main():
     ]
     
     print("=" * 60)
-    print("NICHE CONSOLIDATION: Multiple categories → Master categories")
+    print("NICHE CONSOLIDATION: 171+ categories → 19 optimized categories")
     print("=" * 60)
     
     total_items = 0
@@ -269,7 +428,7 @@ def main():
     print("=" * 60)
     print(f"Total items processed: {total_items}")
     print(f"Total items modified: {total_modified}")
-    print(f"\nMaster categories (15):")
+    print(f"\nMaster categories (13):")
     print(f"  1. Education")
     print(f"  2. Development")
     print(f"  3. Design")
@@ -282,10 +441,21 @@ def main():
     print(f"  10. Open Source")
     print(f"  11. Home Improvement")
     print(f"  12. Business")
-    print(f"\nStandalone categories (3):")
-    print(f"  13. Nonprofit")
-    print(f"  14. Directory")
-    print(f"  15. Automobiles")
+    print(f"  13. Legal")
+    print(f"\nStandalone categories (6):")
+    print(f"  - Automobiles")
+    print(f"  - Politics")
+    print(f"  - Directory")
+    print(f"  - Classified")
+    print(f"  - International")
+    print(f"  - Nonprofit")
+    print(f"\nSpecialty categories (9):")
+    print(f"  - Fashion")
+    print(f"  - Gaming")
+    print(f"  - Military")
+    print(f"  - Careers")
+    print(f"  - Motivation")
+    print(f"  - Science")
 
 if __name__ == '__main__':
     main()
