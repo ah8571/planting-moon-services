@@ -6,7 +6,8 @@
     { "source": "/contact", "destination": "/pages/contact" },
     { "source": "/case-studies", "destination": "/pages/case-studies" },
     { "source": "/guest-posts", "destination": "/pages/guest-posts" },
-    { "source": "/saasdirectories", "destination": "/pages/saasdirectories" }
+    { "source": "/saasdirectories", "destination": "/pages/saasdirectories" },
+    { "source": "/sitemap.xml", "destination": "/pages/sitemap.xml" }
   ],
   "headers": [
     {
@@ -21,6 +22,19 @@
     {
       "source": "/data/directories.json",
       "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        },
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400"
