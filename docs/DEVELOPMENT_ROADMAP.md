@@ -4,8 +4,7 @@
 **Last Updated**: December 31, 2025
 
 To Do:
-**Name change**
-- Need to consider a name change as there is another company with practically same name and has a negative reputation/ don't want to mix up its SEO
+- **another directory list to consider reviewing** https://uneed-directories.com/
 
 ---
 

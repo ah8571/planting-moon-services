@@ -8911,23 +8911,6 @@
       "notes": "Added from launchdirectories.com"
     },
     {
-      "id": "reddit",
-      "name": "Reddit",
-      "url": "https://reddit.com",
-      "description": "The front page of the internet - diverse communities and discussions.",
-      "type": [
-        "Launch Platform",
-        "SaaS Directory"
-      ],
-      "domainRating": 95,
-      "submissionType": "free",
-      "followType": "nofollow",
-      "listedOn": [
-        "launchdirectories.com"
-      ],
-      "notes": "Added from launchdirectories.com"
-    },
-    {
       "id": "techcrunch",
       "name": "TechCrunch",
       "url": "https://techcrunch.com",
