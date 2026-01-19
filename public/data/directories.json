@@ -411,7 +411,7 @@
     {
       "id": "idea-kiln",
       "name": "Idea Kiln",
-      "url": "https://www.ideakiln.com/",
+      "url": "https://ideakiln.com/",
       "description": "Platform for launching and discovering startup ideas.",
       "type": [
         "Launch Platform"
@@ -517,22 +517,6 @@
       "domainRating": 51,
       "submissionType": "free",
       "followType": "nofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "scout-forge",
-      "name": "Scout Forge",
-      "url": "https://www.scoutforge.com/",
-      "description": "Launchpad for product discovery.",
-      "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 50,
-      "submissionType": "free",
-      "followType": "dofollow",
       "listedOn": [
         "submitsaas.com"
       ],
@@ -647,7 +631,8 @@
       "url": "https://www.saashunt.io/",
       "description": "Product launch platform for SaaS.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 47,
       "submissionType": "free",
@@ -740,28 +725,13 @@
       "notes": ""
     },
     {
-      "id": "nextgen-tools",
-      "name": "NextGen Tools",
-      "url": "https://www.nextgentools.com/",
-      "description": "Next generation tools launchpad.",
-      "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 46,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "shipybara",
       "name": "Shipybara",
       "url": "https://www.shipybara.com/",
       "description": "Product launch platform.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 46,
       "submissionType": "free",
@@ -1562,75 +1532,10 @@
       "notes": ""
     },
     {
-      "id": "dr-checker",
-      "name": "DR Checker",
-      "url": "https://www.drchecker.com/",
-      "description": "Domain rating and SEO tools.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 38,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "open-launch",
-      "name": "Open Launch",
-      "url": "https://www.openlaunch.com/",
-      "description": "Open source launch platform.",
-      "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 37,
-      "submissionType": "unknown",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com",
-        "topsaasdirectories.com"
-      ],
-      "notes": "First complete open source alternative to Product Hunt."
-    },
-    {
       "id": "submitmysaas",
       "name": "SubmitMySaaS",
       "url": "https://www.submitmysaas.com/",
       "description": "Direct SaaS submission platform.",
-      "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 36,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "devhub",
-      "name": "DevHub",
-      "url": "https://www.devhub.co/",
-      "description": "Developer tools launchpad.",
-      "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 36,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "launch-vault",
-      "name": "Launch Vault",
-      "url": "https://www.launchvault.com/",
-      "description": "Secure product launch platform.",
       "type": [
         "Launch Platform"
       ],
@@ -1774,7 +1679,7 @@
     {
       "id": "ff2050-ai",
       "name": "FF2050.AI",
-      "url": "https://www.ff2050.ai/",
+      "url": "https://www.ff2050.com/",
       "description": "Future-focused AI tools launchpad.",
       "type": [
         "Launch Platform"
@@ -1796,22 +1701,6 @@
         "SaaS Directory"
       ],
       "domainRating": 32,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "producthubx",
-      "name": "ProductHubX",
-      "url": "https://www.producthubx.com/",
-      "description": "Product hub for software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 31,
       "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
@@ -2862,38 +2751,8 @@
       ],
       "notes": "Follow type not specified in source"
     },
-    {
-      "id": "gumroad-com",
-      "name": "Gumroad",
-      "url": "https://gumroad.com",
-      "description": "Gumroad directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 91.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
-    {
-      "id": "deviantart-com",
-      "name": "Deviantart",
-      "url": "https://www.deviantart.com/",
-      "description": "Deviantart directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 91.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+
+
     {
       "id": "gartner-com-en-digital-markets-claim-profile",
       "name": "Gartner",
@@ -2938,18 +2797,18 @@
         "SaaS Directory"
       ],
       "domainRating": 88.0,
-      "submissionType": "unknown",
+      "submissionType": "paid",
       "followType": "unknown",
       "listedOn": [
         "amrytt.com",
         "topsaasdirectories.com"
       ],
-      "notes": "Follow type not specified in source"
+      "notes": "Cost: $699. Follow type not specified in source"
     },
     {
       "id": "uneed-lemonsqueezy-com",
       "name": "Uneed",
-      "url": "https://uneed.lemonsqueezy.com/",
+      "url": "https://www.uneed.best/submit-a-tool",
       "description": "Uneed directory for SaaS and software discovery.",
       "type": [
         "SaaS Directory"
@@ -2963,24 +2822,9 @@
         "submitatool.com",
         "topsaasdirectories.com"
       ],
-      "notes": "Follow type not specified in source"
+      "notes": "Paid tier available: $30 to expedite. Follow type not specified in source"
     },
-    {
-      "id": "scoop-it",
-      "name": "Scoop",
-      "url": "https://www.scoop.it",
-      "description": "Scoop directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 86.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+
     {
       "id": "f6s-com",
       "name": "F6S",
@@ -3002,22 +2846,7 @@
       ],
       "notes": "Description from SaaSPedia: \"A network for founders to get free deals, resources, and funding.\"\nFollow type not specified in source"
     },
-    {
-      "id": "media-index-kochava-com",
-      "name": "Media Index",
-      "url": "https://media-index.kochava.com/",
-      "description": "Media Index directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 81.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+
     {
       "id": "onepagelove-com",
       "name": "Onepagelove",
@@ -3284,7 +3113,8 @@
       "url": "https://pitchwall.co/",
       "description": "Pitchwall directory for SaaS and software discovery.",
       "type": [
-        "SaaS Directory"
+        "SaaS Directory",
+        "AI"
       ],
       "domainRating": 65.0,
       "submissionType": "free",
@@ -3437,23 +3267,7 @@
       ],
       "notes": "Follow type not specified in source"
     },
-    {
-      "id": "getmakerlog-com",
-      "name": "Getmakerlog",
-      "url": "https://getmakerlog.com/",
-      "description": "Getmakerlog directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 57.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com",
-        "getleadwave.io"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+
     {
       "id": "supertools-therundown-ai",
       "name": "Supertools",
@@ -3600,22 +3414,7 @@
       ],
       "notes": "Follow type not specified in source"
     },
-    {
-      "id": "alistdirectory-com",
-      "name": "Alistdirectory",
-      "url": "https://www.alistdirectory.com/",
-      "description": "Alistdirectory directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 51.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+
     {
       "id": "launchingnext-com-submit",
       "name": "Launchingnext",
@@ -3674,7 +3473,8 @@
       "url": "https://www.tinystartups.com/",
       "description": "Tinystartups directory for SaaS and software discovery.",
       "type": [
-        "SaaS Directory"
+        "SaaS Directory",
+        "Launchpad"
       ],
       "domainRating": 47.0,
       "submissionType": "unknown",
@@ -4197,24 +3997,7 @@
       ],
       "notes": "URL and follow type not available from source"
     },
-    {
-      "id": "launching-next",
-      "name": "Launching Next",
-      "url": "",
-      "description": "Directory",
-      "type": [
-        "SaaS Directory",
-        "AI Directory"
-      ],
-      "domainRating": 51,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "topsaasdirectories.com",
-        "submitatool.com"
-      ],
-      "notes": "URL and follow type not available from source"
-    },
+
     {
       "id": "review-ai",
       "name": "Review AI",
@@ -6372,7 +6155,8 @@
       "url": "https://softwareworld.co",
       "description": "",
       "type": [
-        "Review Directory"
+        "SaaS",
+        "Service Business"
       ],
       "domainRating": "unknown",
       "submissionType": "unknown",
@@ -6924,10 +6708,12 @@
     {
       "id": "startup88",
       "name": "Startup88",
-      "url": "",
-      "description": "",
+      "url": "https://startup88.com/",
+      "description": "Startup88 directory for showcasing new SaaS and AI products.",
       "type": [
-        "AI Directory"
+        "SaaS Directory",
+        "AI Directory",
+        "Launchpad"
       ],
       "domainRating": 88,
       "submissionType": "free",
@@ -6935,17 +6721,19 @@
       "listedOn": [
         "submitatool.com"
       ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
+      "notes": "Paid tier available: $19 to expedite. Follow type not specified in source"
     },
     {
-      "id": "your-story",
-      "name": "Your Story",
+      "id": "somuch",
+      "name": "SoMuch",
       "url": "",
       "description": "",
       "type": [
-        "AI Directory"
+        "SaaS Directory",
+        "Local Service",
+        "Remote Service"
       ],
-      "domainRating": 86,
+      "domainRating": 64,
       "submissionType": "free",
       "followType": "unknown",
       "listedOn": [
@@ -6953,31 +6741,14 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "webwiki",
-      "name": "Webwiki",
-      "url": "",
-      "description": "A website directory and review platform.",
-      "type": [
-        "AI Directory",
-        "Review Directory"
-      ],
-      "domainRating": 77,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com",
-        "saaspedia.io"
-      ],
-      "notes": "Description from SaaSPedia: \"A website directory and review platform.\"\nAI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "digital-agency-network",
       "name": "Digital Agency Network",
       "url": "",
       "description": "",
       "type": [
-        "AI Directory"
+        "Service Business"
       ],
       "domainRating": 76,
       "submissionType": "free",
@@ -7054,23 +6825,7 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "startup-ranking",
-      "name": "Startup Ranking",
-      "url": "",
-      "description": "A directory ranking startups based on various metrics.",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 67,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com",
-        "saaspedia.io"
-      ],
-      "notes": "Description from SaaSPedia: \"A directory ranking startups based on various metrics.\"\nAI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "submission-web-directory",
       "name": "Submission Web Directory",
@@ -7109,7 +6864,9 @@
       "url": "",
       "description": "",
       "type": [
-        "AI Directory"
+        "SaaS",
+        "Local Service",
+        "Remote Service"
       ],
       "domainRating": 61,
       "submissionType": "free",
@@ -7151,41 +6908,8 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "afford-hunt",
-      "name": "Afford Hunt",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 56,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "getleadwave.io",
-        "saaspedia.io",
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
-      "id": "business-software",
-      "name": "Business Software",
-      "url": "",
-      "description": "A resource for finding and comparing business software.",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 55,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com",
-        "saaspedia.io"
-      ],
-      "notes": "Description from SaaSPedia: \"A resource for finding and comparing business software.\"\nAI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
+
     {
       "id": "aitools",
       "name": "AITOOLS",
@@ -7208,7 +6932,7 @@
       "url": "",
       "description": "",
       "type": [
-        "AI Directory"
+        "SaaS"
       ],
       "domainRating": 53,
       "submissionType": "free",
@@ -7240,7 +6964,9 @@
       "url": "",
       "description": "",
       "type": [
-        "AI Directory"
+        "AI",
+        "SaaS",
+        "Launchpad"
       ],
       "domainRating": 50,
       "submissionType": "free",
@@ -7250,38 +6976,8 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "ezweb-directory",
-      "name": "EZWeb Directory",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 47,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
-      "id": "ismailblogger",
-      "name": "Ismailblogger",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 46,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
+
     {
       "id": "hacker-news",
       "name": "Hacker News",
@@ -7299,22 +6995,7 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "tiny-startups",
-      "name": "Tiny Startups",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 44,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "100l5",
       "name": "100L5",
@@ -7348,22 +7029,6 @@
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
     {
-      "id": "ben-s-bites-news",
-      "name": "Ben's Bites News",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 39,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
       "id": "alteropen",
       "name": "AlterOpen",
       "url": "",
@@ -7379,23 +7044,7 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "launched",
-      "name": "Launched",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 38,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com",
-        "getleadwave.io"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "ai-library",
       "name": "AI Library",
@@ -7413,28 +7062,14 @@
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
     {
-      "id": "dockey-ai",
-      "name": "Dockey AI",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 37,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
       "id": "paggu",
       "name": "Paggu",
-      "url": "",
-      "description": "A resource site for entrepreneurs and startups.",
+      "url": "https://www.paggu.com/",
+      "description": "A resource site for entrepreneurs and startups to discover tools and resources.",
       "type": [
-        "AI Directory"
+        "SaaS Directory",
+        "Launchpad",
+        "Startup"
       ],
       "domainRating": 35,
       "submissionType": "free",
@@ -7443,56 +7078,9 @@
         "submitatool.com",
         "saaspedia.io"
       ],
-      "notes": "Description from SaaSPedia: \"A resource site for entrepreneurs and startups.\"\nAI Directory from SubmitATool.com. URL and submission type not available from source."
+      "notes": "Description from SaaSPedia: \"A resource site for entrepreneurs and startups.\" Updated types to reflect startup focus"
     },
-    {
-      "id": "startup-lister",
-      "name": "Startup Lister",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 33,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
-      "id": "allstartups-info",
-      "name": "AllStartups Info",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 33,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
-      "id": "robingood",
-      "name": "Robingood",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 33,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "crazy-about-startups",
       "name": "Crazy About Startups",
@@ -7541,22 +7129,7 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "open-future",
-      "name": "Open Future",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 31,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
+
     {
       "id": "mars-ai-directory",
       "name": "Mars AI directory",
@@ -7628,7 +7201,7 @@
       "url": "",
       "description": "",
       "type": [
-        "SaaS Directory"
+        "SaaS Directory",
       ],
       "domainRating": 74.0,
       "submissionType": "free",
@@ -8537,23 +8110,7 @@
       ],
       "notes": "Description from SaaSPedia: \"A site to submit and review mobile applications.\"\nURL and other details not available from source."
     },
-    {
-      "id": "list-ly",
-      "name": "List.ly",
-      "url": "",
-      "description": "A platform for creating and sharing lists.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 78.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "saaspedia.io",
-        "amrytt.com"
-      ],
-      "notes": "Description from SaaSPedia: \"A platform for creating and sharing lists.\"\nURL and other details not available from source."
-    },
+
     {
       "id": "tally",
       "name": "Tally",
@@ -9325,7 +8882,8 @@
       "description": "Platform for announcing upcoming product launches.",
       "type": [
         "Launch Platform",
-        "SaaS Directory"
+        "SaaS Directory",
+        "Launchpad"
       ],
       "domainRating": 51,
       "submissionType": "unknown",
