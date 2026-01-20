@@ -3114,7 +3114,7 @@
       "description": "Pitchwall directory for SaaS and software discovery.",
       "type": [
         "SaaS Directory",
-        "AI"
+        "AI Directory"
       ],
       "domainRating": 65.0,
       "submissionType": "free",
@@ -3474,7 +3474,7 @@
       "description": "Tinystartups directory for SaaS and software discovery.",
       "type": [
         "SaaS Directory",
-        "Launchpad"
+        "Launch Platform"
       ],
       "domainRating": 47.0,
       "submissionType": "unknown",
@@ -6713,7 +6713,7 @@
       "type": [
         "SaaS Directory",
         "AI Directory",
-        "Launchpad"
+        "Launch Platform"
       ],
       "domainRating": 88,
       "submissionType": "free",
@@ -6864,7 +6864,7 @@
       "url": "",
       "description": "",
       "type": [
-        "SaaS",
+        "SaaS Directory",
         "Local Service",
         "Remote Service"
       ],
@@ -6932,7 +6932,7 @@
       "url": "",
       "description": "",
       "type": [
-        "SaaS"
+        "SaaS Directory"
       ],
       "domainRating": 53,
       "submissionType": "free",
@@ -6964,9 +6964,9 @@
       "url": "",
       "description": "",
       "type": [
-        "AI",
-        "SaaS",
-        "Launchpad"
+        "AI Directory",
+        "SaaS Directory",
+        "Launch Platform"
       ],
       "domainRating": 50,
       "submissionType": "free",
@@ -7068,7 +7068,7 @@
       "description": "A resource site for entrepreneurs and startups to discover tools and resources.",
       "type": [
         "SaaS Directory",
-        "Launchpad",
+        "Launch Platform",
         "Startup"
       ],
       "domainRating": 35,
@@ -8882,8 +8882,7 @@
       "description": "Platform for announcing upcoming product launches.",
       "type": [
         "Launch Platform",
-        "SaaS Directory",
-        "Launchpad"
+        "SaaS Directory"
       ],
       "domainRating": 51,
       "submissionType": "unknown",
