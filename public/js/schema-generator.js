@@ -6,9 +6,9 @@
 class SchemaGenerator {
     constructor(baseConfig = {}) {
         this.baseConfig = {
-            organizationName: 'Trading Moon Services',
-            organizationUrl: 'https://tradingmoon.net',
-            organizationLogo: 'https://tradingmoon.net/logo.png',
+            organizationName: 'Planting Moon',
+            organizationUrl: 'https://plantingmoon.com',
+            organizationLogo: 'https://plantingmoon.com/logo.png',
             ...baseConfig
         };
     }
@@ -61,6 +61,8 @@ class SchemaGenerator {
      * @param {Array} config.keywords - Array of keywords
      * @param {Object} config.distribution - Distribution info
      * @param {string} config.datePublished - Publication date
+     * @param {Object} config.creator - Creator information (Organization or Person)
+     * @param {string} config.license - License URL or name
      */
     generateDataset(config = {}) {
         const schema = {
@@ -69,7 +71,8 @@ class SchemaGenerator {
             'name': config.name || 'Directory Dataset',
             'description': config.description || '',
             'url': config.url || '',
-            'keywords': config.keywords || []
+            'keywords': config.keywords || [],
+            'license': config.license || 'https://creativecommons.org/publicdomain/zero/1.0/'
         };
 
         if (config.itemCount) {
@@ -92,8 +95,19 @@ class SchemaGenerator {
             schema.datePublished = config.datePublished;
         }
 
+        // Properly format creator as Organization
         if (config.creator) {
-            schema.creator = config.creator;
+            if (typeof config.creator === 'object' && config.creator['@type']) {
+                // Already a proper schema object
+                schema.creator = config.creator;
+            } else {
+                // Create Organization from base config
+                schema.creator = {
+                    '@type': 'Organization',
+                    'name': this.baseConfig.organizationName || 'Planting Moon',
+                    'url': this.baseConfig.organizationUrl || 'https://plantingmoon.com'
+                };
+            }
         }
 
         return schema;

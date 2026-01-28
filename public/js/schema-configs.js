@@ -6,7 +6,7 @@
 // Guest Posts Page Configuration
 const GUEST_POSTS_SCHEMA_CONFIG = {
     pageType: 'guestPosts',
-    pageUrl: 'https://tradingmoon.net/guest-posts',
+    pageUrl: 'https://plantingmoon.com/guest-posts',
     
     // FAQPage schema
     faq: {
@@ -33,9 +33,15 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
     dataset: {
         enabled: true,
         name: 'Free Guest Post Sites Database',
-        description: 'A comprehensive collection of 659 verified free guest posting opportunities aggregated from multiple trusted sources. Filter by domain authority, niche category, or submission type.',
+        description: 'A comprehensive collection of 593 verified free guest posting opportunities aggregated from multiple trusted sources. Filter by domain authority, niche category, or submission type.',
         keywords: ['guest posting', 'link building', 'SEO', 'backlinks', 'guest post opportunities', 'domain authority'],
-        datePublished: '2024-01-01'
+        datePublished: '2026-01-01',
+        license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+        creator: {
+            '@type': 'Organization',
+            'name': 'Planting Moon',
+            'url': 'https://plantingmoon.com'
+        }
     },
 
     // Organization schema
@@ -47,9 +53,9 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
     breadcrumb: {
         enabled: true,
         items: [
-            { name: 'Home', url: 'https://tradingmoon.net' },
-            { name: 'Free Tools', url: 'https://tradingmoon.net/free-tools' },
-            { name: 'Guest Posts', url: 'https://tradingmoon.net/guest-posts' }
+            { name: 'Home', url: 'https://plantingmoon.com' },
+            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
+            { name: 'Guest Posts', url: 'https://plantingmoon.com/guest-posts' }
         ]
     }
 };
@@ -57,7 +63,7 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
 // SaaS Directories Page Configuration
 const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
     pageType: 'saasDirs',
-    pageUrl: 'https://tradingmoon.net/saas-directories',
+    pageUrl: 'https://plantingmoon.com/saasdirectories',
     
     // FAQPage schema
     faq: {
@@ -90,7 +96,13 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
         name: 'SaaS Directories Database',
         description: 'A curated collection of 160+ free SaaS directories aggregated from multiple sources. Filter by platform type, free/paid status, and domain rating to find the best platforms for your product.',
         keywords: ['SaaS directories', 'product directory', 'SaaS marketing', 'product launch', 'directory submission'],
-        datePublished: '2024-01-01'
+        datePublished: '2026-01-01',
+        license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+        creator: {
+            '@type': 'Organization',
+            'name': 'Planting Moon',
+            'url': 'https://plantingmoon.com'
+        }
     },
 
     // Organization schema
@@ -102,9 +114,9 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
     breadcrumb: {
         enabled: true,
         items: [
-            { name: 'Home', url: 'https://tradingmoon.net' },
-            { name: 'Free Tools', url: 'https://tradingmoon.net/free-tools' },
-            { name: 'SaaS Directories', url: 'https://tradingmoon.net/saas-directories' }
+            { name: 'Home', url: 'https://plantingmoon.com' },
+            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
+            { name: 'SaaS Directories', url: 'https://plantingmoon.com/saasdirectories' }
         ]
     }
 };

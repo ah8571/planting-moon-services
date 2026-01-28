@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: 
 
-Sitemap: https://tradingmoon.net/sitemap.xml
+Sitemap: https://plantingmoon.com/sitemap.xml
