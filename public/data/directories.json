@@ -28,7 +28,7 @@
       "url": "https://www.g2.com/",
       "description": "Peer-to-peer review site for software and services with comprehensive comparisons.",
       "type": [
-        "Review Directory"
+        "SaaS Directory", "Remote Service"
       ],
       "domainRating": 91,
       "submissionType": "free",
@@ -48,7 +48,7 @@
       "url": "https://www.capterra.com/",
       "description": "Software comparison and review platform for business solutions.",
       "type": [
-        "Review Directory"
+        "SaaS Directory"
       ],
       "domainRating": 90,
       "submissionType": "free",
@@ -69,8 +69,7 @@
       "description": "Community-driven SaaS comparison site with product reviews and ratings.",
       "type": [
         "SaaS Directory",
-        "AI Directory",
-        "Review Directory"
+        "AI Directory"
       ],
       "domainRating": 72,
       "submissionType": "free",
@@ -156,7 +155,8 @@
       "description": "Database of startups, companies, and funding information.",
       "type": [
         "SaaS Directory",
-        "AI Directory"
+        "AI Directory",
+        "Remote Service"
       ],
       "domainRating": 90,
       "submissionType": "free",
@@ -351,7 +351,7 @@
       "url": "https://www.addonbiz.com/",
       "description": "General business listing directory for local businesses and services.",
       "type": [
-        "Local Business"
+        "Local Service"
       ],
       "domainRating": 65,
       "submissionType": "free",
@@ -929,8 +929,7 @@
       "url": "https://www.trustiner.com/",
       "description": "Software reviews and directory.",
       "type": [
-        "SaaS Directory",
-        "Review Directory"
+        "SaaS Directory"
       ],
       "domainRating": 44,
       "submissionType": "free",
@@ -2650,7 +2649,7 @@
       "url": "https://www.gartner.com/en/digital-markets/claim-profile",
       "description": "Gartner directory for SaaS and software discovery.",
       "type": [
-        "Review Directory"
+        "SaaS Directory"
       ],
       "domainRating": 91.0,
       "submissionType": "unknown",
@@ -2815,8 +2814,7 @@
       "url": "https://www.saasworthy.com/",
       "description": "Saasworthy directory for SaaS and software discovery.",
       "type": [
-        "SaaS Directory",
-        "Review Directory"
+        "SaaS Directory"
       ],
       "domainRating": 73.0,
       "submissionType": "free",
@@ -2835,7 +2833,7 @@
       "url": "https://www.startus.cc/",
       "description": "Startup and innovation directory featuring companies, ecosystems, and service providers.",
       "type": [
-        "Service Business"
+        "Remote Service"
       ],
       "domainRating": 72.0,
       "submissionType": "unknown",
@@ -2890,22 +2888,6 @@
       "description": "Gallery of web design inspiration and curated website showcases.",
       "type": [
         "Template Design"
-      ],
-      "domainRating": 71.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
-    {
-      "id": "dynamicbusiness-com",
-      "name": "Dynamicbusiness",
-      "url": "https://dynamicbusiness.com/",
-      "description": "Business publication and website with guest posting opportunities.",
-      "type": [
-        "Guest Posting"
       ],
       "domainRating": 71.0,
       "submissionType": "unknown",
@@ -2990,7 +2972,7 @@
       "description": "Startupranking directory for SaaS and software discovery.",
       "type": [
         "SaaS Directory",
-        "Startup"
+        "Launch Platform"
       ],
       "domainRating": 67.0,
       "submissionType": "unknown",
@@ -3112,8 +3094,7 @@
       "url": "https://www.saasgenius.com/",
       "description": "Saasgenius directory for SaaS and software discovery.",
       "type": [
-        "SaaS Directory",
-        "Review Directory"
+        "SaaS Directory"
       ],
       "domainRating": 59.0,
       "submissionType": "unknown",
@@ -3747,7 +3728,8 @@
       "url": "https://resource.fyi",
       "description": "Curated launch platform and startup resource directory.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 39,
       "submissionType": "free",
@@ -3756,7 +3738,8 @@
         "topsaasdirectories.com",
         "submitatool.com",
         "submitsaas.com",
-        "getleadwave.io"
+        "getleadwave.io",
+        "launchdirectories.com"
       ],
       "notes": "URL added from the directory edits plan. Follow type not available from source."
     },
@@ -5010,7 +4993,7 @@
       "url": "https://financesonline.com",
       "description": "",
       "type": [
-        "Review Directory",
+        "SaaS Directory",
         "AI Directory"
       ],
       "domainRating": 87,
@@ -5984,7 +5967,7 @@
       "description": "",
       "type": [
         "SaaS Directory",
-        "Service Business"
+        "Remove Service"
       ],
       "domainRating": 75,
       "submissionType": "free",
@@ -6574,10 +6557,10 @@
     {
       "id": "digital-agency-network",
       "name": "Digital Agency Network",
-      "url": "",
+      "url": "https://digitalagencynetwork.com/",
       "description": "",
       "type": [
-        "Service Business"
+        "Remote Service"
       ],
       "domainRating": 76,
       "submissionType": "free",
@@ -6796,8 +6779,7 @@
       "description": "A resource site for entrepreneurs and startups to discover tools and resources.",
       "type": [
         "SaaS Directory",
-        "Launch Platform",
-        "Startup"
+        "Launch Platform"
       ],
       "domainRating": 35,
       "submissionType": "free",
@@ -6929,8 +6911,7 @@
       "url": "",
       "description": "",
       "type": [
-        "SaaS Directory",
-        "Guest Posting"
+        "SaaS Directory"
       ],
       "domainRating": 74.0,
       "submissionType": "free",
@@ -8399,8 +8380,6 @@
       "url": "https://aitools.inc",
       "description": "Handy directory for finding AI tools",
       "type": [
-        "Launch Platform",
-        "SaaS Directory",
         "AI Directory"
       ],
       "domainRating": 67,
@@ -8418,8 +8397,7 @@
       "url": "https://aiwith.me",
       "description": "Discover the latest and best AI tools",
       "type": [
-        "Launch Platform",
-        "SaaS Directory"
+        "AI Directory"
       ],
       "domainRating": 66,
       "submissionType": "unknown",
@@ -9010,23 +8988,6 @@
       "domainRating": 32,
       "submissionType": "unknown",
       "followType": "unknown",
-      "listedOn": [
-        "launchdirectories.com"
-      ],
-      "notes": "Added from launchdirectories.com"
-    },
-    {
-      "id": "resourcefyi",
-      "name": "Resource.fyi",
-      "url": "https://resource.fyi",
-      "description": "Collection of useful resources for entrepreneurs.",
-      "type": [
-        "Launch Platform",
-        "SaaS Directory"
-      ],
-      "domainRating": 30,
-      "submissionType": "free",
-      "followType": "dofollow",
       "listedOn": [
         "launchdirectories.com"
       ],
