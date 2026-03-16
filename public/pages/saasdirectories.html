@@ -190,6 +190,12 @@
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
+        function normalizeFilterValue(value) {
+            return typeof value === 'string'
+                ? value.trim().replace(/\s+/g, ' ').toLowerCase()
+                : '';
+        }
+
         // Load JSON data
         async function loadDirectories() {
             try {
@@ -232,7 +238,7 @@
             if (currentTypeFilters.length > 0) {
                 filtered = filtered.filter(d => {
                     const types = Array.isArray(d.type) ? d.type : [d.type];
-                    return types.some(t => currentTypeFilters.includes(t));
+                    return types.some(t => currentTypeFilters.includes(normalizeFilterValue(t)));
                 });
             }
 
@@ -363,45 +369,50 @@
         // Generate type filter buttons
         function generateTypeFilters() {
             // Get unique types sorted (handle both string and array types)
-            const typeSet = new Set();
+            const typeMap = new Map();
             allDirectories.forEach(d => {
                 const types = Array.isArray(d.type) ? d.type : (d.type ? [d.type] : []);
-                types.forEach(t => typeSet.add(t));
+                types.forEach(t => {
+                    const normalizedType = normalizeFilterValue(t);
+                    if (normalizedType && !typeMap.has(normalizedType)) {
+                        typeMap.set(normalizedType, t.trim().replace(/\s+/g, ' '));
+                    }
+                });
             });
-            const types = Array.from(typeSet).sort();
+            const types = Array.from(typeMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
             
             const typeFiltersContainer = document.getElementById('type-filters');
             
-            // Add type filters
-            const typeFiltersHTML = types.map(type => 
-                `<button class="filter-btn" data-type-filter="${type}">${type}</button>`
-            ).join('');
-            
-            typeFiltersContainer.innerHTML = typeFiltersHTML;
-            
-            // Add event listeners for type filters (multiple selection allowed)
-            document.querySelectorAll('[data-type-filter]').forEach(btn => {
+            typeFiltersContainer.innerHTML = '';
+
+            types.forEach(([normalizedType, displayType]) => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.typeFilter = normalizedType;
+                btn.textContent = displayType;
                 btn.addEventListener('click', (e) => {
-                    const typeFilter = e.target.dataset.typeFilter;
-                    const isActive = e.target.classList.contains('active');
+                    const typeFilter = btn.dataset.typeFilter;
+                    const isActive = btn.classList.contains('active');
                     
                     if (isActive) {
                         // If already active, deselect it
-                        e.target.classList.remove('active');
+                        btn.classList.remove('active');
                         currentTypeFilters = currentTypeFilters.filter(t => t !== typeFilter);
                     } else {
                         // Otherwise add it
-                        e.target.classList.add('active');
+                        btn.classList.add('active');
                         currentTypeFilters.push(typeFilter);
                     }
+                    e.stopPropagation();
                     applyFilters();
                 });
+                typeFiltersContainer.appendChild(btn);
             });
             
             // Add toggle listener to column header
             document.getElementById('type-header').addEventListener('click', (e) => {
                 // Don't toggle if clicking the filter buttons themselves
-                if (!e.target.matches('[data-type-filter]')) {
+                if (!e.target.closest('[data-type-filter]')) {
                     typeFiltersContainer.classList.toggle('open');
                     document.querySelector('#type-header .th-chevron').classList.toggle('open');
                 }
