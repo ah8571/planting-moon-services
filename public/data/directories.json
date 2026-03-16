@@ -266,7 +266,7 @@
       "type": [
         "SaaS Directory",
         "Local Service",
-        "Service Business"
+        "Remote Service"
       ],
       "domainRating": 73,
       "submissionType": "free",
@@ -5967,7 +5967,7 @@
       "description": "",
       "type": [
         "SaaS Directory",
-        "Remove Service"
+        "Remote Service"
       ],
       "domainRating": 75,
       "submissionType": "free",
