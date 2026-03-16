@@ -2626,24 +2626,6 @@
       "notes": ""
     },
     {
-      "id": "patreon-com",
-      "name": "Patreon",
-      "url": "https://www.patreon.com/",
-      "description": "Patreon directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 93.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
-
-
-    {
       "id": "gartner-com-en-digital-markets-claim-profile",
       "name": "Gartner",
       "url": "https://www.gartner.com/en/digital-markets/claim-profile",
@@ -3332,8 +3314,7 @@
       "description": "Tinystartups directory for SaaS and software discovery.",
       "type": [
         "SaaS Directory",
-        "Launch Platform",
-        "Startup"
+          "Launch Platform"
       ],
       "domainRating": 47.0,
       "submissionType": "unknown",
