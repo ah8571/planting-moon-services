@@ -234,7 +234,7 @@
         function applyFilters() {
             let filtered = allDirectories;
 
-            // Filter by directory type (multiple types allowed)
+            // Filter by directory type
             if (currentTypeFilters.length > 0) {
                 filtered = filtered.filter(d => {
                     const types = Array.isArray(d.type) ? d.type : [d.type];
@@ -391,19 +391,21 @@
                 btn.dataset.typeFilter = normalizedType;
                 btn.textContent = displayType;
                 btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     const typeFilter = btn.dataset.typeFilter;
                     const isActive = btn.classList.contains('active');
                     
+                    typeFiltersContainer.querySelectorAll('.filter-btn').forEach(button => {
+                        button.classList.remove('active');
+                    });
+
                     if (isActive) {
-                        // If already active, deselect it
-                        btn.classList.remove('active');
-                        currentTypeFilters = currentTypeFilters.filter(t => t !== typeFilter);
+                        currentTypeFilters = [];
                     } else {
-                        // Otherwise add it
                         btn.classList.add('active');
-                        currentTypeFilters.push(typeFilter);
+                        currentTypeFilters = [typeFilter];
                     }
-                    e.stopPropagation();
                     applyFilters();
                 });
                 typeFiltersContainer.appendChild(btn);
