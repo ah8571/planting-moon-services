@@ -190,6 +190,25 @@
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
 
+        function getDirectoryName(dir) {
+            return (dir?.name || '').toString().trim().toLowerCase();
+        }
+
+        function logSortPreview(label, directories) {
+            console.log(`[saasdirectories] ${label}`, directories.slice(0, 5).map(dir => dir.name));
+        }
+
+        function normalizeSubmissionTypes(submissionType) {
+            const values = Array.isArray(submissionType) ? submissionType : [submissionType];
+            return values
+                .filter(value => typeof value === 'string' && value.trim())
+                .map(value => value.trim().toLowerCase());
+        }
+
+        function formatSubmissionTypeLabel(value) {
+            return value.charAt(0).toUpperCase() + value.slice(1);
+        }
+
         function normalizeFilterValue(value) {
             return typeof value === 'string'
                 ? value.trim().replace(/\s+/g, ' ').toLowerCase()
@@ -212,7 +231,13 @@
                 // Sort by DR (highest first)
                 allDirectories.sort((a, b) => b.domainRating - a.domainRating);
 
-                filteredDirectories = allDirectories;
+                console.log('[saasdirectories] Loaded directories', {
+                    totalLoaded: data.directories?.length || 0,
+                    totalWithDR: allDirectories.length
+                });
+                logSortPreview('Initial DR sort preview', allDirectories);
+
+                filteredDirectories = [...allDirectories];
                 renderTable();
                 updateStats();
                 generateTypeFilters();
@@ -232,7 +257,7 @@
 
         // Apply filters
         function applyFilters() {
-            let filtered = allDirectories;
+            let filtered = [...allDirectories];
 
             // Filter by directory type
             if (currentTypeFilters.length > 0) {
@@ -244,7 +269,7 @@
 
             // Filter by submission type
             if (currentSubmissionFilter) {
-                filtered = filtered.filter(d => d.submissionType === currentSubmissionFilter);
+                filtered = filtered.filter(d => normalizeSubmissionTypes(d.submissionType).includes(currentSubmissionFilter));
             }
 
             // Filter by number of sources
@@ -270,6 +295,21 @@
                 // Default: sort by DR (highest first)
                 filtered.sort((a, b) => b.domainRating - a.domainRating);
             }
+
+            console.log('[saasdirectories] applyFilters state', {
+                typeFilters: currentTypeFilters,
+                submissionFilter: currentSubmissionFilter,
+                sourcesFilters: currentSourcesFilters,
+                sortByName,
+                sortDirection,
+                resultCount: filtered.length
+            });
+            logSortPreview(
+                sortByName
+                    ? `Name sort (${sortDirection}) preview`
+                    : 'DR sort preview',
+                filtered
+            );
 
             // Reset pagination when filters change
             currentPage = 1;
@@ -311,10 +351,12 @@
                     : `<span class="name-text">${dir.name}</span>`;
 
                 // Format submission type for display
-                const submissionTypeDisplay = dir.submissionType || 'unknown';
-                const submissionTypeBadge = submissionTypeDisplay === 'unknown' 
-                    ? '' 
-                    : `<span class="submission-type-badge">${submissionTypeDisplay.charAt(0).toUpperCase() + submissionTypeDisplay.slice(1)}</span>`;
+                const submissionTypeValues = normalizeSubmissionTypes(dir.submissionType);
+                const submissionTypeBadge = submissionTypeValues.length === 0 || submissionTypeValues.includes('unknown')
+                    ? ''
+                    : submissionTypeValues
+                        .map(value => `<span class="submission-type-badge">${formatSubmissionTypeLabel(value)}</span>`)
+                        .join('');
 
                 // Format type for display (handle both string and array)
                 const typeArray = Array.isArray(dir.type) ? dir.type : [dir.type];
@@ -448,6 +490,15 @@
         function toggleNameSort() {
             const btn = document.querySelector('#name-header .th-header');
             const chevron = btn?.querySelector('.th-chevron');
+
+            console.log('[saasdirectories] Directory Name header clicked', {
+                previousSortByName: sortByName,
+                previousSortDirection: sortDirection,
+                activeTypeFilters: currentTypeFilters,
+                activeSubmissionFilter: currentSubmissionFilter,
+                activeSourcesFilters: currentSourcesFilters,
+                currentVisibleCount: filteredDirectories.length
+            });
             
             if (sortByName) {
                 // Toggle direction
@@ -464,6 +515,11 @@
                     chevron.style.opacity = '1';
                 }
             }
+
+            console.log('[saasdirectories] Directory Name sort updated', {
+                sortByName,
+                sortDirection
+            });
             applyFilters();
         }
 
