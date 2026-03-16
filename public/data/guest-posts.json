@@ -1415,6 +1415,24 @@
       "notes": ""
     },
     {
+      "id": "news-ycombinator-com",
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "dr": 90,
+      "description": "Community/news submission opportunity sourced from SaaS directory research.",
+      "niche": [
+        "Business",
+        "Development"
+      ],
+      "submissionType": "unknown",
+      "listedOn": [
+        "amrytt.com",
+        "getleadwave.io",
+        "launchdirectories.com"
+      ],
+      "notes": "Moved from SaaS directories classification into guest posts/community submission opportunities."
+    },
+    {
       "id": "topuniversitiescom",
       "name": "TopUniversities.com",
       "url": "https://www.topuniversities.com",

@@ -7,6 +7,7 @@
       "description": "Platform for discovering and launching new tech products, offering daily curated lists and community discussions.",
       "type": [
         "Launch Platform",
+        "SaaS Directory",
         "AI Directory"
       ],
       "domainRating": 91,
@@ -112,7 +113,8 @@
       "url": "https://betalist.com/",
       "description": "Platform to find and get early access to new startups and products.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 73,
       "submissionType": "free",
@@ -383,7 +385,8 @@
       "url": "https://www.firsto.co/",
       "description": "Launchpad for startups and new projects.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 56,
       "submissionType": "free",
@@ -400,7 +403,8 @@
       "url": "https://ideakiln.com/",
       "description": "Platform for launching and discovering startup ideas.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 55,
       "submissionType": "free",
@@ -482,7 +486,8 @@
       "url": "https://www.launchitx.com/",
       "description": "Product launch platform.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 49,
       "submissionType": "free",
@@ -619,7 +624,8 @@
       "url": "https://www.openhunts.com/",
       "description": "Open launchpad for product discovery.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 47,
       "submissionType": ["free", "paid"],
@@ -940,22 +946,6 @@
       "notes": ""
     },
     {
-      "id": "ai-toolz",
-      "name": "AI Toolz",
-      "url": "https://www.aitoolz.com/",
-      "description": "AI tools directory.",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 44,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
       "id": "tool-finddir",
       "name": "Tool Finddir",
       "url": "https://www.toolfinddir.com/",
@@ -1169,7 +1159,7 @@
       "url": "https://www.ctrlalt.cc/",
       "description": "Alternative tools launchpad.",
       "type": [
-        "Launch Platform"
+        "SaaS Directory"
       ],
       "domainRating": 43,
       "submissionType": "free",
@@ -1346,7 +1336,8 @@
       "url": "https://www.launchscroll.com/",
       "description": "Scrollable launch platform.",
       "type": [
-        "SaaS Directory"
+        "SaaS Directory",
+        "Launch Platform"
       ],
       "domainRating": 42,
       "submissionType": "free",
@@ -1443,7 +1434,8 @@
       "url": "https://www.submitmysaas.com/",
       "description": "Direct SaaS submission platform.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 36,
       "submissionType": "free",
@@ -1462,22 +1454,6 @@
         "SaaS Directory"
       ],
       "domainRating": 36,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "shipyardhq",
-      "name": "ShipYardHQ",
-      "url": "https://www.shipyardhq.com/",
-      "description": "Shipyard for projects and launches.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 35,
       "submissionType": "free",
       "followType": "dofollow",
       "listedOn": [
@@ -2642,24 +2618,7 @@
       ],
       "notes": "Follow type not specified in source"
     },
-    {
-      "id": "news-ycombinator-com",
-      "name": "News",
-      "url": "https://news.ycombinator.com/",
-      "description": "News directory for SaaS and software discovery.",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": 90.0,
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "amrytt.com",
-        "getleadwave.io",
-        "launchdirectories.com"
-      ],
-      "notes": "Follow type not specified in source"
-    },
+  
     {
       "id": "hackernoon-com",
       "name": "Hackernoon",
@@ -3022,7 +2981,7 @@
     },
     {
       "id": "indiepa-ge-discover",
-      "name": "Indiepa",
+      "name": "Indie page",
       "url": "https://indiepa.ge/discover",
       "description": "Indiepa directory for SaaS and software discovery.",
       "type": [
@@ -3257,7 +3216,7 @@
     },
     {
       "id": "app-innmind-com",
-      "name": "App",
+      "name": "Innmind",
       "url": "https://app.innmind.com/",
       "description": "App directory for SaaS and software discovery.",
       "type": [
@@ -6552,22 +6511,6 @@
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
     {
-      "id": "getlatka",
-      "name": "Getlatka",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 71,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-    {
       "id": "sitelike",
       "name": "Sitelike",
       "url": "",
@@ -7170,7 +7113,7 @@
     {
       "id": "side-projectors",
       "name": "Side Projectors",
-      "url": "",
+      "url": "https://www.sideprojectors.com/",
       "description": "A marketplace for buying and selling side projects.",
       "type": [
         "SaaS Directory"
@@ -7182,7 +7125,8 @@
         "amrytt.com",
         "getleadwave.io",
         "saaspedia.io",
-        "submitatool.com"
+        "submitatool.com",
+        "launchdirectories.com"
       ],
       "notes": "Description from SaaSPedia: \"A marketplace for buying and selling side projects.\"\nTop SaaS directory from SubmitATool.com. URL and other details not available from source."
     },
@@ -8339,23 +8283,6 @@
       "notes": "Added from launchdirectories.com"
     },
     {
-      "id": "sideprojectors",
-      "name": "SideProjectors",
-      "url": "https://www.sideprojectors.com",
-      "description": "Community for sharing and discovering side projects.",
-      "type": [
-        "Launch Platform",
-        "SaaS Directory"
-      ],
-      "domainRating": 70,
-      "submissionType": "freemium",
-      "followType": "dofollow",
-      "listedOn": [
-        "launchdirectories.com"
-      ],
-      "notes": "Added from launchdirectories.com"
-    },
-    {
       "id": "aitools",
       "name": "AiTools",
       "url": "https://aitools.inc",
@@ -8478,8 +8405,7 @@
       "url": "https://www.agenthunter.io",
       "description": "Best AI Agents in One Place",
       "type": [
-        "Launch Platform",
-        "SaaS Directory"
+        "AI Directory"
       ],
       "domainRating": 55,
       "submissionType": "freemium",
@@ -8833,7 +8759,8 @@
       "submissionType": "unknown",
       "followType": "unknown",
       "listedOn": [
-        "launchdirectories.com"
+        "launchdirectories.com",
+        "submitsaas.com"
       ],
       "notes": "Added from launchdirectories.com"
     },
