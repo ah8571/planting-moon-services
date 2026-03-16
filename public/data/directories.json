@@ -1,4 +1,5 @@
 {
+  "note": "TODO: Add a LinkedIn entry to the directories list.",
   "directories": [
     {
       "id": "product-hunt",
@@ -1483,7 +1484,8 @@
       "url": "https://saaspa.ge/",
       "description": "SaaS product launch page.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 34,
       "submissionType": "free",
@@ -1529,26 +1531,11 @@
     {
       "id": "startupdirs",
       "name": "StartupDirs",
-      "url": "https://www.startupdirs.com/",
+      "url": "https://startupdirs.com/",
       "description": "Directory for startup launches.",
       "type": [
-        "Launch Platform"
-      ],
-      "domainRating": 32,
-      "submissionType": "free",
-      "followType": "dofollow",
-      "listedOn": [
-        "submitsaas.com"
-      ],
-      "notes": ""
-    },
-    {
-      "id": "ff2050-ai",
-      "name": "FF2050.AI",
-      "url": "https://www.ff2050.com/",
-      "description": "Future-focused AI tools launchpad.",
-      "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 32,
       "submissionType": "free",
@@ -1596,7 +1583,8 @@
       "url": "https://www.fastlaunch.com/",
       "description": "Quick product launch platform.",
       "type": [
-        "Launch Platform"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 30,
       "submissionType": "free",
@@ -8611,7 +8599,6 @@
       "url": "https://toolfio.com",
       "description": "The ultimate hub for finding and showcasing SaaS products.",
       "type": [
-        "Launch Platform",
         "SaaS Directory"
       ],
       "domainRating": 41,
@@ -8645,7 +8632,6 @@
       "url": "https://awesome.tools",
       "description": "Best Awesome Tools for Startups",
       "type": [
-        "Launch Platform",
         "SaaS Directory"
       ],
       "domainRating": 40,
