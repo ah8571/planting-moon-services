@@ -238,6 +238,26 @@ th {
     opacity: 0.8;
 }
 
+.type-filter-select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 0.9em;
+}
+
+.type-filter-select option {
+    color: #333;
+}
+
+.type-filter-select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
 .th-chevron {
     font-size: 0.8em;
     transition: transform 0.3s;

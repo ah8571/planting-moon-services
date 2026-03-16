@@ -52,12 +52,12 @@
                             </div>
                         </th>
                         <th id="type-header">
-                            <div class="th-header toggleable">
+                            <div class="th-header">
                                 <span>Directory Type</span>
-                                <span class="th-chevron">▼</span>
                             </div>
-                            <div class="type-filters-dropdown" id="type-filters">
-                            </div>
+                            <select id="type-filter-select" class="type-filter-select" aria-label="Filter by directory type">
+                                <option value="">All Types</option>
+                            </select>
                         </th>
                         <th id="submission-header">
                             <div class="th-header toggleable">
@@ -380,44 +380,20 @@
                 });
             });
             const types = Array.from(typeMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
-            
-            const typeFiltersContainer = document.getElementById('type-filters');
-            
-            typeFiltersContainer.innerHTML = '';
+
+            const typeFilterSelect = document.getElementById('type-filter-select');
+            typeFilterSelect.innerHTML = '<option value="">All Types</option>';
 
             types.forEach(([normalizedType, displayType]) => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-                btn.dataset.typeFilter = normalizedType;
-                btn.textContent = displayType;
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    const typeFilter = btn.dataset.typeFilter;
-                    const isActive = btn.classList.contains('active');
-                    
-                    typeFiltersContainer.querySelectorAll('.filter-btn').forEach(button => {
-                        button.classList.remove('active');
-                    });
-
-                    if (isActive) {
-                        currentTypeFilters = [];
-                    } else {
-                        btn.classList.add('active');
-                        currentTypeFilters = [typeFilter];
-                    }
-                    applyFilters();
-                });
-                typeFiltersContainer.appendChild(btn);
+                const option = document.createElement('option');
+                option.value = normalizedType;
+                option.textContent = displayType;
+                typeFilterSelect.appendChild(option);
             });
-            
-            // Add toggle listener to column header
-            document.getElementById('type-header').addEventListener('click', (e) => {
-                // Don't toggle if clicking the filter buttons themselves
-                if (!e.target.closest('[data-type-filter]')) {
-                    typeFiltersContainer.classList.toggle('open');
-                    document.querySelector('#type-header .th-chevron').classList.toggle('open');
-                }
+
+            typeFilterSelect.addEventListener('change', (e) => {
+                currentTypeFilters = e.target.value ? [e.target.value] : [];
+                applyFilters();
             });
         }
 
