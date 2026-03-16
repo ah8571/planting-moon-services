@@ -197,8 +197,8 @@
       "url": "https://sourceforge.net/",
       "description": "Repository for open-source software and project hosting.",
       "type": [
-        "SaaS Directory",
-        "AI Directory"
+        "Launch Platform",
+        "SaaS Directory"
       ],
       "domainRating": 92,
       "submissionType": "free",
@@ -574,7 +574,8 @@
       "url": "https://www.indietool.io/",
       "description": "AI and indie tools directory.",
       "type": [
-        "AI Directory"
+        "AI Directory",
+        "SaaS Directory"
       ],
       "domainRating": 48,
       "submissionType": "paid",
@@ -3674,10 +3675,10 @@
     {
       "id": "neil-patel-ai-tools",
       "name": "Neil Patel AI Tools",
-      "url": "",
+      "url": "https://aitools.neilpatel.com/",
       "description": "AI Directory",
       "type": [
-        "SaaS Directory"
+        "AI Directory"
       ],
       "domainRating": 91,
       "submissionType": "unknown",
@@ -6601,24 +6602,6 @@
       ],
       "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
     },
-    {
-      "id": "hacker-news",
-      "name": "Hacker News",
-      "url": "",
-      "description": "",
-      "type": [
-        "AI Directory"
-      ],
-      "domainRating": 44,
-      "submissionType": "free",
-      "followType": "unknown",
-      "listedOn": [
-        "submitatool.com",
-        "topsaasdirectories.com"
-      ],
-      "notes": "AI Directory from SubmitATool.com. URL and submission type not available from source."
-    },
-
     {
       "id": "100l5",
       "name": "100L5",

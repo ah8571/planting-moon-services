@@ -121,10 +121,63 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
     }
 };
 
+// AI Directories Page Configuration
+const AI_DIRECTORIES_SCHEMA_CONFIG = {
+    pageType: 'aiDirs',
+    pageUrl: 'https://plantingmoon.com/aidirectories',
+    
+    faq: {
+        enabled: true,
+        extractFromDOM: true,
+        faqs: [
+            {
+                question: 'What are AI directories and why do they matter?',
+                answer: 'AI directories are curated collections of AI products, models, agents, and automation tools. Listing in them improves discoverability, credibility, and can help you earn relevant backlinks from high-authority sites.'
+            },
+            {
+                question: 'Should I submit my AI product to general SaaS directories too?',
+                answer: 'Yes, if your product overlaps with broader SaaS categories. AI-specific directories help with relevance, while general SaaS directories can widen reach and referral opportunities.'
+            },
+            {
+                question: 'How should I prioritize AI directories?',
+                answer: 'Start with directories that combine strong domain authority, clear AI relevance, and a submission model that matches your launch budget. High-authority directories with active curation usually provide the best long-term SEO value.'
+            }
+        ]
+    },
+
+    dataset: {
+        enabled: true,
+        name: 'AI Directories Database',
+        description: 'A curated collection of AI directories aggregated from multiple sources. Filter by platform type, platform fee, and domain rating to find the best places to list AI products and agents.',
+        keywords: ['AI directories', 'AI tools directory', 'AI product launch', 'AI marketing', 'AI startup submission'],
+        datePublished: '2026-03-15',
+        license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+        creator: {
+            '@type': 'Organization',
+            'name': 'Planting Moon',
+            'url': 'https://plantingmoon.com'
+        }
+    },
+
+    organization: {
+        enabled: true
+    },
+
+    breadcrumb: {
+        enabled: true,
+        items: [
+            { name: 'Home', url: 'https://plantingmoon.com' },
+            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
+            { name: 'AI Directories', url: 'https://plantingmoon.com/aidirectories' }
+        ]
+    }
+};
+
 // Export configs
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         GUEST_POSTS_SCHEMA_CONFIG,
-        SAAS_DIRECTORIES_SCHEMA_CONFIG
+        SAAS_DIRECTORIES_SCHEMA_CONFIG,
+        AI_DIRECTORIES_SCHEMA_CONFIG
     };
 }
