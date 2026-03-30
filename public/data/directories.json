@@ -3522,22 +3522,6 @@
       "notes": "URL and follow type not available from source"
     },
     {
-      "id": "openalternative",
-      "name": "OpenAlternative",
-      "url": "",
-      "description": "A curated collection of the best open source alternatives to everyday SaaS products. Save money with reliable tools hand-picked for you",
-      "type": [
-        "SaaS Directory"
-      ],
-      "domainRating": "unknown",
-      "submissionType": "unknown",
-      "followType": "unknown",
-      "listedOn": [
-        "topsaasdirectories.com"
-      ],
-      "notes": "URL and follow type not available from source"
-    },
-    {
       "id": "tiny-launch",
       "name": "Tiny Launch",
       "url": "",
@@ -8442,9 +8426,9 @@
     },
     {
       "id": "open-alternative",
-      "name": "Open Alternative",
+      "name": "OpenAlternative",
       "url": "https://openalternative.co",
-      "description": "Open source alternatives to popular software.",
+      "description": "A curated collection of open source alternatives to everyday SaaS products and popular software.",
       "type": [
         "Launch Platform",
         "SaaS Directory"
@@ -8453,9 +8437,10 @@
       "submissionType": "unknown",
       "followType": "unknown",
       "listedOn": [
-        "launchdirectories.com"
+        "launchdirectories.com",
+        "topsaasdirectories.com"
       ],
-      "notes": "Added from launchdirectories.com"
+      "notes": "Consolidated duplicate entries from launchdirectories.com and topsaasdirectories.com"
     },
     {
       "id": "trustmrr",
