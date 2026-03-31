@@ -7,7 +7,7 @@ from pathlib import Path
 def main() -> None:
     repo_root = Path(__file__).resolve().parent.parent
     awesome_repo = repo_root.parent / "awesome-launch-list"
-    source_path = awesome_repo / "data" / "saas-directories.json"
+    source_path = awesome_repo / "data" / "directories.json"
     target_path = repo_root / "public" / "data" / "directories.json"
 
     if not source_path.exists():
@@ -21,7 +21,7 @@ def main() -> None:
         raise ValueError("Source dataset is missing a valid 'directories' list")
 
     synced_payload = {
-        "note": "Synced from ../awesome-launch-list/data/saas-directories.json. Edit the awesome-launch-list copy first.",
+        "note": "Synced from ../awesome-launch-list/data/directories.json. Edit the awesome-launch-list copy first.",
         "metadata": source_data.get("metadata", {}),
         "directories": directories,
     }
