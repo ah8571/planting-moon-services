@@ -154,6 +154,7 @@
         padding: 0;
         width: 40px;
         height: 40px;
+        margin: 0;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -208,18 +209,22 @@
 
         nav .dropdown,
         nav .nav-link {
-            padding: 15px 20px;
             width: 100%;
             text-align: left;
+        }
+
+        nav .dropdown {
+            padding: 0;
         }
 
         nav .dropdown-toggle {
             width: 100%;
             justify-content: space-between;
-            padding: 0 20px;
+            padding: 15px 20px;
             background: none;
             border: none;
             color: white;
+            margin: 0;
         }
 
         nav .dropdown-menu {
@@ -247,7 +252,7 @@
         }
 
         nav .dropdown-menu a {
-            padding: 10px 40px;
+            padding: 10px 20px;
             color: #bbb;
         }
 

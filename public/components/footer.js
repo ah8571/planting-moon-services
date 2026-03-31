@@ -4,7 +4,7 @@ async function loadFooter() {
         // Determine correct path based on current location
         const path = window.location.pathname;
         const footerPath = path.startsWith('/pages/') || path === '/pages' ? './footer.html' : './components/footer.html';
-        const response = await fetch(footerPath);
+        const response = await fetch(footerPath, { cache: 'no-store' });
         const footerHTML = await response.text();
         document.getElementById('footer-container').innerHTML = footerHTML;
     } catch (error) {
