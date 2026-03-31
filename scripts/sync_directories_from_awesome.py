@@ -6,7 +6,11 @@ from pathlib import Path
 
 def main() -> None:
     repo_root = Path(__file__).resolve().parent.parent
-    awesome_repo = repo_root.parent / "awesome-launch-list"
+    candidate_repos = [
+        repo_root.parent / "open-startup-backlink-lists",
+        repo_root.parent / "awesome-launch-list",
+    ]
+    awesome_repo = next((path for path in candidate_repos if path.exists()), candidate_repos[0])
     source_path = awesome_repo / "data" / "directories.json"
     target_path = repo_root / "public" / "data" / "directories.json"
 
@@ -21,7 +25,7 @@ def main() -> None:
         raise ValueError("Source dataset is missing a valid 'directories' list")
 
     synced_payload = {
-        "note": "Synced from ../awesome-launch-list/data/directories.json. Edit the awesome-launch-list copy first.",
+        "note": "Synced from the canonical directories repo. Edit the canonical repo copy first.",
         "metadata": source_data.get("metadata", {}),
         "directories": directories,
     }
