@@ -154,6 +154,14 @@ h1 {
     text-decoration: underline;
 }
 
+.table-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
 .page-actions {
     background: white;
     border-radius: 8px;
@@ -390,6 +398,14 @@ h1 {
 
     .page-actions-bar {
         flex-direction: column;
+    }
+
+    .table-actions {
+        justify-content: stretch;
+    }
+
+    .table-actions .page-action-btn {
+        width: 100%;
     }
 
     .page-action-btn {
