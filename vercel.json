@@ -2,14 +2,21 @@
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/directories", "destination": "/resources/free-directories", "permanent": true },
+    { "source": "/saasdirectories", "destination": "/resources/saas-directories", "permanent": true },
+    { "source": "/aidirectories", "destination": "/resources/ai-directories", "permanent": true },
+    { "source": "/guest-posts", "destination": "/resources/guest-post-sites", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/contact", "destination": "/pages/contact" },
     { "source": "/case-studies", "destination": "/pages/case-studies" },
-    { "source": "/guest-posts", "destination": "/pages/guest-posts" },
-    { "source": "/directories", "destination": "/pages/directories" },
-    { "source": "/aidirectories", "destination": "/pages/aidirectories" },
-    { "source": "/saasdirectories", "destination": "/pages/saasdirectories" },
     { "source": "/resources", "destination": "/pages/resources" },
+    { "source": "/resources/open-startup-backlink-lists", "destination": "/pages/open-startup-backlink-lists" },
+    { "source": "/resources/free-directories", "destination": "/pages/directories" },
+    { "source": "/resources/saas-directories", "destination": "/pages/saasdirectories" },
+    { "source": "/resources/ai-directories", "destination": "/pages/aidirectories" },
+    { "source": "/resources/guest-post-sites", "destination": "/pages/guest-posts" },
     { "source": "/sitemap.xml", "destination": "/pages/sitemap.xml" },
     { "source": "/robots.txt", "destination": "/pages/robots.txt" }
   ],

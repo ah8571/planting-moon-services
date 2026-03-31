@@ -25,8 +25,8 @@ class SchemaGenerator {
             'url': config.organizationUrl,
             'logo': config.organizationLogo,
             'sameAs': [
-                'https://www.linkedin.com/company/trading-moon-services',
-                'https://twitter.com/tradingmoon'
+                'https://www.linkedin.com/company/planting-moon',
+                'https://twitter.com/plantingmoon'
             ].filter(url => url)
         };
     }

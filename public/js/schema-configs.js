@@ -6,7 +6,7 @@
 // Guest Posts Page Configuration
 const GUEST_POSTS_SCHEMA_CONFIG = {
     pageType: 'guestPosts',
-    pageUrl: 'https://plantingmoon.com/guest-posts',
+    pageUrl: 'https://plantingmoon.com/resources/guest-post-sites',
     
     // FAQPage schema
     faq: {
@@ -54,8 +54,8 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
         enabled: true,
         items: [
             { name: 'Home', url: 'https://plantingmoon.com' },
-            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
-            { name: 'Guest Posts', url: 'https://plantingmoon.com/guest-posts' }
+            { name: 'Resources', url: 'https://plantingmoon.com/resources' },
+            { name: 'Guest Posts', url: 'https://plantingmoon.com/resources/guest-post-sites' }
         ]
     }
 };
@@ -63,7 +63,7 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
 // SaaS Directories Page Configuration
 const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
     pageType: 'saasDirs',
-    pageUrl: 'https://plantingmoon.com/saasdirectories',
+    pageUrl: 'https://plantingmoon.com/resources/saas-directories',
     
     // FAQPage schema
     faq: {
@@ -115,8 +115,8 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
         enabled: true,
         items: [
             { name: 'Home', url: 'https://plantingmoon.com' },
-            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
-            { name: 'SaaS Directories', url: 'https://plantingmoon.com/saasdirectories' }
+            { name: 'Resources', url: 'https://plantingmoon.com/resources' },
+            { name: 'SaaS Directories', url: 'https://plantingmoon.com/resources/saas-directories' }
         ]
     }
 };
@@ -124,7 +124,7 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
 // AI Directories Page Configuration
 const AI_DIRECTORIES_SCHEMA_CONFIG = {
     pageType: 'aiDirs',
-    pageUrl: 'https://plantingmoon.com/aidirectories',
+    pageUrl: 'https://plantingmoon.com/resources/ai-directories',
     
     faq: {
         enabled: true,
@@ -167,8 +167,8 @@ const AI_DIRECTORIES_SCHEMA_CONFIG = {
         enabled: true,
         items: [
             { name: 'Home', url: 'https://plantingmoon.com' },
-            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
-            { name: 'AI Directories', url: 'https://plantingmoon.com/aidirectories' }
+            { name: 'Resources', url: 'https://plantingmoon.com/resources' },
+            { name: 'AI Directories', url: 'https://plantingmoon.com/resources/ai-directories' }
         ]
     }
 };
@@ -176,7 +176,7 @@ const AI_DIRECTORIES_SCHEMA_CONFIG = {
 // All Directories Page Configuration
 const ALL_DIRECTORIES_SCHEMA_CONFIG = {
     pageType: 'allDirs',
-    pageUrl: 'https://plantingmoon.com/directories',
+    pageUrl: 'https://plantingmoon.com/resources/free-directories',
 
     faq: {
         enabled: true,
@@ -219,8 +219,8 @@ const ALL_DIRECTORIES_SCHEMA_CONFIG = {
         enabled: true,
         items: [
             { name: 'Home', url: 'https://plantingmoon.com' },
-            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
-            { name: 'Directories', url: 'https://plantingmoon.com/directories' }
+            { name: 'Resources', url: 'https://plantingmoon.com/resources' },
+            { name: 'Directories', url: 'https://plantingmoon.com/resources/free-directories' }
         ]
     }
 };

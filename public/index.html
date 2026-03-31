@@ -3,135 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React & React Native MVP Development</title>
+    <title>Planting Moon | Product Development and Growth</title>
     <link rel="icon" type="image/svg+xml" href="./favicon/moon-favicon-black.svg">
     <style>
+        :root {
+            --ink: #13110f;
+            --muted: #645f59;
+            --surface: #fffdf8;
+            --surface-soft: #f6f0e7;
+            --line: rgba(19, 17, 15, 0.12);
+            --line-strong: rgba(19, 17, 15, 0.22);
+            --accent: #bc5a45;
+            --accent-deep: #7f3526;
+            --shadow-soft: 0 24px 60px rgba(28, 23, 18, 0.08);
+            --shadow-strong: 0 28px 80px rgba(28, 23, 18, 0.14);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
-            color: #333;
-            line-height: 1.6;
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* Hero Section */
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            color: var(--ink);
+            line-height: 1.6;
+            background:
+                radial-gradient(circle at top left, rgba(188, 90, 69, 0.14), transparent 28%),
+                radial-gradient(circle at top right, rgba(23, 40, 56, 0.08), transparent 26%),
+                linear-gradient(180deg, #f8f2ea 0%, #fffdf9 28%, #fffdf9 100%);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+            letter-spacing: -0.03em;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        #our-services {
+            scroll-margin-top: 96px;
+        }
+
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop') center/cover;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-            min-height: 600px;
+            position: relative;
+            color: #fff6ef;
+            min-height: 760px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            padding: 112px 20px 84px;
+            overflow: hidden;
+            background:
+                linear-gradient(130deg, rgba(19, 17, 15, 0.82), rgba(40, 27, 23, 0.72)),
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1400&h=900&fit=crop') center/cover;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            border-radius: 999px;
+            pointer-events: none;
+            filter: blur(8px);
+        }
+
+        .hero::before {
+            width: 420px;
+            height: 420px;
+            top: -90px;
+            left: -90px;
+            background: radial-gradient(circle, rgba(188, 90, 69, 0.28), transparent 70%);
+            animation: floatOrb 12s ease-in-out infinite;
+        }
+
+        .hero::after {
+            width: 360px;
+            height: 360px;
+            right: -80px;
+            bottom: -120px;
+            background: radial-gradient(circle, rgba(255, 214, 168, 0.18), transparent 72%);
+            animation: floatOrb 14s ease-in-out infinite reverse;
+        }
+
+        .hero-layout {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.9fr);
+            gap: 38px;
             align-items: center;
         }
 
-        .hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
+        .hero-copy-block {
+            max-width: 700px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            margin-bottom: 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 246, 239, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+            font-size: 0.84rem;
             font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
         }
 
         .hero p {
-            font-size: 1.4em;
-            margin-bottom: 30px;
-            max-width: 800px;
-            opacity: 0.95;
+            font-size: 1.16rem;
+            margin-bottom: 34px;
+            max-width: 640px;
+            opacity: 0.92;
+            line-height: 1.8;
+            color: rgba(255, 246, 239, 0.86);
+        }
+
+        .hero h1 {
+            font-size: clamp(3.3rem, 7vw, 6rem);
+            margin-bottom: 22px;
+            line-height: 0.94;
+            font-weight: 700;
+            max-width: 10ch;
         }
 
         .cta-buttons {
             display: flex;
-            gap: 20px;
-            justify-content: center;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 16px 40px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1em;
+            padding: 16px 32px;
+            border-radius: 999px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
             text-decoration: none;
             display: inline-block;
         }
 
         .btn-primary {
-            background: white;
-            color: #000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            background: #fff7f1;
+            color: var(--ink);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 26px 50px rgba(0, 0, 0, 0.22);
         }
 
         .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff7f1;
+            border: 1px solid rgba(255, 247, 241, 0.28);
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.12);
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Services Section */
+        .hero-panel {
+            position: relative;
+            display: grid;
+            gap: 16px;
+            padding: 28px;
+            border-radius: 26px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+            border: 1px solid rgba(255, 247, 241, 0.18);
+            box-shadow: 0 28px 60px rgba(0, 0, 0, 0.22);
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-panel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 55%);
+            pointer-events: none;
+        }
+
+        .hero-panel-label {
+            font-size: 0.84rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(255, 246, 239, 0.7);
+            font-weight: 700;
+        }
+
+        .hero-panel strong {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .hero-panel p {
+            margin: 0;
+            font-size: 0.98rem;
+            color: rgba(255, 246, 239, 0.72);
+            line-height: 1.7;
+        }
+
+        .hero-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .hero-metric {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 247, 241, 0.12);
+        }
+
+        .hero-metric span {
+            display: block;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: rgba(255, 246, 239, 0.68);
+            margin-bottom: 8px;
+        }
+
+        .hero-metric strong {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+
+        section {
+            position: relative;
+        }
+
         .services {
-            padding: 80px 20px;
-            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop') center/cover;
-            background-attachment: fixed;
+            padding: 94px 20px;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            color: #333;
+            font-size: clamp(2.2rem, 4vw, 3.4rem);
+            margin-bottom: 14px;
+            color: var(--ink);
         }
 
         .section-subtitle {
             text-align: center;
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 50px;
-            max-width: 600px;
+            font-size: 1.08rem;
+            color: var(--muted);
+            margin-bottom: 54px;
+            max-width: 680px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.8;
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 24px;
         }
 
         .service-card {
-            background: white;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(246, 240, 231, 0.94));
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-            transition: all 0.3s;
+            border-radius: 24px;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(188, 90, 69, 0.09), transparent 46%);
+            opacity: 0;
+            transition: opacity 0.35s ease;
         }
 
         .service-card:hover {
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-            transform: translateY(-5px);
+            box-shadow: var(--shadow-strong);
+            transform: translateY(-8px);
+            border-color: var(--line-strong);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
         }
 
         .service-icon {
@@ -139,68 +322,264 @@
         }
 
         .service-card h3 {
-            font-size: 1.5em;
+            position: relative;
+            z-index: 1;
+            font-size: 1.8rem;
             margin-bottom: 15px;
-            color: #333;
+            color: var(--ink);
         }
 
         .service-card p {
-            color: #666;
+            position: relative;
+            z-index: 1;
+            color: var(--muted);
             line-height: 1.8;
             margin-bottom: 20px;
         }
 
         .service-features {
-            display: none;
+            display: grid;
+            position: relative;
+            z-index: 1;
+            list-style: none;
+            gap: 10px;
         }
 
         .service-features li {
-            padding: 8px 0;
-            color: #666;
+            padding: 0;
+            color: var(--ink);
         }
 
         .service-features li:before {
-            content: "✓ ";
-            color: #667eea;
+            content: "+ ";
+            color: var(--accent);
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 8px;
         }
 
-        /* Why Choose Us */
         .why-us {
-            padding: 80px 20px;
-            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop') center/cover;
-            background-attachment: fixed;
+            padding: 40px 20px 24px;
         }
 
         .why-us-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 24px;
             margin-top: 40px;
         }
 
         .why-card {
+            background: rgba(255, 255, 255, 0.78);
             padding: 30px;
             text-align: center;
+            border-radius: 24px;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-strong);
         }
 
         .why-card .number {
             font-size: 3em;
             font-weight: 700;
-            color: #667eea;
+            color: var(--accent);
             margin-bottom: 10px;
             filter: grayscale(100%);
         }
 
         .why-card h4 {
-            font-size: 1.2em;
+            font-size: 1.4rem;
             margin-bottom: 10px;
-            color: #333;
+            color: var(--ink);
         }
 
         .why-card p {
-            color: #666;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .resources-home {
+            padding: 36px 20px 24px;
+        }
+
+        .resources-shell {
+            padding: 42px;
+            border-radius: 28px;
+            background: linear-gradient(145deg, rgba(255, 252, 247, 0.96), rgba(244, 235, 224, 0.92));
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .resource-showcase-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .resource-intro {
+            display: grid;
+            align-content: start;
+            gap: 16px;
+        }
+
+        .resource-intro p {
+            color: var(--muted);
+            line-height: 1.8;
+            max-width: 54ch;
+        }
+
+        .resource-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.72);
+            color: var(--muted);
+            font-size: 0.84rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            width: fit-content;
+        }
+
+        .resource-card-home {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            gap: 18px;
+            padding: 30px;
+            border-radius: 24px;
+            background: linear-gradient(180deg, #ffffff, #f8f0e8);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow-soft);
+            text-decoration: none;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .resource-card-home::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(188, 90, 69, 0.12), transparent 44%);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .resource-card-home:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-strong);
+            border-color: var(--line-strong);
+        }
+
+        .resource-card-home:hover::before {
+            opacity: 1;
+        }
+
+        .resource-card-home > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .resource-kicker {
+            font-size: 0.84rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 700;
+            color: var(--accent-deep);
+        }
+
+        .resource-card-home h3 {
+            font-size: 2rem;
+            line-height: 1.02;
+        }
+
+        .resource-card-home p,
+        .resource-list li {
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .resource-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+        }
+
+        .resource-list li::before {
+            content: "+ ";
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .resource-link::after {
+            content: "->";
+        }
+
+        .home-cta {
+            padding: 28px 20px 90px;
+        }
+
+        .cta-shell {
+            padding: 42px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, rgba(24, 21, 19, 0.96), rgba(62, 37, 29, 0.94));
+            color: #fff6ef;
+            text-align: center;
+            box-shadow: var(--shadow-strong);
+        }
+
+        .cta-shell h2 {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            margin-bottom: 14px;
+        }
+
+        .cta-shell p {
+            font-size: 1.08rem;
+            margin: 0 auto 28px;
+            max-width: 620px;
+            color: rgba(255, 246, 239, 0.8);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+            transition-delay: var(--reveal-delay, 0ms);
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .drift {
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+        }
+
+        @keyframes floatOrb {
+            0%,
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+            50% {
+                transform: translate3d(0, 22px, 0);
+            }
         }
 
         @media (max-width: 768px) {
@@ -209,13 +588,18 @@
             }
 
             .hero {
-                padding: 60px 20px;
-                min-height: 400px;
+                padding: 92px 20px 56px;
+                min-height: auto;
                 margin-top: 60px;
             }
 
+            .hero-layout,
+            .resource-showcase-grid {
+                grid-template-columns: 1fr;
+            }
+
             .hero h1 {
-                font-size: 2em;
+                font-size: 2.7rem;
             }
 
             .hero p {
@@ -228,6 +612,7 @@
 
             .btn {
                 width: 100%;
+                text-align: center;
             }
 
             .section-title {
@@ -237,123 +622,227 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+
+            .hero-panel,
+            .resources-shell,
+            .cta-shell,
+            .service-card,
+            .why-card,
+            .resource-card-home {
+                padding: 24px;
+                border-radius: 20px;
+            }
+
+            .hero-metrics {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .resources-shell,
+            .cta-shell {
+                padding: 24px 20px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .reveal,
+            .service-card,
+            .why-card,
+            .resource-card-home,
+            .btn,
+            .hero::before,
+            .hero::after,
+            .drift {
+                transition: none;
+                animation: none;
+                transform: none;
+            }
         }
     </style>
 </head>
 <body>
     <nav id="navbar-container"></nav>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Build Faster with Modern Tech</h1>
-        <p>We build our own apps and help others build their apps so we understand the process of being invested in a product's success. Hence the idea of Planting Moon, we plant the seeds of innovation and cultivate your vision to help you be successful.</p>
-        <div class="cta-buttons">
-            <a href="/contact" class="btn btn-primary">Start Your Project</a>
-            <a href="/case-studies" class="btn btn-secondary">See Our Work</a>
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div class="services">
+    <section class="hero">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">We specialize in building MVPs and scalable applications with modern technologies</p>
+            <div class="hero-layout">
+                <div class="hero-copy-block reveal" style="--reveal-delay: 60ms;">
+                    <div class="eyebrow">Product Studio for Founders</div>
+                    <h1>Build the product, growth engine, and launch surface together.</h1>
+                    <p>Planting Moon helps founders move from idea to working product with a tighter loop between development, launch strategy, and distribution. We build the software, shape the release path, and create practical resources that support the people using it.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact" class="btn btn-primary">Start Your Project</a>
+                        <a href="/#our-services" class="btn btn-secondary">Explore Services</a>
+                    </div>
+                </div>
+
+                <aside class="hero-panel reveal drift" data-drift="14" style="--reveal-delay: 140ms;">
+                    <div class="hero-panel-label">How we work</div>
+                    <div>
+                        <strong>Build with product context</strong>
+                        <p>We are not just handed tickets. We work close to the product, launch goals, and constraints that shape what should actually get built first.</p>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="hero-metric">
+                            <span>Focus</span>
+                            <strong>MVPs</strong>
+                        </div>
+                        <div class="hero-metric">
+                            <span>Stack</span>
+                            <strong>React</strong>
+                        </div>
+                        <div class="hero-metric">
+                            <span>Growth</span>
+                            <strong>SEO</strong>
+                        </div>
+                        <div class="hero-metric">
+                            <span>Ops</span>
+                            <strong>Automation</strong>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="our-services">
+        <div class="container">
+            <h2 class="section-title reveal">Our Services</h2>
+            <p class="section-subtitle reveal" style="--reveal-delay: 60ms;">We help founders ship modern products, tighten their launch process, and put the right infrastructure behind early growth.</p>
             
             <div class="services-grid">
-                <div class="service-card" id="web-app-development">
+                <div class="service-card reveal drift" data-drift="10" id="web-app-development" style="--reveal-delay: 80ms;">
                     <h3>React Web Apps</h3>
-                    <p>Full-stack React applications from concept to deployment. We build responsive, performant web apps with modern tooling.</p>
+                    <p>Full-stack React applications from concept to deployment, designed for fast iteration and long-term maintainability.</p>
                     <ul class="service-features">
-                        <li>Custom Web Applications</li>
-                        <li>REST/GraphQL APIs</li>
-                        <li>Database Design & Setup</li>
-                        <li>Authentication & Security</li>
-                        <li>Performance Optimization</li>
+                        <li>Custom web applications</li>
+                        <li>REST and GraphQL APIs</li>
+                        <li>Database design and setup</li>
+                        <li>Authentication and security</li>
+                        <li>Performance optimization</li>
                     </ul>
                 </div>
 
-                <div class="service-card" id="mobile-app-development">
+                <div class="service-card reveal drift" data-drift="12" id="mobile-app-development" style="--reveal-delay: 130ms;">
                     <h3>React Native Mobile Apps</h3>
-                    <p>Native-like mobile apps for iOS and Android using React Native. One codebase, two platforms, maximum reach.</p>
+                    <p>Mobile products for iOS and Android with a single codebase, built to feel fast, polished, and launch-ready.</p>
                     <ul class="service-features">
-                        <li>iOS & Android Development</li>
-                        <li>Push Notifications</li>
-                        <li>Offline Capabilities</li>
-                        <li>Native Module Integration</li>
-                        <li>App Store Deployment</li>
+                        <li>iOS and Android development</li>
+                        <li>Push notifications</li>
+                        <li>Offline capabilities</li>
+                        <li>Native module integration</li>
+                        <li>App store deployment</li>
                     </ul>
                 </div>
 
-                <div class="service-card" id="mvp-development">
+                <div class="service-card reveal drift" data-drift="10" id="mvp-development" style="--reveal-delay: 180ms;">
                     <h3>MVP Development</h3>
-                    <p>Validate your idea quickly with a minimum viable product. Fast, focused development to get to market and gather user feedback.</p>
+                    <p>Focused MVP builds that help you validate the idea, launch sooner, and learn from real users without overbuilding.</p>
                     <ul class="service-features">
-                        <li>Rapid Prototyping</li>
-                        <li>Core Feature Implementation</li>
-                        <li>Tech Stack Guidance</li>
-                        <li>Scalability Planning</li>
-                        <li>Cost-Effective Solutions</li>
+                        <li>Rapid prototyping</li>
+                        <li>Core feature implementation</li>
+                        <li>Tech stack guidance</li>
+                        <li>Scalability planning</li>
+                        <li>Cost-aware delivery</li>
                     </ul>
                 </div>
 
-                <div class="service-card" id="marketing-growth">
-                    <h3>Marketing & Growth</h3>
-                    <p>Help your product get discovered. From SEO to PPC to analytics setup, we support your go-to-market strategy.</p>
+                <div class="service-card reveal drift" data-drift="12" id="marketing-growth" style="--reveal-delay: 230ms;">
+                    <h3>Marketing and Growth</h3>
+                    <p>Growth support that connects product decisions to discoverability, measurement, and a clearer go-to-market motion.</p>
                     <ul class="service-features">
-                        <li>SEO Optimization</li>
-                        <li>PPC Campaigns</li>
-                        <li>Analytics Setup</li>
-                        <li>Conversion Tracking</li>
-                        <li>Growth Strategy</li>
+                        <li>SEO optimization</li>
+                        <li>PPC campaigns</li>
+                        <li>Analytics setup</li>
+                        <li>Conversion tracking</li>
+                        <li>Growth strategy</li>
                     </ul>
                 </div>
 
-                <div class="service-card" id="automation-integration">
-                    <h3>Automation & Integration</h3>
-                    <p>Streamline your workflows with automation and third-party integrations. Save time, reduce errors, scale efficiently.</p>
+                <div class="service-card reveal drift" data-drift="10" id="automation-integration" style="--reveal-delay: 280ms;">
+                    <h3>Automation and Integration</h3>
+                    <p>Operational systems that remove repetitive work, connect tools, and make the product and team easier to scale.</p>
                     <ul class="service-features">
-                        <li>Workflow Automation</li>
-                        <li>API Integrations</li>
-                        <li>Data Pipeline Setup</li>
-                        <li>Process Optimization</li>
-                        <li>Custom Solutions</li>
+                        <li>Workflow automation</li>
+                        <li>API integrations</li>
+                        <li>Data pipeline setup</li>
+                        <li>Process optimization</li>
+                        <li>Custom internal tooling</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Why Choose Us & CTA -->
-    <div class="why-us">
+    <section class="why-us">
         <div class="container">
-            <h2 class="section-title">Why Choose Planting Moon</h2>
+            <h2 class="section-title reveal">Why Choose Planting Moon</h2>
             
             <div class="why-us-grid">
-                <div class="why-card">
+                <div class="why-card reveal drift" data-drift="8" style="--reveal-delay: 60ms;">
                     <h4>Custom Built</h4>
                     <p>No templates or off-the-shelf solutions. We build exactly what your product needs.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal drift" data-drift="8" style="--reveal-delay: 110ms;">
                     <h4>Fast Delivery</h4>
                     <p>Focused sprints to get your MVP to market quickly and gather real user feedback.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal drift" data-drift="8" style="--reveal-delay: 160ms;">
                     <h4>Results-Driven</h4>
                     <p>We're invested in your success. We focus on metrics that matter to your business.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal drift" data-drift="8" style="--reveal-delay: 210ms;">
                     <h4>Strategic Partnership</h4>
                     <p>Not just developers - we're advisors who help you make better product decisions.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.1);">
-                <h2 style="font-size: 2.2em; margin-bottom: 15px; color: #333;">Ready to Build Something Great?</h2>
-                <p style="font-size: 1.1em; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; color: #666;">Let's discuss your project and how we can help bring your idea to life.</p>
+    <section class="resources-home">
+        <div class="container">
+            <div class="resources-shell reveal" style="--reveal-delay: 80ms;">
+                <div class="resource-showcase-grid">
+                    <div class="resource-intro">
+                        <div class="resource-pill">Resources</div>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 0;">Practical resources we are building alongside the work.</h2>
+                        <p>We want the home page to point to useful assets, not just service pages. This section is where we surface the best operational resources Planting Moon is publishing for founders and operators.</p>
+                    </div>
+
+                    <a href="/resources/open-startup-backlink-lists" class="resource-card-home drift" data-drift="10">
+                        <div class="resource-kicker">Featured Resource</div>
+                        <h3>Open Startup Backlink Lists</h3>
+                        <p>A dedicated resource page for our open directories and guest post research, with live explorers, public source data, and a cleaner starting point for distribution work.</p>
+                        <ul class="resource-list">
+                            <li>Editorial overview page plus linked tools</li>
+                            <li>Nested resource URLs for directories and guest post explorers</li>
+                            <li>Public data source backed by the open-startup-backlink-lists repo</li>
+                        </ul>
+                        <div class="resource-link">Explore the resource</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-cta">
+        <div class="container">
+            <div class="cta-shell reveal" style="--reveal-delay: 100ms;">
+                <h2>Ready to Build Something Great?</h2>
+                <p>Let's discuss your product, what needs to ship first, and where development, launch planning, and growth support should connect.</p>
                 <a href="/contact" class="btn btn-primary">Get Started Today</a>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div id="footer-container"></div>
@@ -361,5 +850,58 @@
 
     <script src="./components/navbar.js"></script>
     <script src="./components/footer.js"></script>
+    <script>
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: '0px 0px -8% 0px'
+            });
+
+            document.querySelectorAll('.reveal').forEach((node) => {
+                revealObserver.observe(node);
+            });
+
+            const driftNodes = Array.from(document.querySelectorAll('.drift'));
+            let driftTicking = false;
+
+            function updateDrift() {
+                const viewportHeight = window.innerHeight || 1;
+
+                driftNodes.forEach((node) => {
+                    const range = Number(node.dataset.drift || 8);
+                    const rect = node.getBoundingClientRect();
+                    const distance = rect.top + rect.height / 2 - viewportHeight / 2;
+                    const offset = Math.max(-range, Math.min(range, distance * -0.018));
+                    node.style.transform = `translate3d(0, ${offset}px, 0)`;
+                });
+
+                driftTicking = false;
+            }
+
+            function requestDriftUpdate() {
+                if (!driftTicking) {
+                    window.requestAnimationFrame(updateDrift);
+                    driftTicking = true;
+                }
+            }
+
+            updateDrift();
+            window.addEventListener('scroll', requestDriftUpdate, { passive: true });
+            window.addEventListener('resize', requestDriftUpdate);
+        } else {
+            document.querySelectorAll('.reveal').forEach((node) => {
+                node.classList.add('is-visible');
+            });
+        }
+    </script>
 </body>
 </html>
