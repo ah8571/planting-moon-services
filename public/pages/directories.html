@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the full directories chart from Planting Moon. Filter by one or more directory types, platform fee, and domain rating to build a submission list that fits your product.">
+    <link rel="canonical" href="https://plantingmoon.com/directories">
+    <title>Directories Explorer | Planting Moon</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon/moon-favicon-black.svg">
+    <link rel="stylesheet" href="../css/blog-template.css">
+    <script src="../js/schema-generator.js"></script>
+    <script src="../js/schema-configs.js"></script>
+</head>
+<body data-schema-config="ALL_DIRECTORIES_SCHEMA_CONFIG" data-page-log-prefix="directories">
+    <nav id="navbar-container"></nav>
+    <div class="container">
+        <header>
+            <h1>Directories Explorer</h1>
+            <p style="text-align: left; font-size: 0.9em; color: #999; margin: 5px 0 20px 0;"><em>Last Updated: March 31, 2026</em></p>
+            <p class="subtitle">This is the flexible version of the directories chart. Instead of starting from a single niche, you can use the full dataset and combine directory types based on how your product is positioned.</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number" id="total-count">0</div>
+                    <div class="stat-label">Total Directories</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="with-dr-count">0</div>
+                    <div class="stat-label">With Domain Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="avg-dr">0</div>
+                    <div class="stat-label">Average DR</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" id="highest-dr">0</div>
+                    <div class="stat-label">Highest DR</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="chart-guide">
+            <div class="chart-guide-grid">
+                <div class="chart-guide-copy">
+                    <span class="guide-eyebrow">How The Chart Works</span>
+                    <h2>Open the type filter and combine categories when your product spans more than one lane.</h2>
+                    <p>The <strong>Directory Type</strong> menu supports multi-select. If your product could reasonably be submitted as both AI and SaaS, or as startup and open source, you can keep those combinations in one working list instead of switching pages back and forth.</p>
+                    <p>This dataset is compiled from public sources with attribution and maintained conservatively. The goal is to give founders and marketers a cleaner starting point for research, not to imply every directory belongs in every launch plan.</p>
+                    <div class="guide-chip-row">
+                        <span class="guide-chip">AI Directory + SaaS Directory</span>
+                        <span class="guide-chip">Startup Directory + Startup Platform</span>
+                        <span class="guide-chip">Open Source + SaaS Directory</span>
+                    </div>
+                </div>
+                <div class="guide-notes">
+                    <div class="guide-card">
+                        <strong>Suggested workflow</strong>
+                        <p>Start broad here, then narrow by platform fee and domain rating. If you want a pre-filtered starting point, use the SaaS-first or AI-first landing pages and add more types from there.</p>
+                    </div>
+                    <div class="guide-card">
+                        <strong>Current view</strong>
+                        <p id="type-filter-summary" class="filter-summary">Showing all directory types. Open Directory Type to narrow the list or combine multiple product categories.</p>
+                        <div class="guide-links">
+                            <a href="/saasdirectories">Open the SaaS-first page</a>
+                            <a href="/aidirectories">Open the AI-first page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-actions">
+            <div class="page-actions-header">
+                <h2>Download options</h2>
+                <p>Use the chart first, then export the filtered view you actually want to work from. You can download the current filtered list as CSV or JSON, or grab the raw source file directly.</p>
+            </div>
+            <div class="page-actions-bar">
+                <button class="page-action-btn" id="download-filtered-csv" type="button">Download filtered CSV</button>
+                <button class="page-action-btn secondary" id="download-filtered-json" type="button">Download filtered JSON</button>
+                <a href="https://raw.githubusercontent.com/ah8571/awesome-launch-list/main/data/directories.json" target="_blank" rel="noopener noreferrer" class="page-action-btn secondary">Open raw JSON source</a>
+            </div>
+            <p class="page-summary-note">A practical workflow is: choose one or more directory types that fit the business, narrow by platform fee or authority, then export only the shortlist that still makes sense for outreach.</p>
+        </section>
+
+        <div class="pagination-info-top" id="pagination-info-top"></div>
+
+        <div class="table-container">
+            <table id="directories-table">
+                <thead>
+                    <tr>
+                        <th id="name-header">
+                            <div class="th-header toggleable">
+                                <span>Directory Name</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                        </th>
+                        <th id="type-header">
+                            <div class="th-header toggleable">
+                                <span>Directory Type</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="type-filters"></div>
+                        </th>
+                        <th id="submission-header">
+                            <div class="th-header toggleable">
+                                <span>Platform Fee</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="submission-filters-dropdown">
+                                <button class="filter-btn" data-filter="free">Free</button>
+                            </div>
+                        </th>
+                        <th id="dr-header">
+                            <div class="th-header">
+                                <span>Domain Rating</span>
+                            </div>
+                        </th>
+                        <th id="sources-header">
+                            <div class="th-header toggleable">
+                                <span>Sources</span>
+                                <span class="th-chevron">▼</span>
+                            </div>
+                            <div class="type-filters-dropdown" id="sources-filters"></div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr class="loading">
+                        <td colspan="6">Loading directories...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination-info" id="pagination-info"></div>
+        <div style="display: flex; gap: 10px; justify-content: center; margin: 30px 0;">
+            <button class="load-more-btn" id="prev-btn" style="display: none;">← Previous Page</button>
+            <button class="load-more-btn" id="next-btn" style="display: none;">Next Page →</button>
+        </div>
+
+        <div class="education-section">
+            <div class="content-section">
+                <h2>How to use this explorer</h2>
+                <p>This page is meant to be the clean front door to the full dataset. Use it when you want to test different category combinations, compare how broad or narrow your submission list should be, and export a working list that matches your product rather than forcing it into one label.</p>
+            </div>
+
+            <div class="faq-container">
+                <h2 style="font-size: 1.8em; margin-bottom: 30px; color: #333;">Directories Explorer FAQs</h2>
+
+                <div class="faq-item">
+                    <h3><span>Can I select more than one directory type at the same time?</span> <span class="toggle">▼</span></h3>
+                    <div class="faq-answer">
+                        <p>Yes. Open the Directory Type filter and click multiple type buttons. The chart will include directories that match any of the selected types, which makes it easier to build a broader submission list for products that cross categories.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>Should I start here or on one of the narrower landing pages?</span> <span class="toggle">▼</span></h3>
+                    <div class="faq-answer">
+                        <p>Start here if you want maximum flexibility. Start on a narrower page like SaaS or AI if you want a pre-filtered view for SEO or a quicker first pass, then add more types if your product fits more than one category.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3><span>What filters matter most after type?</span> <span class="toggle">▼</span></h3>
+                    <div class="faq-answer">
+                        <p>After type, the most practical filters are platform fee and domain rating. Those help you narrow the list to directories that fit both your budget and the authority level you want from a submission campaign.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script src="../components/navbar.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../js/directories-table.js"></script>
+</body>
+</html>

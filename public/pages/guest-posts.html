@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Access 593 verified free guest posting opportunities with domain ratings. Filter by niche, domain authority, and source credibility to build high-quality backlinks.">
+    <meta name="description" content="Browse guest post opportunities from multiple public sources. Filter by niche and domain rating, then export a practical outreach shortlist as CSV or JSON.">
     <link rel="canonical" href="https://plantingmoon.com/guest-posts">
-    <title> 593 Free Guest Post Sites Database - High-Quality Opportunities</title>
+    <title>Free Guest Post Sites Database | Planting Moon</title>
     <link rel="icon" type="image/svg+xml" href="../favicon/moon-favicon-black.svg">
     <link rel="stylesheet" href="../css/blog-template.css">
     <script src="../js/schema-generator.js"></script>
@@ -17,7 +17,7 @@
         <header>
             <h1>Free Guest Post Sites Database</h1>
             <p style="text-align: left; font-size: 0.9em; color: #999; margin: 5px 0 20px 0;"><em>Last Updated: January 1, 2026</em></p>
-            <p class="subtitle">Discover 593 verified free guest posting opportunities aggregated and deduplicated from 13 trusted sources. Filter by domain authority, niche category, or submission type to find the perfect platforms for your content. All entries verified across multiple aggregators for credibility.</p>
+            <p class="subtitle">A curated guest post database aggregated from multiple public sources. Use it to narrow outreach targets by niche and authority, then export the shortlist that actually fits your audience and publication strategy.</p>
             
             <div class="stats">
                 <div class="stat-box">
@@ -38,6 +38,40 @@
                 </div>
             </div>
         </header>
+
+        <section class="chart-guide">
+            <div class="chart-guide-grid">
+                <div class="chart-guide-copy">
+                    <span class="guide-eyebrow">Why This Exists</span>
+                    <h2>Use this page as a cleaner starting point for guest post research, not a volume-first outreach list.</h2>
+                    <p>The dataset is compiled from public sources with attribution and maintained conservatively. It is meant to help teams start from a more useful shortlist instead of treating every opportunity as equally valuable.</p>
+                    <p>Use the niche and source filters to narrow the table before exporting. In practice, the best workflow is to choose relevant niches first, compare authority, then download only the subset worth reviewing further.</p>
+                </div>
+                <div class="guide-notes">
+                    <div class="guide-card">
+                        <strong>How to use this table</strong>
+                        <p>Filter by niche, sort by site name if needed, and use source counts as a rough confidence signal before moving into outreach review.</p>
+                    </div>
+                    <div class="guide-card">
+                        <strong>How to contribute</strong>
+                        <p>If you find a strong addition or correction, update the canonical dataset rather than treating the list as a bulk submission database.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-actions">
+            <div class="page-actions-header">
+                <h2>Download options</h2>
+                <p>Filter first, then export the current working list as CSV or JSON. If you want the full source file, you can open the raw JSON directly.</p>
+            </div>
+            <div class="page-actions-bar">
+                <button class="page-action-btn" id="download-guest-posts-csv" type="button">Download filtered CSV</button>
+                <button class="page-action-btn secondary" id="download-guest-posts-json" type="button">Download filtered JSON</button>
+                <a href="https://raw.githubusercontent.com/ah8571/awesome-launch-list/main/data/guest-posts.json" target="_blank" rel="noopener noreferrer" class="page-action-btn secondary">Open raw JSON source</a>
+            </div>
+            <p class="page-summary-note">A useful pattern is to export a smaller niche-specific list instead of taking the entire dataset into outreach unchanged.</p>
+        </section>
 
         <div class="pagination-info-top" id="pagination-info-top"></div>
 
@@ -179,6 +213,57 @@
         let sortDirection = 'asc';
         let currentPage = 1;
         const ITEMS_PER_PAGE = 50;
+
+        function downloadBlob(filename, content, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            URL.revokeObjectURL(url);
+        }
+
+        function escapeCsvValue(value) {
+            const stringValue = value == null ? '' : String(value);
+            return `"${stringValue.replace(/"/g, '""')}"`;
+        }
+
+        function convertGuestPostsToCsv(guestPosts) {
+            const headers = ['Name', 'URL', 'Niche', 'Domain Rating', 'Submission Type', 'Sources', 'Description', 'Notes'];
+            const rows = guestPosts.map(post => [
+                post.name,
+                post.url,
+                Array.isArray(post.niche) ? post.niche.join('; ') : '',
+                post.dr || '',
+                post.submissionType || '',
+                Array.isArray(post.listedOn) ? post.listedOn.join('; ') : '',
+                post.description || '',
+                post.notes || ''
+            ].map(escapeCsvValue).join(','));
+
+            return [headers.map(escapeCsvValue).join(','), ...rows].join('\n');
+        }
+
+        function setupDownloadActions() {
+            document.getElementById('download-guest-posts-json')?.addEventListener('click', () => {
+                const payload = {
+                    exportedAt: new Date().toISOString(),
+                    filterSummary: {
+                        nicheFilter: currentNicheFilter,
+                        sourcesFilters: currentSourcesFilters
+                    },
+                    guestPosts: filteredGuestPosts
+                };
+                downloadBlob('guest-posts-filtered.json', JSON.stringify(payload, null, 2), 'application/json');
+            });
+
+            document.getElementById('download-guest-posts-csv')?.addEventListener('click', () => {
+                downloadBlob('guest-posts-filtered.csv', convertGuestPostsToCsv(filteredGuestPosts), 'text/csv;charset=utf-8;');
+            });
+        }
 
         // Load JSON data
         async function loadGuestPosts() {
@@ -449,6 +534,7 @@
 
         // Header click handlers
         document.addEventListener('DOMContentLoaded', () => {
+            setupDownloadActions();
             loadGuestPosts();
 
             // Name sort toggle

@@ -6,6 +6,7 @@
     { "source": "/contact", "destination": "/pages/contact" },
     { "source": "/case-studies", "destination": "/pages/case-studies" },
     { "source": "/guest-posts", "destination": "/pages/guest-posts" },
+    { "source": "/directories", "destination": "/pages/directories" },
     { "source": "/aidirectories", "destination": "/pages/aidirectories" },
     { "source": "/saasdirectories", "destination": "/pages/saasdirectories" },
     { "source": "/resources", "destination": "/pages/resources" },

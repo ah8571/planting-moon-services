@@ -33,7 +33,7 @@ const GUEST_POSTS_SCHEMA_CONFIG = {
     dataset: {
         enabled: true,
         name: 'Free Guest Post Sites Database',
-        description: 'A comprehensive collection of 593 verified free guest posting opportunities aggregated from multiple trusted sources. Filter by domain authority, niche category, or submission type.',
+        description: 'A curated guest post database aggregated from multiple public sources. Filter by domain authority and niche to build a practical outreach shortlist.',
         keywords: ['guest posting', 'link building', 'SEO', 'backlinks', 'guest post opportunities', 'domain authority'],
         datePublished: '2026-01-01',
         license: 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -94,7 +94,7 @@ const SAAS_DIRECTORIES_SCHEMA_CONFIG = {
     dataset: {
         enabled: true,
         name: 'SaaS Directories Database',
-        description: 'A curated collection of 160+ free SaaS directories aggregated from multiple sources. Filter by platform type, free/paid status, and domain rating to find the best platforms for your product.',
+        description: 'A SaaS-first directories database that can also be combined with adjacent directory types. Filter by platform type, platform fee, and domain rating to build a submission list that matches your product.',
         keywords: ['SaaS directories', 'product directory', 'SaaS marketing', 'product launch', 'directory submission'],
         datePublished: '2026-01-01',
         license: 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -148,7 +148,7 @@ const AI_DIRECTORIES_SCHEMA_CONFIG = {
     dataset: {
         enabled: true,
         name: 'AI Directories Database',
-        description: 'A curated collection of AI directories aggregated from multiple sources. Filter by platform type, platform fee, and domain rating to find the best places to list AI products and agents.',
+        description: 'An AI-first directories database that can be combined with related directory types. Filter by platform type, platform fee, and domain rating to find the best places to list AI products and adjacent software categories.',
         keywords: ['AI directories', 'AI tools directory', 'AI product launch', 'AI marketing', 'AI startup submission'],
         datePublished: '2026-03-15',
         license: 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -173,11 +173,73 @@ const AI_DIRECTORIES_SCHEMA_CONFIG = {
     }
 };
 
+// All Directories Page Configuration
+const ALL_DIRECTORIES_SCHEMA_CONFIG = {
+    pageType: 'allDirs',
+    pageUrl: 'https://plantingmoon.com/directories',
+
+    faq: {
+        enabled: true,
+        extractFromDOM: true,
+        faqs: [
+            {
+                question: 'Can I combine multiple directory types on this page?',
+                answer: 'Yes. Open the Directory Type filter and select more than one type to build a broader list, such as AI Directory plus SaaS Directory for products that span both categories.'
+            },
+            {
+                question: 'Why keep separate landing pages if this page shows all directories?',
+                answer: 'The generic explorer is the flexible master view, while dedicated pages like SaaS directories and AI directories provide focused entry points for people searching for a narrower list.'
+            },
+            {
+                question: 'What is the best way to use this chart for submission research?',
+                answer: 'Start with the default list or a narrow type filter, then combine adjacent categories, compare platform fee and domain rating, and export only the directories that fit your product positioning and launch stage.'
+            }
+        ]
+    },
+
+    dataset: {
+        enabled: true,
+        name: 'Startup Directories Database',
+        description: 'A flexible directories database for startup, SaaS, AI, and related product categories. Filter by one or more directory types, platform fee, and domain rating to build a submission list that fits your product.',
+        keywords: ['startup directories', 'saas directories', 'ai directories', 'product launch directories', 'directory filters'],
+        datePublished: '2026-03-31',
+        license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+        creator: {
+            '@type': 'Organization',
+            'name': 'Planting Moon',
+            'url': 'https://plantingmoon.com'
+        }
+    },
+
+    organization: {
+        enabled: true
+    },
+
+    breadcrumb: {
+        enabled: true,
+        items: [
+            { name: 'Home', url: 'https://plantingmoon.com' },
+            { name: 'Free Tools', url: 'https://plantingmoon.com/free-tools' },
+            { name: 'Directories', url: 'https://plantingmoon.com/directories' }
+        ]
+    }
+};
+
+if (typeof window !== 'undefined') {
+    Object.assign(window, {
+        GUEST_POSTS_SCHEMA_CONFIG,
+        SAAS_DIRECTORIES_SCHEMA_CONFIG,
+        AI_DIRECTORIES_SCHEMA_CONFIG,
+        ALL_DIRECTORIES_SCHEMA_CONFIG
+    });
+}
+
 // Export configs
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         GUEST_POSTS_SCHEMA_CONFIG,
         SAAS_DIRECTORIES_SCHEMA_CONFIG,
-        AI_DIRECTORIES_SCHEMA_CONFIG
+        AI_DIRECTORIES_SCHEMA_CONFIG,
+        ALL_DIRECTORIES_SCHEMA_CONFIG
     };
 }

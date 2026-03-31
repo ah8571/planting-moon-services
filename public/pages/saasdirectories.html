@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover 160+ free SaaS directories aggregated from multiple sources. Filter by domain rating and submission type to find the best platforms for your product launch.">
+    <meta name="description" content="Browse SaaS directories and related submission lists. Start with the SaaS view, then combine multiple directory types to build a broader launch list for your product.">
     <link rel="canonical" href="https://plantingmoon.com/saasdirectories">
-    <title>160 Free SaaS Directories</title>
+    <title>SaaS Directories and Related Submission Lists</title>
     <link rel="icon" type="image/svg+xml" href="../favicon/moon-favicon-black.svg">
     <link rel="stylesheet" href="../css/blog-template.css">
     <script src="../js/schema-generator.js"></script>
     <script src="../js/schema-configs.js"></script>
 </head>
-<body data-default-type-filter="SaaS Directory" data-schema-config="SAAS_DIRECTORIES_SCHEMA_CONFIG">
+<body data-default-type-filter="SaaS Directory" data-schema-config="SAAS_DIRECTORIES_SCHEMA_CONFIG" data-page-log-prefix="saasdirectories">
     <nav id="navbar-container"></nav>
     <div class="container">
         <header>
             <h1>SaaS Directories Aggregator</h1>
             <p style="text-align: left; font-size: 0.9em; color: #999; margin: 5px 0 20px 0;"><em>Last Updated: March 15, 2026</em></p>
-            <p class="subtitle">A comprehensive collection of 160+ free SaaS directories aggregated from multiple sources. Use this tool to discover where to submit your product for maximum visibility and reach in the SaaS ecosystem. Filter by free/paid status and directory type to find the perfect fit for your product launch.</p>
+            <p class="subtitle">This page opens with SaaS Directory selected, but the chart is not limited to SaaS-only research. If your product also fits AI, startup, or open source categories, you can combine multiple directory types and build a broader submission list from the same table.</p>
             
             <div class="stats">
                 <div class="stat-box">
@@ -38,6 +38,36 @@
                 </div>
             </div>
         </header>
+
+        <section class="chart-guide">
+            <div class="chart-guide-grid">
+                <div class="chart-guide-copy">
+                    <span class="guide-eyebrow">Flexible Filters</span>
+                    <h2>Use the default SaaS view, then widen it when your product overlaps categories.</h2>
+                    <p>Open <strong>Directory Type</strong> in the chart header to add more than one type at once. This is useful when a product could reasonably be submitted as SaaS, AI, startup, or open source rather than forcing a single bucket.</p>
+                    <div class="guide-chip-row">
+                        <span class="guide-chip">SaaS Directory</span>
+                        <span class="guide-chip">AI Directory</span>
+                        <span class="guide-chip">Startup Directory</span>
+                        <span class="guide-chip">Open Source</span>
+                    </div>
+                </div>
+                <div class="guide-notes">
+                    <div class="guide-card">
+                        <strong>How to use this table</strong>
+                        <p>Keep the default SaaS filter if you want a narrower list, or add adjacent types to build a combined export for products that sit across categories.</p>
+                    </div>
+                    <div class="guide-card">
+                        <strong>Current view</strong>
+                        <p id="type-filter-summary" class="filter-summary">Showing SaaS Directory by default. Add more types to widen the list.</p>
+                        <div class="guide-links">
+                            <a href="/directories">Open the full directories explorer</a>
+                            <a href="/aidirectories">Switch to the AI-first view</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="pagination-info-top" id="pagination-info-top"></div>
 
@@ -179,577 +209,6 @@
     <script src="../components/navbar.js"></script>
     <script src="../components/footer.js"></script>
 
-    <script>
-        let allDirectories = [];
-        let filteredDirectories = [];
-        let currentTypeFilters = [];
-        let currentSubmissionFilter = null;
-        let currentSourcesFilters = [];
-        let sortByName = false;
-        let sortDirection = 'asc';
-        let currentPage = 1;
-        const ITEMS_PER_PAGE = 50;
-        const defaultTypeFilter = normalizeFilterValue(document.body.dataset.defaultTypeFilter || '');
-        const schemaConfigName = document.body.dataset.schemaConfig || 'SAAS_DIRECTORIES_SCHEMA_CONFIG';
-
-        function getDirectoryName(dir) {
-            return (dir?.name || '').toString().trim().toLowerCase();
-        }
-
-        function logSortPreview(label, directories) {
-            console.log(`[saasdirectories] ${label}`, directories.slice(0, 5).map(dir => dir.name));
-        }
-
-        function normalizeSubmissionTypes(submissionType) {
-            const values = Array.isArray(submissionType) ? submissionType : [submissionType];
-            return values
-                .filter(value => typeof value === 'string' && value.trim())
-                .map(value => value.trim().toLowerCase());
-        }
-
-        function formatSubmissionTypeLabel(value) {
-            return value.charAt(0).toUpperCase() + value.slice(1);
-        }
-
-        function normalizeFilterValue(value) {
-            return typeof value === 'string'
-                ? value.trim().replace(/\s+/g, ' ').toLowerCase()
-                : '';
-        }
-
-        function syncTypeFilterButtons() {
-            document.querySelectorAll('#type-filters .filter-btn').forEach(button => {
-                const isActive = currentTypeFilters.includes(button.dataset.typeFilter);
-                button.classList.toggle('active', isActive);
-            });
-        }
-
-        function setTypeFilter(typeFilter) {
-            currentTypeFilters = typeFilter ? [typeFilter] : [];
-            syncTypeFilterButtons();
-        }
-
-        function applyInitialTypeFilter() {
-            if (!defaultTypeFilter) {
-                return false;
-            }
-
-            const matchingButton = document.querySelector(`#type-filters .filter-btn[data-type-filter="${defaultTypeFilter}"]`);
-            if (!matchingButton) {
-                console.warn('[saasdirectories] Default type filter button not found', defaultTypeFilter);
-                return false;
-            }
-
-            setTypeFilter(defaultTypeFilter);
-            console.log('[saasdirectories] Applied initial type filter', defaultTypeFilter);
-            return true;
-        }
-
-        // Load JSON data
-        async function loadDirectories() {
-            try {
-                const response = await fetch('/data/directories.json');
-                if (!response.ok) {
-                    throw new Error('Could not load directories.json');
-                }
-                const data = await response.json();
-                allDirectories = data.directories || [];
-                
-                // Filter out entries without DR or with DR < 30
-                allDirectories = allDirectories.filter(d => d.domainRating !== 'unknown' && d.domainRating >= 30);
-                
-                // Sort by DR (highest first)
-                allDirectories.sort((a, b) => b.domainRating - a.domainRating);
-
-                console.log('[saasdirectories] Loaded directories', {
-                    totalLoaded: data.directories?.length || 0,
-                    totalWithDR: allDirectories.length
-                });
-                logSortPreview('Initial DR sort preview', allDirectories);
-
-                generateTypeFilters();
-                generateSourcesFilters();
-
-                if (applyInitialTypeFilter()) {
-                    applyFilters();
-                } else {
-                    filteredDirectories = [...allDirectories];
-                    renderTable();
-                    updateStats();
-                }
-            } catch (error) {
-                console.error('Error loading directories:', error);
-                document.getElementById('table-body').innerHTML = `
-                    <tr>
-                        <td colspan="6" style="text-align: center; padding: 40px;">
-                            Error loading directories.json<br>
-                            <small style="color: #999;">Make sure the file is in the data/ folder relative to this HTML file</small>
-                        </td>
-                    </tr>
-                `;
-            }
-        }
-
-        // Apply filters
-        function applyFilters() {
-            let filtered = [...allDirectories];
-
-            // Filter by directory type
-            if (currentTypeFilters.length > 0) {
-                filtered = filtered.filter(d => {
-                    const types = Array.isArray(d.type) ? d.type : [d.type];
-                    return types.some(t => currentTypeFilters.includes(normalizeFilterValue(t)));
-                });
-            }
-
-            // Filter by submission type
-            if (currentSubmissionFilter) {
-                filtered = filtered.filter(d => normalizeSubmissionTypes(d.submissionType).includes(currentSubmissionFilter));
-            }
-
-            // Filter by number of sources
-            if (currentSourcesFilters.length > 0) {
-                filtered = filtered.filter(d => {
-                    const sourceCount = d.listedOn ? d.listedOn.length : 0;
-                    return currentSourcesFilters.includes(sourceCount);
-                });
-            }
-
-            // Apply sorting
-            if (sortByName) {
-                filtered.sort((a, b) => {
-                    const nameA = a.name.toLowerCase();
-                    const nameB = b.name.toLowerCase();
-                    if (sortDirection === 'asc') {
-                        return nameA.localeCompare(nameB);
-                    } else {
-                        return nameB.localeCompare(nameA);
-                    }
-                });
-            } else {
-                // Default: sort by DR (highest first)
-                filtered.sort((a, b) => b.domainRating - a.domainRating);
-            }
-
-            console.log('[saasdirectories] applyFilters state', {
-                typeFilters: currentTypeFilters,
-                submissionFilter: currentSubmissionFilter,
-                sourcesFilters: currentSourcesFilters,
-                sortByName,
-                sortDirection,
-                resultCount: filtered.length
-            });
-            logSortPreview(
-                sortByName
-                    ? `Name sort (${sortDirection}) preview`
-                    : 'DR sort preview',
-                filtered
-            );
-
-            // Reset pagination when filters change
-            currentPage = 1;
-
-            filteredDirectories = filtered;
-            renderTable();
-            updateStats();
-        }
-
-        // Render table
-        function renderTable() {
-            const tbody = document.getElementById('table-body');
-            
-            if (filteredDirectories.length === 0) {
-                tbody.innerHTML = '<tr class="no-results"><td colspan="6">No directories found</td></tr>';
-                document.getElementById('pagination-info').textContent = '';
-                document.getElementById('load-more-btn').style.display = 'none';
-                return;
-            }
-
-            // Calculate pagination
-            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-            const endIndex = startIndex + ITEMS_PER_PAGE;
-            const pageItems = filteredDirectories.slice(startIndex, endIndex);
-            const totalPages = Math.ceil(filteredDirectories.length / ITEMS_PER_PAGE);
-
-            tbody.innerHTML = pageItems.map(dir => {
-                const drClass = dir.domainRating >= 80 
-                    ? 'dr-high' 
-                    : dir.domainRating >= 60 
-                    ? 'dr-medium' 
-                    : 'dr-low';
-                
-                const drText = dir.domainRating;
-
-                // Create clickable link or plain text for name
-                const nameDisplay = dir.url && dir.url.trim() !== ''
-                    ? `<a href="${dir.url}" target="_blank" rel="noopener noreferrer">${dir.name}</a>`
-                    : `<span class="name-text">${dir.name}</span>`;
-
-                // Format submission type for display
-                const submissionTypeValues = normalizeSubmissionTypes(dir.submissionType);
-                const submissionTypeBadge = submissionTypeValues.length === 0 || submissionTypeValues.includes('unknown')
-                    ? ''
-                    : submissionTypeValues
-                        .map(value => `<span class="submission-type-badge">${formatSubmissionTypeLabel(value)}</span>`)
-                        .join('');
-
-                // Format type for display (handle both string and array)
-                const typeArray = Array.isArray(dir.type) ? dir.type : [dir.type];
-                const typeDisplay = typeArray.filter(t => t && t.trim()).join(', ') || 'N/A';
-                const typeBadges = typeArray.map(t => `<span class="type-badge">${t}</span>`).join('');
-
-                return `
-                    <tr>
-                        <td class="name">${nameDisplay}</td>
-                        <td>${typeBadges || '<span class="type-badge">N/A</span>'}</td>
-                        <td>${submissionTypeBadge}</td>
-                        <td><span class="dr-badge ${drClass}">${drText}</span></td>
-                        <td class="sources">${dir.listedOn.join(', ')}</td>
-                    </tr>
-                `;
-            }).join('');
-
-            // Update pagination info
-            const startNum = (currentPage - 1) * ITEMS_PER_PAGE + 1;
-            const endNum = Math.min(currentPage * ITEMS_PER_PAGE, filteredDirectories.length);
-            const paginationText = `Showing ${startNum} - ${endNum} of ${filteredDirectories.length} directories`;
-            document.getElementById('pagination-info-top').textContent = paginationText;
-            document.getElementById('pagination-info').textContent = paginationText;
-
-            // Show/hide previous/next buttons
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            
-            prevBtn.style.display = currentPage > 1 ? 'block' : 'none';
-            nextBtn.style.display = currentPage < totalPages ? 'block' : 'none';
-        }
-
-        // Update stats
-        function updateStats() {
-            document.getElementById('total-count').textContent = filteredDirectories.length;
-            
-            const withDR = filteredDirectories.filter(d => d.domainRating !== 'unknown');
-            document.getElementById('with-dr-count').textContent = withDR.length;
-            
-            if (withDR.length > 0) {
-                const avgDR = (withDR.reduce((sum, d) => sum + d.domainRating, 0) / withDR.length).toFixed(1);
-                document.getElementById('avg-dr').textContent = avgDR;
-                
-                const maxDR = Math.max(...withDR.map(d => d.domainRating));
-                document.getElementById('highest-dr').textContent = maxDR;
-            } else {
-                document.getElementById('avg-dr').textContent = '0';
-                document.getElementById('highest-dr').textContent = '0';
-            }
-        }
-
-        // Generate type filter buttons
-        function generateTypeFilters() {
-            // Get unique types sorted (handle both string and array types)
-            const typeMap = new Map();
-            allDirectories.forEach(d => {
-                const types = Array.isArray(d.type) ? d.type : (d.type ? [d.type] : []);
-                types.forEach(t => {
-                    const normalizedType = normalizeFilterValue(t);
-                    if (normalizedType && !typeMap.has(normalizedType)) {
-                        typeMap.set(normalizedType, t.trim().replace(/\s+/g, ' '));
-                    }
-                });
-            });
-            const types = Array.from(typeMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
-
-            const typeFiltersContainer = document.getElementById('type-filters');
-            typeFiltersContainer.innerHTML = '';
-
-            types.forEach(([normalizedType, displayType]) => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-                btn.dataset.typeFilter = normalizedType;
-                btn.textContent = displayType;
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    const typeFilter = btn.dataset.typeFilter;
-                    const isActive = btn.classList.contains('active');
-
-                    typeFiltersContainer.querySelectorAll('.filter-btn').forEach(button => {
-                        button.classList.remove('active');
-                    });
-
-                    if (isActive) {
-                        setTypeFilter(null);
-                    } else {
-                        setTypeFilter(typeFilter);
-                    }
-
-                    applyFilters();
-                });
-                typeFiltersContainer.appendChild(btn);
-            });
-
-            document.getElementById('type-header').addEventListener('click', (e) => {
-                if (!e.target.closest('[data-type-filter]')) {
-                    typeFiltersContainer.classList.toggle('open');
-                    document.querySelector('#type-header .th-chevron').classList.toggle('open');
-                }
-            });
-        }
-
-        // Generate sources filter buttons
-        function generateSourcesFilters() {
-            const sourceCounts = {};
-            allDirectories.forEach(d => {
-                const count = d.listedOn ? d.listedOn.length : 0;
-                if (!sourceCounts[count]) {
-                    sourceCounts[count] = 0;
-                }
-                sourceCounts[count]++;
-            });
-
-            const container = document.getElementById('sources-filters');
-            container.innerHTML = '';
-            
-            // Create buttons for each source count in descending order
-            Object.keys(sourceCounts).sort((a, b) => b - a).forEach(count => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-                btn.textContent = `${count} source${count > 1 ? 's' : ''} (${sourceCounts[count]})`;
-                btn.dataset.sourcesFilter = count;
-                btn.addEventListener('click', (e) => toggleSourcesFilter(count, btn, e));
-                container.appendChild(btn);
-            });
-        }
-
-        // Toggle name sort
-        function toggleNameSort() {
-            const btn = document.querySelector('#name-header .th-header');
-            const chevron = btn?.querySelector('.th-chevron');
-
-            console.log('[saasdirectories] Directory Name header clicked', {
-                previousSortByName: sortByName,
-                previousSortDirection: sortDirection,
-                activeTypeFilters: currentTypeFilters,
-                activeSubmissionFilter: currentSubmissionFilter,
-                activeSourcesFilters: currentSourcesFilters,
-                currentVisibleCount: filteredDirectories.length
-            });
-            
-            if (sortByName) {
-                // Toggle direction
-                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-                if (chevron) {
-                    chevron.style.transform = sortDirection === 'desc' ? 'rotate(180deg)' : 'rotate(0deg)';
-                }
-            } else {
-                // Enable sorting
-                sortByName = true;
-                sortDirection = 'asc';
-                if (chevron) {
-                    chevron.style.color = '#667eea';
-                    chevron.style.opacity = '1';
-                }
-            }
-
-            console.log('[saasdirectories] Directory Name sort updated', {
-                sortByName,
-                sortDirection
-            });
-            applyFilters();
-        }
-
-        // Toggle sources filter
-        function toggleSourcesFilter(sourceCount, btn, e) {
-            // Stop event from bubbling to parent toggle handler
-            if (e) {
-                e.stopPropagation();
-            }
-            const count = parseInt(sourceCount);
-            if (currentSourcesFilters.includes(count)) {
-                currentSourcesFilters = currentSourcesFilters.filter(c => c !== count);
-                btn.classList.remove('active');
-            } else {
-                currentSourcesFilters.push(count);
-                btn.classList.add('active');
-            }
-            applyFilters();
-        }
-
-        // Add name sort toggle
-        document.getElementById('name-header')?.addEventListener('click', () => {
-            toggleNameSort();
-        });
-
-
-        // Add submission type filter dropdown toggle
-        document.getElementById('submission-header').addEventListener('click', (e) => {
-            // Don't toggle if clicking the filter buttons themselves
-            if (!e.target.matches('[data-filter]')) {
-                document.getElementById('submission-filters-dropdown').classList.toggle('open');
-                document.querySelector('#submission-header .th-chevron').classList.toggle('open');
-            }
-        });
-
-        // Add sources filter dropdown toggle
-        document.getElementById('sources-header').addEventListener('click', (e) => {
-            // Don't toggle if clicking the filter buttons themselves
-            if (!e.target.matches('[data-sourcesFilter]')) {
-                document.getElementById('sources-filters').classList.toggle('open');
-                document.querySelector('#sources-header .th-chevron').classList.toggle('open');
-            }
-        });
-
-        // Add event listeners for submission type filters in dropdown
-        document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const isActive = e.target.classList.contains('active');
-                document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(b => b.classList.remove('active'));
-                
-                if (isActive) {
-                    // If already active, deselect it
-                    currentSubmissionFilter = null;
-                } else {
-                    // Otherwise select it
-                    e.target.classList.add('active');
-                    currentSubmissionFilter = e.target.dataset.filter;
-                }
-                applyFilters();
-            });
-        });
-
-        // Navbar dropdown toggle - click to toggle, hover to show
-        const freeToolsDropdown = document.querySelector('#free-tools-toggle')?.parentElement;
-        const servicesDropdown = document.querySelector('#services-toggle')?.parentElement;
-
-        document.getElementById('free-tools-toggle')?.addEventListener('click', (e) => {
-            const menu = document.getElementById('free-tools-menu');
-            const toggle = e.currentTarget;
-            menu?.classList.toggle('open');
-            toggle?.classList.toggle('open');
-        });
-
-        document.getElementById('services-toggle')?.addEventListener('click', (e) => {
-            const menu = document.getElementById('services-menu');
-            const toggle = e.currentTarget;
-            menu?.classList.toggle('open');
-            toggle?.classList.toggle('open');
-        });
-
-        // Add hover support for dropdowns
-        freeToolsDropdown?.addEventListener('mouseenter', () => {
-            document.getElementById('free-tools-menu')?.classList.add('open');
-            document.getElementById('free-tools-toggle')?.classList.add('open');
-        });
-
-        freeToolsDropdown?.addEventListener('mouseleave', () => {
-            document.getElementById('free-tools-menu')?.classList.remove('open');
-            document.getElementById('free-tools-toggle')?.classList.remove('open');
-        });
-
-        servicesDropdown?.addEventListener('mouseenter', () => {
-            document.getElementById('services-menu')?.classList.add('open');
-            document.getElementById('services-toggle')?.classList.add('open');
-        });
-
-        servicesDropdown?.addEventListener('mouseleave', () => {
-            document.getElementById('services-menu')?.classList.remove('open');
-            document.getElementById('services-toggle')?.classList.remove('open');
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', (e) => {
-            const dropdowns = document.querySelectorAll('.dropdown');
-            let clickedInDropdown = false;
-            
-            dropdowns.forEach(dropdown => {
-                if (dropdown.contains(e.target)) {
-                    clickedInDropdown = true;
-                }
-            });
-            
-            if (!clickedInDropdown) {
-                document.getElementById('free-tools-menu').classList.remove('open');
-                document.getElementById('free-tools-toggle').classList.remove('open');
-                document.getElementById('services-menu').classList.remove('open');
-                document.getElementById('services-toggle').classList.remove('open');
-            }
-        });
-
-        // Previous button
-        document.getElementById('prev-btn')?.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                renderTable();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        });
-
-        // Next button
-        document.getElementById('next-btn')?.addEventListener('click', () => {
-            const totalPages = Math.ceil(filteredDirectories.length / ITEMS_PER_PAGE);
-            if (currentPage < totalPages) {
-                currentPage++;
-                renderTable();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        });
-
-        // Load on page load
-        (async () => {
-            await loadDirectories();
-            
-            // Initialize JSON-LD schemas after data loads
-        setTimeout(() => {
-            const schemaGen = new SchemaGenerator();
-            const config = window[schemaConfigName] || SAAS_DIRECTORIES_SCHEMA_CONFIG;
-            const schemas = [];
-
-            // Add Organization schema
-            if (config.organization.enabled) {
-                schemas.push({
-                    schema: schemaGen.generateOrganization(),
-                    id: 'org-schema'
-                });
-            }
-
-            // Add Breadcrumb schema
-            if (config.breadcrumb.enabled) {
-                schemas.push({
-                    schema: schemaGen.generateBreadcrumb(config.breadcrumb.items),
-                    id: 'breadcrumb-schema'
-                });
-            }
-
-            // Add Dataset schema
-            if (config.dataset.enabled) {
-                schemas.push({
-                    schema: schemaGen.generateDataset({
-                        ...config.dataset,
-                        url: config.pageUrl,
-                        itemCount: filteredDirectories.length,
-                        creator: config.organization
-                    }),
-                    id: 'dataset-schema'
-                });
-            }
-
-            // Add FAQPage schema
-            if (config.faq.enabled) {
-                const faqs = config.faq.extractFromDOM 
-                    ? schemaGen.extractFAQsFromDOM() 
-                    : config.faq.faqs;
-                
-                if (faqs.length > 0) {
-                    schemas.push({
-                        schema: schemaGen.generateFAQPage(faqs, config.pageUrl),
-                        id: 'faq-schema'
-                    });
-                }
-            }
-
-            // Inject all schemas
-            schemaGen.injectSchemas(schemas);
-        }, 100); // Brief delay to ensure DOM is ready
-        })();
-    </script>
+    <script src="../js/directories-table.js"></script>
 </body>
 </html>
