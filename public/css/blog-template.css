@@ -547,6 +547,8 @@ tr:hover {
     font-size: 0.85em;
     color: #666;
     max-width: 200px;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .no-results {
@@ -687,10 +689,6 @@ tr:hover {
 
     th, td {
         padding: 10px;
-    }
-
-    .sources {
-        display: none;
     }
 
     header {
