@@ -1,8 +1,6 @@
 async function loadNavbar() {
     try {
-        // Determine correct path based on current location
-        const path = window.location.pathname;
-        const navbarPath = path.startsWith('/pages/') || path === '/pages' ? './navbar.html' : './components/navbar.html';
+        const navbarPath = '/components/navbar';
         const response = await fetch(navbarPath, { cache: 'no-store' });
         const html = await response.text();
         document.getElementById('navbar-container').innerHTML = html;
