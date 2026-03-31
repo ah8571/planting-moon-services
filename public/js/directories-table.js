@@ -1,7 +1,7 @@
 let allDirectories = [];
 let filteredDirectories = [];
 let currentTypeFilters = [];
-let currentSubmissionFilter = null;
+let currentSubmissionFilters = [];
 let currentSourcesFilters = [];
 let sortByName = false;
 let sortDirection = 'asc';
@@ -67,7 +67,7 @@ function setupDownloadActions() {
             exportedAt: new Date().toISOString(),
             filterSummary: {
                 typeFilters: currentTypeFilters,
-                submissionFilter: currentSubmissionFilter,
+                submissionFilters: currentSubmissionFilters,
                 sourcesFilters: currentSourcesFilters
             },
             directories: filteredDirectories
@@ -112,6 +112,13 @@ function normalizeFilterValue(value) {
 function syncTypeFilterButtons() {
     document.querySelectorAll('#type-filters .filter-btn[data-type-filter]').forEach(button => {
         const isActive = currentTypeFilters.includes(button.dataset.typeFilter);
+        button.classList.toggle('active', isActive);
+    });
+}
+
+function syncSubmissionFilterButtons() {
+    document.querySelectorAll('#submission-filters-dropdown .filter-btn[data-filter]').forEach(button => {
+        const isActive = currentSubmissionFilters.includes(button.dataset.filter);
         button.classList.toggle('active', isActive);
     });
 }
@@ -221,14 +228,14 @@ function applyFilters() {
         });
     }
 
-    if (currentSubmissionFilter) {
+    if (currentSubmissionFilters.length > 0) {
         filtered = filtered.filter(directory => {
             const submissionTypes = normalizeSubmissionTypes(directory.submissionType);
-            if (currentSubmissionFilter === 'unknown') {
-                return submissionTypes.length === 0;
+            if (submissionTypes.length === 0) {
+                return currentSubmissionFilters.includes('unknown');
             }
 
-            return submissionTypes.includes(currentSubmissionFilter);
+            return submissionTypes.some(type => currentSubmissionFilters.includes(type));
         });
     }
 
@@ -253,7 +260,7 @@ function applyFilters() {
 
     console.log(`[${pageLogPrefix}] applyFilters state`, {
         typeFilters: currentTypeFilters,
-        submissionFilter: currentSubmissionFilter,
+        submissionFilters: currentSubmissionFilters,
         sourcesFilters: currentSourcesFilters,
         sortByName,
         sortDirection,
@@ -419,6 +426,19 @@ function generateSubmissionFilters() {
     const container = document.getElementById('submission-filters-dropdown');
     container.innerHTML = '';
 
+    const clearButton = document.createElement('button');
+    clearButton.className = 'filter-btn';
+    clearButton.dataset.clearSubmissionFilters = 'true';
+    clearButton.textContent = 'Clear fees';
+    clearButton.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        currentSubmissionFilters = [];
+        syncSubmissionFilterButtons();
+        applyFilters();
+    });
+    container.appendChild(clearButton);
+
     Array.from(submissionFilterCounts.entries())
         .sort((a, b) => {
             if (a[0] === 'unknown') {
@@ -435,20 +455,22 @@ function generateSubmissionFilters() {
             button.dataset.filter = value;
             button.textContent = `${submissionLabelMap.get(value) || value} (${count})`;
             button.addEventListener('click', event => {
-                const isActive = event.currentTarget.classList.contains('active');
-                container.querySelectorAll('.filter-btn').forEach(filterButton => filterButton.classList.remove('active'));
+                event.preventDefault();
+                event.stopPropagation();
 
-                if (isActive) {
-                    currentSubmissionFilter = null;
+                if (currentSubmissionFilters.includes(value)) {
+                    currentSubmissionFilters = currentSubmissionFilters.filter(filterValue => filterValue !== value);
                 } else {
-                    event.currentTarget.classList.add('active');
-                    currentSubmissionFilter = value;
+                    currentSubmissionFilters.push(value);
                 }
 
+                syncSubmissionFilterButtons();
                 applyFilters();
             });
             container.appendChild(button);
         });
+
+    syncSubmissionFilterButtons();
 }
 
 function generateSourcesFilters() {
@@ -479,7 +501,7 @@ function toggleNameSort() {
         previousSortByName: sortByName,
         previousSortDirection: sortDirection,
         activeTypeFilters: currentTypeFilters,
-        activeSubmissionFilter: currentSubmissionFilter,
+        activeSubmissionFilters: currentSubmissionFilters,
         activeSourcesFilters: currentSourcesFilters,
         currentVisibleCount: filteredDirectories.length
     });
