@@ -12,6 +12,9 @@ const defaultTypeFilter = normalizeFilterValue(document.body.dataset.defaultType
 const schemaConfigName = document.body.dataset.schemaConfig || 'SAAS_DIRECTORIES_SCHEMA_CONFIG';
 const pageLogPrefix = document.body.dataset.pageLogPrefix || 'directories';
 const typeLabelMap = new Map();
+const submissionLabelMap = new Map([
+    ['unknown', 'No entry']
+]);
 
 function downloadBlob(filename, content, mimeType) {
     const blob = new Blob([content], { type: mimeType });
@@ -93,6 +96,10 @@ function normalizeSubmissionTypes(submissionType) {
 }
 
 function formatSubmissionTypeLabel(value) {
+    if (value === 'unknown') {
+        return 'No entry';
+    }
+
     return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
@@ -181,6 +188,7 @@ async function loadDirectories() {
         logSortPreview('Initial DR sort preview', allDirectories);
 
         generateTypeFilters();
+        generateSubmissionFilters();
         generateSourcesFilters();
 
         if (applyInitialTypeFilter()) {
@@ -214,7 +222,14 @@ function applyFilters() {
     }
 
     if (currentSubmissionFilter) {
-        filtered = filtered.filter(directory => normalizeSubmissionTypes(directory.submissionType).includes(currentSubmissionFilter));
+        filtered = filtered.filter(directory => {
+            const submissionTypes = normalizeSubmissionTypes(directory.submissionType);
+            if (currentSubmissionFilter === 'unknown') {
+                return submissionTypes.length === 0;
+            }
+
+            return submissionTypes.includes(currentSubmissionFilter);
+        });
     }
 
     if (currentSourcesFilters.length > 0) {
@@ -281,8 +296,8 @@ function renderTable() {
             : `<span class="name-text">${directory.name}</span>`;
 
         const submissionTypeValues = normalizeSubmissionTypes(directory.submissionType);
-        const submissionTypeBadge = submissionTypeValues.length === 0 || submissionTypeValues.includes('unknown')
-            ? ''
+        const submissionTypeBadge = submissionTypeValues.length === 0
+            ? '<span class="submission-type-badge">No entry</span>'
             : submissionTypeValues
                 .map(value => `<span class="submission-type-badge">${formatSubmissionTypeLabel(value)}</span>`)
                 .join('');
@@ -383,6 +398,59 @@ function generateTypeFilters() {
     });
 }
 
+function generateSubmissionFilters() {
+    const submissionFilterCounts = new Map();
+
+    allDirectories.forEach(directory => {
+        const submissionTypes = normalizeSubmissionTypes(directory.submissionType);
+        if (submissionTypes.length === 0) {
+            submissionFilterCounts.set('unknown', (submissionFilterCounts.get('unknown') || 0) + 1);
+            return;
+        }
+
+        submissionTypes.forEach(value => {
+            submissionFilterCounts.set(value, (submissionFilterCounts.get(value) || 0) + 1);
+            if (!submissionLabelMap.has(value)) {
+                submissionLabelMap.set(value, formatSubmissionTypeLabel(value));
+            }
+        });
+    });
+
+    const container = document.getElementById('submission-filters-dropdown');
+    container.innerHTML = '';
+
+    Array.from(submissionFilterCounts.entries())
+        .sort((a, b) => {
+            if (a[0] === 'unknown') {
+                return 1;
+            }
+            if (b[0] === 'unknown') {
+                return -1;
+            }
+            return (submissionLabelMap.get(a[0]) || a[0]).localeCompare(submissionLabelMap.get(b[0]) || b[0]);
+        })
+        .forEach(([value, count]) => {
+            const button = document.createElement('button');
+            button.className = 'filter-btn';
+            button.dataset.filter = value;
+            button.textContent = `${submissionLabelMap.get(value) || value} (${count})`;
+            button.addEventListener('click', event => {
+                const isActive = event.currentTarget.classList.contains('active');
+                container.querySelectorAll('.filter-btn').forEach(filterButton => filterButton.classList.remove('active'));
+
+                if (isActive) {
+                    currentSubmissionFilter = null;
+                } else {
+                    event.currentTarget.classList.add('active');
+                    currentSubmissionFilter = value;
+                }
+
+                applyFilters();
+            });
+            container.appendChild(button);
+        });
+}
+
 function generateSourcesFilters() {
     const sourceCounts = {};
     allDirectories.forEach(directory => {
@@ -469,23 +537,6 @@ document.getElementById('sources-header').addEventListener('click', event => {
         document.getElementById('sources-filters').classList.toggle('open');
         document.querySelector('#sources-header .th-chevron').classList.toggle('open');
     }
-});
-
-document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(button => {
-    button.addEventListener('click', event => {
-        const isActive = event.target.classList.contains('active');
-        document.querySelectorAll('#submission-filters-dropdown .filter-btn').forEach(filterButton => {
-            filterButton.classList.remove('active');
-        });
-
-        if (isActive) {
-            currentSubmissionFilter = null;
-        } else {
-            event.target.classList.add('active');
-            currentSubmissionFilter = event.target.dataset.filter;
-        }
-        applyFilters();
-    });
 });
 
 const freeToolsDropdown = document.querySelector('#free-tools-toggle')?.parentElement;
